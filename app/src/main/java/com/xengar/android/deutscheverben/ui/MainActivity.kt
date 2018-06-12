@@ -414,11 +414,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 launchFragment(PAGE_VERBS)
             }
             R.id.nav_cards -> {
-                //page = PAGE_CARDS
+                page = PAGE_CARDS
 
                 supportActionBar!!.setTitle(R.string.cards)
-                //ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_CARDS)
-                //launchFragment(PAGE_CARDS)
+                ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_CARDS)
+                launchFragment(PAGE_CARDS)
             }
             R.id.nav_favorites -> {
                 page = PAGE_FAVORITES

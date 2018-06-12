@@ -178,6 +178,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_EN
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_ES
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_PT
+import com.xengar.android.deutscheverben.ui.DetailsActivity
 import com.xengar.android.deutscheverben.utils.Constants.CONJUGATION_ID
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_FONT_SIZE
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_TTS_LOCALE
@@ -275,7 +276,7 @@ object ActivityUtils {
      * @param cId conjugation id
      * @param verb verb name
      * @param demoMode demo
-     *//*
+     */
     fun launchDetailsActivity(context: Context, id: Long, cId: Long, verb: String,
                               demoMode: Boolean) {
         val intent = Intent(context, DetailsActivity::class.java)
@@ -289,7 +290,7 @@ object ActivityUtils {
         intent.putExtras(bundle)
 
         context.startActivity(intent)
-    }*/
+    }
 
     /**
      * Launches Help Activity.

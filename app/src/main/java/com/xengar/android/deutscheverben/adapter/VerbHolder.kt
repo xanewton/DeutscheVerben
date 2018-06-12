@@ -173,9 +173,9 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
             R.id.play_sample3 -> ActivityUtils.speak(context, tts, verb?.sample3)
 
             else -> if (verb != null) {
-                //ActivityUtils.launchDetailsActivity(context, verb!!.id,
-                //        verb!!.conjugation.toLong(), verb!!.infinitive, false)
-                Toast.makeText(context, verb!!.infinitive, Toast.LENGTH_SHORT).show();
+                ActivityUtils.launchDetailsActivity(context, verb!!.id,
+                        verb!!.conjugation.toLong(), verb!!.infinitive, false)
+                //Toast.makeText(context, verb!!.infinitive, Toast.LENGTH_SHORT).show();
             }
         }
     }
