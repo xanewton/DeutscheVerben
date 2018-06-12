@@ -18,6 +18,7 @@ package com.xengar.android.deutscheverben
 import android.os.Bundle
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
+import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
@@ -61,35 +62,62 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+            R.id.action_change_group -> {
+                //changeVerbGroup()
+                return true
+            }
+
+            R.id.action_sort -> {
+                //sortVerbs()
+                return true
+            }
+
+            R.id.action_most_common -> {
+                //showMostCommon()
+                return true
+            }
+
+            R.id.action_search -> {
+                //ActivityUtils.launchSearchActivity(applicationContext)
+                return true
+            }
         }
+
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.nav_camera -> {
-                // Handle the camera action
-            }
-            R.id.nav_gallery -> {
+        val id = item.itemId
 
-            }
-            R.id.nav_slideshow -> {
+        when (id) {
+            R.id.nav_verbs -> {
+                //page = PAGE_VERBS
 
+                supportActionBar!!.setTitle(R.string.verbs)
+                //ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_VERBS)
+                //launchFragment(PAGE_VERBS)
             }
-            R.id.nav_manage -> {
+            R.id.nav_cards -> {
+                //page = PAGE_CARDS
 
+                supportActionBar!!.setTitle(R.string.cards)
+                //ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_CARDS)
+                //launchFragment(PAGE_CARDS)
             }
-            R.id.nav_share -> {
+            R.id.nav_favorites -> {
+                //page = PAGE_FAVORITES
 
+                supportActionBar!!.setTitle(R.string.favorites)
+                //ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_FAVORITES)
+                //launchFragment(PAGE_FAVORITES)
             }
-            R.id.nav_send -> {
-
-            }
+            R.id.nav_settings -> {}//ActivityUtils.launchSettingsActivity(applicationContext)
+            R.id.nav_help -> {}//ActivityUtils.launchHelpActivity(applicationContext)
         }
 
-        drawer_layout.closeDrawer(GravityCompat.START)
+        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
+        drawer.closeDrawer(GravityCompat.START)
         return true
     }
 }
