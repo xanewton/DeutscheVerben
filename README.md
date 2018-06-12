@@ -20,7 +20,8 @@ Pre-requisites
 References
 ----------
 - https://en.wikipedia.org/wiki/German_verbs
--
+- http://canoo.net/inflection/laufen:V:sein:haben
+
 
 
 
