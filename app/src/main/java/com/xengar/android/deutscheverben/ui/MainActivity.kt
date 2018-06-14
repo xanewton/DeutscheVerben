@@ -427,7 +427,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_FAVORITES)
                 launchFragment(PAGE_FAVORITES)
             }
-            R.id.nav_settings -> {}//ActivityUtils.launchSettingsActivity(applicationContext)
+            R.id.nav_settings -> ActivityUtils.launchSettingsActivity(applicationContext)
             R.id.nav_help -> ActivityUtils.launchHelpActivity(applicationContext)
         }
 

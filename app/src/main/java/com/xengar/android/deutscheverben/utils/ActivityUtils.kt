@@ -56,7 +56,7 @@ import com.xengar.android.deutscheverben.data.Verb
 import com.xengar.android.deutscheverben.ui.DetailsActivity
 import com.xengar.android.deutscheverben.ui.HelpActivity
 import com.xengar.android.deutscheverben.ui.SearchActivity
-//import com.xengar.android.deutscheverben.ui.SettingsActivity
+import com.xengar.android.deutscheverben.ui.SettingsActivity
 
 import android.app.AlarmManager.INTERVAL_HOUR
 import android.content.Context.MODE_PRIVATE
@@ -304,7 +304,7 @@ object ActivityUtils {
     /**
      * Launches Settings Activity.
      * @param context context
-     *//*
+     */
     fun launchSettingsActivity(context: Context) {
         val intent = Intent(context, SettingsActivity::class.java)
         intent.putExtra(PreferenceActivity.EXTRA_SHOW_FRAGMENT,
@@ -313,7 +313,7 @@ object ActivityUtils {
         intent.putExtra(PreferenceActivity.EXTRA_SHOW_FRAGMENT_TITLE, R.string.settings)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
-    }*/
+    }
 
     /**
      * Launches Search Activity.
