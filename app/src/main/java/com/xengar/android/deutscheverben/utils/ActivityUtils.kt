@@ -51,8 +51,8 @@ import com.xengar.android.deutscheverben.BuildConfig
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.data.Conjugation
 import com.xengar.android.deutscheverben.data.Verb
-//import com.xengar.android.deutscheverben.sync.AlarmReceiver
-//import com.xengar.android.deutscheverben.sync.JobSchedulerService
+import com.xengar.android.deutscheverben.sync.AlarmReceiver
+import com.xengar.android.deutscheverben.sync.JobSchedulerService
 import com.xengar.android.deutscheverben.ui.DetailsActivity
 import com.xengar.android.deutscheverben.ui.HelpActivity
 import com.xengar.android.deutscheverben.ui.SearchActivity
@@ -983,7 +983,7 @@ object ActivityUtils {
     /**
      * Schedules a repeating event to launch the verb Notifications.
      * @param context Context
-     *//*
+     */
     fun scheduleRepeatingNotifications(context: Context) {
         // JobScheduler works since 21+ (Lollipop).
         // But, it doesn't allow to configure start time.
@@ -993,12 +993,12 @@ object ActivityUtils {
         } else {
             startAlarm(context)
         }
-    }*/
+    }
 
     /**
      * Cancels the repeating event that launches the verb Notifications.
      * @param context Context
-     *//*
+     */
     fun cancelRepeatingNotifications(context: Context) {
         // JobScheduler works since 21+ (Lollipop).
         // But, it doesn't allow to configure start time.
@@ -1008,12 +1008,12 @@ object ActivityUtils {
         } else {
             cancelAlarm(context)
         }
-    }*/
+    }
 
     /**
      * Start an Alarm
      * @param context Context
-     *//*
+     */
     fun startAlarm(context: Context) {
         val alarmIntent = Intent(context, AlarmReceiver::class.java)
         val pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0)
@@ -1028,12 +1028,12 @@ object ActivityUtils {
         if (LOG) {
             Toast.makeText(context, "Alarm Set", Toast.LENGTH_SHORT).show()
         }
-    }*/
+    }
 
     /**
      * Cancel Alarm
      * @param context Context
-     *//*
+     */
     fun cancelAlarm(context: Context) {
         val manager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val alarmIntent = Intent(context, AlarmReceiver::class.java)
@@ -1042,12 +1042,12 @@ object ActivityUtils {
         if (LOG) {
             Toast.makeText(context, "Alarm Canceled", Toast.LENGTH_SHORT).show()
         }
-    }*/
+    }
 
     /**
      * Schedules a repeating task.
      * @param context Context
-     *//*
+     */
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun scheduleTask(context: Context) {
         // https://code.tutsplus.com/tutorials/using-the-jobscheduler-api-on-android-lollipop--cms-23562
@@ -1076,12 +1076,12 @@ object ActivityUtils {
                         Toast.LENGTH_SHORT).show()
             }
         }
-    }*/
+    }
 
     /**
      * Cancel all tasks
      * @param context Context
-     *//*
+     */
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun cancelTask(context: Context) {
         val jobScheduler = context.getSystemService(Context.JOB_SCHEDULER_SERVICE) as JobScheduler
@@ -1090,7 +1090,7 @@ object ActivityUtils {
             Toast.makeText(context, "Scheduled Notification Task Canceled",
                     Toast.LENGTH_SHORT).show()
         }
-    }*/
+    }
 
     /**
      * Check if it's the first run, and launch the Verb Notifications with AlarmManager.
@@ -1112,7 +1112,7 @@ object ActivityUtils {
 
         } else if (savedVersionCode == notFound || currentVersionCode > savedVersionCode) {
             // This is a new install (or the user cleared the shared preferences) or upgrade
-//            scheduleRepeatingNotifications(context)
+            scheduleRepeatingNotifications(context)
 //            firebaseAnalyticsLogEventSelectContent(firebaseAnalytics,
 //                    TYPE_START_NOTIFICATIONS, "First Run", TYPE_VERB_NOTIFICATION)
         }
