@@ -350,7 +350,7 @@ class DetailsActivity
             }
 
             R.id.action_search -> {
-                //ActivityUtils.launchSearchActivity(applicationContext)
+                ActivityUtils.launchSearchActivity(applicationContext)
                 return true
             }
 

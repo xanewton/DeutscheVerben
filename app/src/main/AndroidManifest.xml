@@ -41,12 +41,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xengar.android.deutscheverben.ui.MainActivity" />
         </activity>
+        <activity
+            android:name=".ui.SearchActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xengar.android.deutscheverben.ui.MainActivity" />
+        </activity>
 
         <provider
             android:name=".data.VerbProvider"
             android:authorities="com.xengar.android.deutscheverben"
             android:exported="false" />
-
 
     </application>
 

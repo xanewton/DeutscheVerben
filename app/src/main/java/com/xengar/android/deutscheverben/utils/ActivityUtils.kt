@@ -179,6 +179,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_ES
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_PT
 import com.xengar.android.deutscheverben.ui.DetailsActivity
+import com.xengar.android.deutscheverben.ui.SearchActivity
 import com.xengar.android.deutscheverben.utils.Constants.CONJUGATION_ID
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_FONT_SIZE
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_TTS_LOCALE
@@ -319,12 +320,12 @@ object ActivityUtils {
     /**
      * Launches Search Activity.
      * @param context context
-     *//*
+     */
     fun launchSearchActivity(context: Context) {
         val intent = Intent(context, SearchActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
-    }*/
+    }
 
     /**
      * Checks if the intent is callable.
