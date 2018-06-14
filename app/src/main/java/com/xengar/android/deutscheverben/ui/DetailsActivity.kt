@@ -806,7 +806,7 @@ class DetailsActivity
 
         // Try to put the verb image
         val imageVerb = findViewById<ImageView>(R.id.verb_image)
-        val imageId = resources.getIdentifier(VERB + verb.image, DRAWABLE, packageName)
+        val imageId = resources.getIdentifier(VERB + "lehren"/*verb.image*/, DRAWABLE, packageName)
         if (imageId != 0) {
             ActivityUtils.setImage(applicationContext, imageVerb, imageId)
         }
