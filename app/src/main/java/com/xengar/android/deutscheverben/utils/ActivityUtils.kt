@@ -53,9 +53,9 @@ import com.xengar.android.deutscheverben.data.Conjugation
 import com.xengar.android.deutscheverben.data.Verb
 //import com.xengar.android.deutscheverben.sync.AlarmReceiver
 //import com.xengar.android.deutscheverben.sync.JobSchedulerService
-//import com.xengar.android.deutscheverben.ui.DetailsActivity
-//import com.xengar.android.deutscheverben.ui.HelpActivity
-//import com.xengar.android.deutscheverben.ui.SearchActivity
+import com.xengar.android.deutscheverben.ui.DetailsActivity
+import com.xengar.android.deutscheverben.ui.HelpActivity
+import com.xengar.android.deutscheverben.ui.SearchActivity
 //import com.xengar.android.deutscheverben.ui.SettingsActivity
 
 import android.app.AlarmManager.INTERVAL_HOUR
@@ -178,8 +178,6 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_EN
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_ES
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_PT
-import com.xengar.android.deutscheverben.ui.DetailsActivity
-import com.xengar.android.deutscheverben.ui.SearchActivity
 import com.xengar.android.deutscheverben.utils.Constants.CONJUGATION_ID
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_FONT_SIZE
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_TTS_LOCALE
@@ -296,12 +294,12 @@ object ActivityUtils {
     /**
      * Launches Help Activity.
      * @param context context
-     *//*
+     */
     fun launchHelpActivity(context: Context) {
         val intent = Intent(context, HelpActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         context.startActivity(intent)
-    }*/
+    }
 
     /**
      * Launches Settings Activity.

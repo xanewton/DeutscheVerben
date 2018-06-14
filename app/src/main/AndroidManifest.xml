@@ -49,6 +49,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.xengar.android.deutscheverben.ui.MainActivity" />
         </activity>
+        <activity
+            android:name=".ui.HelpActivity"
+            android:label="@string/help"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xengar.android.deutscheverben.ui.MainActivity" />
+        </activity>
 
         <provider
             android:name=".data.VerbProvider"

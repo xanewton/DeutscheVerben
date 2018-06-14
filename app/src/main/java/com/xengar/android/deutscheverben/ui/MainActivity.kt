@@ -428,7 +428,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 launchFragment(PAGE_FAVORITES)
             }
             R.id.nav_settings -> {}//ActivityUtils.launchSettingsActivity(applicationContext)
-            R.id.nav_help -> {}//ActivityUtils.launchHelpActivity(applicationContext)
+            R.id.nav_help -> ActivityUtils.launchHelpActivity(applicationContext)
         }
 
         val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
