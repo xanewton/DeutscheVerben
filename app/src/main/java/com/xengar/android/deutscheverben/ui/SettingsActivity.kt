@@ -38,7 +38,7 @@ import android.util.Log
 import android.view.MenuItem
 import android.widget.Toast
 
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.utils.ActivityUtils
 import com.xengar.android.deutscheverben.utils.Constants.ACT_CHECK_TTS_DATA
@@ -65,14 +65,14 @@ import java.util.*
 class SettingsActivity : AppCompatPreferenceActivity(),
         SharedPreferences.OnSharedPreferenceChangeListener {
 
-    //private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
         setupActionBar()
 
-        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
     }
 
     /**
@@ -149,12 +149,12 @@ class SettingsActivity : AppCompatPreferenceActivity(),
             val enabled = ActivityUtils.getPreferenceEnableNotifications(applicationContext)
             if (!enabled) {
                 ActivityUtils.cancelRepeatingNotifications(applicationContext)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-                //        TYPE_STOP_NOTIFICATIONS, "Preferences", TYPE_VERB_NOTIFICATION)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                        TYPE_STOP_NOTIFICATIONS, "Preferences", TYPE_VERB_NOTIFICATION)
             } else {
                 ActivityUtils.scheduleRepeatingNotifications(applicationContext)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-                //        TYPE_START_NOTIFICATIONS, "Preferences", TYPE_VERB_NOTIFICATION)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                        TYPE_START_NOTIFICATIONS, "Preferences", TYPE_VERB_NOTIFICATION)
             }
         }
     }

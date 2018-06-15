@@ -43,10 +43,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 
-//import com.google.android.gms.ads.AdRequest
-//import com.google.android.gms.ads.AdView
-//import com.google.android.gms.ads.MobileAds
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.BuildConfig
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.data.Conjugation
@@ -1097,7 +1097,7 @@ object ActivityUtils {
      * @param context Context
      * @param firebaseAnalytics FirebaseAnalytics
      */
-    fun checkFirstRun(context: Context/*, firebaseAnalytics: FirebaseAnalytics*/) : Boolean {
+    fun checkFirstRun(context: Context, firebaseAnalytics: FirebaseAnalytics) : Boolean {
         val notFound = -1
         // Get current version code
         val currentVersionCode = BuildConfig.VERSION_CODE
@@ -1113,8 +1113,8 @@ object ActivityUtils {
         } else if (savedVersionCode == notFound || currentVersionCode > savedVersionCode) {
             // This is a new install (or the user cleared the shared preferences) or upgrade
             scheduleRepeatingNotifications(context)
-//            firebaseAnalyticsLogEventSelectContent(firebaseAnalytics,
-//                    TYPE_START_NOTIFICATIONS, "First Run", TYPE_VERB_NOTIFICATION)
+            firebaseAnalyticsLogEventSelectContent(firebaseAnalytics,
+                    TYPE_START_NOTIFICATIONS, "First Run", TYPE_VERB_NOTIFICATION)
         }
 
         // Update the shared preferences with the current version code
@@ -1128,7 +1128,7 @@ object ActivityUtils {
      * https://firebase.google.com/docs/admob/android/quick-start
      * @param activity activity
      * @param listener LogAdListener
-     *//*
+     */
     fun createAdMobBanner(activity: AppCompatActivity, listener: LogAdListener): AdView {
         val adMobAppId = activity.getString(R.string.admob_app_id)
         // Initialize AdMob
@@ -1153,7 +1153,7 @@ object ActivityUtils {
         adView.loadAd(adRequest)
 
         return adView
-    }*/
+    }
 
     /**
      * Logs a Firebase Analytics select content event.
@@ -1162,7 +1162,7 @@ object ActivityUtils {
      * @param id id
      * @param name name
      * @param type type
-     *//*
+     */
     fun firebaseAnalyticsLogEventSelectContent(analytics: FirebaseAnalytics, id: String,
                                                name: String, type: String) {
         val bundle = Bundle()
@@ -1170,31 +1170,31 @@ object ActivityUtils {
         bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name)
         bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, type)
         analytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle)
-    }*/
+    }
 
     /**
      * Logs a Firebase Analytics search event.
      * https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#SEARCH
      * @param analytics FirebaseAnalytics
      * @param search string to search
-     *//*
+     */
     fun firebaseAnalyticsLogEventSearch(analytics: FirebaseAnalytics, search: String) {
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SEARCH_TERM, search)
         analytics.logEvent(FirebaseAnalytics.Event.SEARCH, bundle)
-    }*/
+    }
 
     /**
      * Logs a Firebase Analytics view search results event.
      * https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#VIEW_SEARCH_RESULTS
      * @param analytics FirebaseAnalytics
      * @param search string to search
-     *//*
+     */
     fun firebaseAnalyticsLogEventViewSearchResults(analytics: FirebaseAnalytics, search: String) {
         val bundle = Bundle()
         bundle.putString(FirebaseAnalytics.Param.SEARCH_TERM, search)
         analytics.logEvent(FirebaseAnalytics.Event.VIEW_SEARCH_RESULTS, bundle)
-    }*/
+    }
 
     /**
      * Logs a Firebase Analytics view item event.
@@ -1203,7 +1203,7 @@ object ActivityUtils {
      * @param id id
      * @param name name
      * @param category category
-     *//*
+     */
     fun firebaseAnalyticsLogEventViewItem(analytics: FirebaseAnalytics, id: String, name: String,
                                           category: String) {
         val bundle = Bundle()
@@ -1211,5 +1211,5 @@ object ActivityUtils {
         bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name)
         bundle.putString(FirebaseAnalytics.Param.ITEM_CATEGORY, category)
         analytics.logEvent(FirebaseAnalytics.Event.VIEW_ITEM, bundle)
-    }*/
+    }
 }

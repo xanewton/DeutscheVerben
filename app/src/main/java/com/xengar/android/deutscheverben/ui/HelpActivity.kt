@@ -31,7 +31,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.BuildConfig
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.utils.ActivityUtils
@@ -45,7 +45,7 @@ import com.xengar.android.deutscheverben.utils.Constants.TYPE_PAGE
  */
 class HelpActivity : AppCompatActivity(), View.OnClickListener {
 
-    //private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,9 +65,9 @@ class HelpActivity : AppCompatActivity(), View.OnClickListener {
         (findViewById<View>(R.id.description_volume) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
 
         // Obtain the FirebaseAnalytics instance.
-        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
-        //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-        //        PAGE_HELP, PAGE_HELP, TYPE_PAGE)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
+        ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                PAGE_HELP, PAGE_HELP, TYPE_PAGE)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -193,8 +193,8 @@ class HelpActivity : AppCompatActivity(), View.OnClickListener {
             R.id.header_verbs -> {
                 // dormir
                 ActivityUtils.launchDetailsActivity(applicationContext, 100, 33, "dormir", true)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-                //        "Contextual help", "acheter", TYPE_CONTEXT_HELP)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                        "Contextual help", "dormir", TYPE_CONTEXT_HELP)
             }
         }
     }

@@ -19,7 +19,7 @@ import android.content.Context
 import android.content.Intent
 import android.support.v4.content.WakefulBroadcastReceiver
 
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.utils.ActivityUtils
 
 import com.xengar.android.deutscheverben.utils.Constants.TYPE_START_NOTIFICATIONS
@@ -38,9 +38,9 @@ class DeviceBootReceiver : WakefulBroadcastReceiver() {
             if (ActivityUtils.getPreferenceEnableNotifications(context)) {
                 // Setting the alarm here
                 ActivityUtils.startAlarm(context)
-                //val mFirebaseAnalytics = FirebaseAnalytics.getInstance(context)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics,
-                //        TYPE_START_NOTIFICATIONS, "Reboot", TYPE_VERB_NOTIFICATION)
+                val mFirebaseAnalytics = FirebaseAnalytics.getInstance(context)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics,
+                        TYPE_START_NOTIFICATIONS, "Reboot", TYPE_VERB_NOTIFICATION)
             }
         }
     }

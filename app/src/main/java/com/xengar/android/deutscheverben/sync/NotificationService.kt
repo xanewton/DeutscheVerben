@@ -35,7 +35,7 @@ import android.support.v4.content.ContextCompat
 import android.util.Log
 
 import com.bumptech.glide.Glide
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.data.Verb
 import com.xengar.android.deutscheverben.ui.DetailsActivity
@@ -74,6 +74,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_300
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_50
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_500
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_VERB_NOTIFICATION
 
 /**
  * NotificationService
@@ -94,9 +95,9 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
         if (verb != null) {
             notifyVerb(applicationContext, verb)
 
-            //val mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
-            //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics,
-            //        VERB_ID + " " + verb.id, verb.infinitive, TYPE_VERB_NOTIFICATION)
+            val mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
+            ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics,
+                    VERB_ID + " " + verb.id, verb.infinitive, TYPE_VERB_NOTIFICATION)
         }
     }
 

@@ -59,7 +59,7 @@
 
         </android.support.design.widget.CoordinatorLayout>
 
-        <!-- view for AdMob Banner Ad --> <!--
+        <!-- view for AdMob Banner Ad -->
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
@@ -68,7 +68,7 @@
             android:layout_gravity="center"
             android:layout_weight="0"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id_1" /> -->
+            ads:adUnitId="@string/banner_ad_unit_id_1" />
 
     </LinearLayout>
 

@@ -29,11 +29,11 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 
-//import com.google.android.gms.ads.AdView
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.android.gms.ads.AdView
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.utils.ActivityUtils
-//import com.xengar.android.deutscheverben.utils.LogAdListener
+import com.xengar.android.deutscheverben.utils.LogAdListener
 import com.xengar.android.deutscheverben.utils.ActivityUtils.checkFirstRun
 import com.xengar.android.deutscheverben.utils.Constants.ACT_CHECK_TTS_DATA
 import com.xengar.android.deutscheverben.utils.Constants.ALPHABET
@@ -98,18 +98,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         private set
 
     private var isFirstRun = false
-    //private var mFirebaseAnalytics: FirebaseAnalytics? = null
-    //private var mAdView: AdView? = null
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var mAdView: AdView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         // Obtain the FirebaseAnalytics instance.
-        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
         // create AdMob banner
-        //val listener = LogAdListener(mFirebaseAnalytics!!, MAIN_ACTIVITY)
-        //mAdView = ActivityUtils.createAdMobBanner(this, listener)
+        val listener = LogAdListener(mFirebaseAnalytics!!, MAIN_ACTIVITY)
+        mAdView = ActivityUtils.createAdMobBanner(this, listener)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer.addDrawerListener(toggle)
         toggle.syncState()
 
-        isFirstRun = checkFirstRun(this/*, mFirebaseAnalytics!!*/)
+        isFirstRun = checkFirstRun(this, mFirebaseAnalytics!!)
         configureTextToSpeech()
         createFragments()
     }
@@ -195,7 +195,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     /** Called when leaving the activity  */
     public override fun onPause() {
-        //mAdView?.pause()
+        mAdView?.pause()
         super.onPause()
     }
 
@@ -205,12 +205,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
      * */
     public override fun onPostResume() {
         super.onPostResume()
-        //mAdView?.resume()
+        mAdView?.resume()
     }
 
     /** Called before the activity is destroyed  */
     public override fun onDestroy() {
-        //mAdView?.destroy()
+        mAdView?.destroy()
         tts?.stop()
         tts?.shutdown()
         super.onDestroy()
@@ -471,24 +471,24 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                 supportActionBar!!.setTitle(R.string.verbs)
                 ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_VERBS)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(
-                //        mFirebaseAnalytics!!, PAGE_VERBS, PAGE_VERBS, TYPE_PAGE)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(
+                        mFirebaseAnalytics!!, PAGE_VERBS, PAGE_VERBS, TYPE_PAGE)
                 launchFragment(PAGE_VERBS)
             }
             PAGE_CARDS -> {
 
                 supportActionBar!!.setTitle(R.string.verbs)
                 ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_CARDS)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(
-                //        mFirebaseAnalytics!!, PAGE_CARDS, PAGE_CARDS, TYPE_PAGE)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(
+                        mFirebaseAnalytics!!, PAGE_CARDS, PAGE_CARDS, TYPE_PAGE)
                 launchFragment(PAGE_CARDS)
             }
             PAGE_FAVORITES -> {
 
                 supportActionBar!!.setTitle(R.string.favorites)
                 ActivityUtils.saveStringToPreferences(applicationContext, CURRENT_PAGE, PAGE_FAVORITES)
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(
-                //        mFirebaseAnalytics!!, PAGE_FAVORITES, PAGE_FAVORITES, TYPE_PAGE)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(
+                        mFirebaseAnalytics!!, PAGE_FAVORITES, PAGE_FAVORITES, TYPE_PAGE)
                 launchFragment(PAGE_FAVORITES)
             }
         }

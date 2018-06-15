@@ -30,7 +30,7 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.adapter.VerbHolder
 import com.xengar.android.deutscheverben.data.Verb
@@ -53,7 +53,7 @@ class SearchActivity : AppCompatActivity() {
     private var mSearchView: SearchView? = null
     private var mAdapter: SearchAdapter? = null
 
-    //private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,9 +75,9 @@ class SearchActivity : AppCompatActivity() {
         mRecyclerView.adapter = mAdapter
 
         // Obtain the FirebaseAnalytics instance.
-        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
-        //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-        //        PAGE_SEARCH, PAGE_SEARCH, TYPE_PAGE)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(applicationContext)
+        ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                PAGE_SEARCH, PAGE_SEARCH, TYPE_PAGE)
     }
 
     private fun setupActionBar() {
@@ -152,10 +152,10 @@ class SearchActivity : AppCompatActivity() {
                     results.values = verbs
                     results.count = verbs.size
 
-                    //ActivityUtils.firebaseAnalyticsLogEventSearch(
-                    //        mFirebaseAnalytics!!, charSequence.toString())
-                    //ActivityUtils.firebaseAnalyticsLogEventViewSearchResults(
-                    //        mFirebaseAnalytics!!, charSequence.toString())
+                    ActivityUtils.firebaseAnalyticsLogEventSearch(
+                            mFirebaseAnalytics!!, charSequence.toString())
+                    ActivityUtils.firebaseAnalyticsLogEventViewSearchResults(
+                            mFirebaseAnalytics!!, charSequence.toString())
 
                     return results
                 }

@@ -30,13 +30,13 @@ import com.android.colorpicker.ColorPickerPalette
 import com.android.colorpicker.ColorPickerSwatch
 import com.github.amlcurran.showcaseview.ShowcaseView
 import com.github.amlcurran.showcaseview.targets.ViewTarget
-//import com.google.android.gms.ads.AdView
-//import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.android.gms.ads.AdView
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.xengar.android.deutscheverben.R
 import com.xengar.android.deutscheverben.data.Conjugation
 import com.xengar.android.deutscheverben.data.Verb
 import com.xengar.android.deutscheverben.utils.ActivityUtils
-//import com.xengar.android.deutscheverben.utils.LogAdListener
+import com.xengar.android.deutscheverben.utils.LogAdListener
 
 import java.util.ArrayList
 
@@ -105,8 +105,8 @@ class DetailsActivity
     private var sample2:TextView? = null
     private var sample3:TextView? = null
 
-    //private var mFirebaseAnalytics:FirebaseAnalytics? = null
-    //private var mAdView:AdView? = null
+    private var mFirebaseAnalytics:FirebaseAnalytics? = null
+    private var mAdView:AdView? = null
 
     // Demo
     private var showcaseView:ShowcaseView? = null
@@ -120,13 +120,13 @@ class DetailsActivity
         setContentView(R.layout.activity_details)
 
         // Obtain the FirebaseAnalytics instance.
-        //mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
-        //ActivityUtils.firebaseAnalyticsLogEventSelectContent(
-        //        mFirebaseAnalytics!!, PAGE_VERB_DETAILS, PAGE_VERB_DETAILS, TYPE_PAGE)
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        ActivityUtils.firebaseAnalyticsLogEventSelectContent(
+                mFirebaseAnalytics!!, PAGE_VERB_DETAILS, PAGE_VERB_DETAILS, TYPE_PAGE)
 
         // create AdMob banner
-        //val listener = LogAdListener(mFirebaseAnalytics!!, DETAILS_ACTIVITY)
-        //mAdView = ActivityUtils.createAdMobBanner(this, listener)
+        val listener = LogAdListener(mFirebaseAnalytics!!, DETAILS_ACTIVITY)
+        mAdView = ActivityUtils.createAdMobBanner(this, listener)
 
         // changing status bar color
         if (android.os.Build.VERSION.SDK_INT >= 21) {
@@ -310,7 +310,7 @@ class DetailsActivity
 
     /** Called when leaving the activity  */
     public override fun onPause() {
-        //mAdView?.pause()
+        mAdView?.pause()
         super.onPause()
     }
 
@@ -320,12 +320,12 @@ class DetailsActivity
      * */
     public override fun onPostResume() {
         super.onPostResume()
-        //mAdView?.resume()
+        mAdView?.resume()
     }
 
     /** Called before the activity is destroyed  */
     public override fun onDestroy() {
-        //mAdView?.destroy()
+        mAdView?.destroy()
         tts?.stop()
         tts?.shutdown()
         super.onDestroy()
@@ -357,8 +357,8 @@ class DetailsActivity
             R.id.action_share -> {
                 ActivityUtils.launchShareText(this, createShareText())
                 val verbName = if (verb != null) verb!!.infinitive else "verb name not available"
-                //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-                //        "Verb: $verbName, VerbId: $verbID", TYPE_SHARE, TYPE_SHARE)
+                ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                        "Verb: $verbName, VerbId: $verbID", TYPE_SHARE, TYPE_SHARE)
                 return true
             }
         }
@@ -603,8 +603,8 @@ class DetailsActivity
             fabAdd!!.visibility = View.INVISIBLE
             fabDel!!.visibility = View.VISIBLE
             val verbName = if (verb != null) verb!!.infinitive else "verb name not available"
-            //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-            //        "$VERB_ID $verbID", verbName, TYPE_ADD_FAV)
+            ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                    "$VERB_ID $verbID", verbName, TYPE_ADD_FAV)
         }
 
         fabDel!!.setOnClickListener{ view ->
@@ -617,8 +617,8 @@ class DetailsActivity
             fabAdd!!.visibility = View.VISIBLE
             fabDel!!.visibility = View.INVISIBLE
             val verbName = if (verb != null) verb!!.infinitive else "verb name not available"
-            //ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
-            //        "$VERB_ID $verbID", verbName, TYPE_DEL_FAV)
+            ActivityUtils.firebaseAnalyticsLogEventSelectContent(mFirebaseAnalytics!!,
+                    "$VERB_ID $verbID", verbName, TYPE_DEL_FAV)
         }
     }
 
@@ -811,8 +811,8 @@ class DetailsActivity
             ActivityUtils.setImage(applicationContext, imageVerb, imageId)
         }
 
-        //ActivityUtils.firebaseAnalyticsLogEventViewItem(
-        //        mFirebaseAnalytics!!, "" + verbID, verb.infinitive, VERBS)
+        ActivityUtils.firebaseAnalyticsLogEventViewItem(
+                mFirebaseAnalytics!!, "" + verbID, verb.infinitive, VERBS)
     }
 
 
