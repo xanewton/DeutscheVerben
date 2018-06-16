@@ -527,14 +527,11 @@ object ActivityUtils {
         val values = localStr.split(", ")
         return if (values.size == 2) {
             when {
-                values[1].contentEquals("GBR") -> Locale.UK
-                values[0].contentEquals("en")
-                        || values[1].contentEquals("USA") -> Locale.US
-                values[0].contentEquals("fr") -> Locale.FRENCH
+                values[0].contentEquals("de") -> Locale.GERMANY
                 else -> Locale(values[0], values[1])
             }
         } else {
-            Locale.FRENCH
+            Locale.GERMANY
         }
     }
 
@@ -580,7 +577,7 @@ object ActivityUtils {
 
         var selectedLocal : Locale? = null
         for (locale in locales) {
-            if ("FRA".contentEquals(locale.isO3Country)) {
+            if ("DEU".contentEquals(locale.isO3Country)) {
                 selectedLocal = locale
                 break
             }
@@ -609,8 +606,8 @@ object ActivityUtils {
                     getTTSSupportedLanguagesLegacy(tts)
                 }
         if (languagesAll.isNotEmpty()) {
-            // filter to French
-            return languagesAll.filter { s -> s.toString().contains("fr") }
+            // filter to German
+            return languagesAll.filter { s -> s.toString().contains("de") }
         }
         return languagesAll
     }

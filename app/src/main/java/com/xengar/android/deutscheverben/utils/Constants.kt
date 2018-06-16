@@ -92,7 +92,7 @@ object Constants {
     val PORTUGUESE = "pt"
     // Check Text To Speech
     val ACT_CHECK_TTS_DATA = 1000
-    val DEFAULT_TTS_LOCALE = "fr"
+    val DEFAULT_TTS_LOCALE = "de"
 
     // Firebase strings
     val TYPE_PAGE = "page"
