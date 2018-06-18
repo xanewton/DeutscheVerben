@@ -21,7 +21,18 @@ References
 ----------
 - https://en.wikipedia.org/wiki/German_verbs
 - http://canoo.net/inflection/laufen:V:sein:haben
+- http://conjugator.reverso.net/index-german-251-500.html  Conjugator
+- https://en.wikipedia.org/wiki/German_verbs  Conjugator
+- http://www.die-konjugation.de/verb/interpretieren.php Conjugator pattern
+- http://conjugator.reverso.net/conjugation-german-verb-interpretieren.html Conjugator pattern
 
+- http://www.learnalanguage.com/learn-german/german-verbs/   top100, top500
+- https://quizlet.com/6414/500-german-verbs-flash-cards/  top500
+- http://www.thegermanprofessor.com/top-100-german-verbs/ top100 (in order)
+- https://www.pinterest.ca/pin/234187249353769621  top25
+- https://zodml.org/sites/default/files/501_German_Verbs.pdf  top500 book, conjugation rules
+- https://www.kobo.com/gb/en/ebook/501-german-verbs-5th-edition   top500
+- https://quizlet.com/15319894/250-german-verbs-mit-mnemonic-pt-1-flash-cards/   top250
 
 
 
