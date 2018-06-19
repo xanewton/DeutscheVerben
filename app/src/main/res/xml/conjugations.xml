@@ -37,116 +37,116 @@
         - Indikativ Präsens (Gegenwart) - Indicative Present
         ind_prasens_ich  = Indikativ Präsens ich
         ind_prasens_du   = Indikativ Präsens du
-        ind_prasens_er   = Indikativ Präsens er
+        ind_prasens_er   = Indikativ Präsens er/sie/es
         ind_prasens_wir  = Indikativ Präsens wir
         ind_prasens_ihr  = Indikativ Präsens ihr
-        ind_prasens_sie  = Indikativ Präsens sie
+        ind_prasens_sie  = Indikativ Präsens sie/Sie
 
         - Indikativ Präteritum (Imperfekt (Vergangenheit)) - Indicative Imperfect or Past
         ind_prateritum_ich  = Indikativ Präteritum ich
         ind_prateritum_du   = Indikativ Präteritum du
-        ind_prateritum_er   = Indikativ Präteritum er
+        ind_prateritum_er   = Indikativ Präteritum er/sie/es
         ind_prateritum_wir  = Indikativ Präteritum wir
         ind_prateritum_ihr  = Indikativ Präteritum ihr
-        ind_prateritum_sie  = Indikativ Präteritum sie
+        ind_prateritum_sie  = Indikativ Präteritum sie/Sie
 
         - Indikativ Perfekt (vollendete Gegenwart) - Indicative Perfect or Present Perfect Indicative
         ind_perfekt_ich  = Indikativ Perfekt ich
         ind_perfekt_du   = Indikativ Perfekt du
-        ind_perfekt_er   = Indikativ Perfekt er
+        ind_perfekt_er   = Indikativ Perfekt er/sie/es
         ind_perfekt_wir  = Indikativ Perfekt wir
         ind_perfekt_ihr  = Indikativ Perfekt ihr
-        ind_perfekt_sie  = Indikativ Perfekt sie
+        ind_perfekt_sie  = Indikativ Perfekt sie/Sie
 
         - Indikativ Plusquamperfekt (vollendete Vergangenheit) - Indicative Pluperfect or Past Perfect Indicative
         ind_plusquamperfekt_ich  = Indikativ Plusquamperfekt ich
         ind_plusquamperfekt_du   = Indikativ Plusquamperfekt du
-        ind_plusquamperfekt_er   = Indikativ Plusquamperfekt er
+        ind_plusquamperfekt_er   = Indikativ Plusquamperfekt er/sie/es
         ind_plusquamperfekt_wir  = Indikativ Plusquamperfekt wir
         ind_plusquamperfekt_ihr  = Indikativ Plusquamperfekt ihr
-        ind_plusquamperfekt_sie  = Indikativ Plusquamperfekt sie
+        ind_plusquamperfekt_sie  = Indikativ Plusquamperfekt sie/Sie
 
         - Indikativ Futur I (Zukunft) - Indicative Future
         ind_futur1_ich  = Indikativ Futur 1 ich
         ind_futur1_du   = Indikativ Futur 1 du
-        ind_futur1_er   = Indikativ Futur 1 er
+        ind_futur1_er   = Indikativ Futur 1 er/sie/es
         ind_futur1_wir  = Indikativ Futur 1 wir
         ind_futur1_ihr  = Indikativ Futur 1 ihr
-        ind_futur1_sie  = Indikativ Futur 1 sie
+        ind_futur1_sie  = Indikativ Futur 1 sie/Sie
 
         - Indikativ Futur II (vollendete Zukunft) - Indicative Future Perfect
         ind_futur2_ich  = Indikativ Futur 2 ich
         ind_futur2_du   = Indikativ Futur 2 du
-        ind_futur2_er   = Indikativ Futur 2 er
+        ind_futur2_er   = Indikativ Futur 2 er/sie/es
         ind_futur2_wir  = Indikativ Futur 2 wir
         ind_futur2_ihr  = Indikativ Futur 2 ihr
-        ind_futur2_sie  = Indikativ Futur 2 sie
+        ind_futur2_sie  = Indikativ Futur 2 sie/Sie
 
 
         - Konjunktiv I Präsens (Möglichkeitsform) - Subjunctive Present Subjunctive primary
         kon1_prasens_ich  = Konjunktiv 1 Präsens ich
         kon1_prasens_du   = Konjunktiv 1 Präsens du
-        kon1_prasens_er   = Konjunktiv 1 Präsens er
+        kon1_prasens_er   = Konjunktiv 1 Präsens er/sie/es
         kon1_prasens_wir  = Konjunktiv 1 Präsens wir
         kon1_prasens_ihr  = Konjunktiv 1 Präsens ihr
-        kon1_prasens_sie  = Konjunktiv 1 Präsens sie
+        kon1_prasens_sie  = Konjunktiv 1 Präsens sie/Sie
 
         - Konjunktiv I Perfekt - Subjunctive Perfect Subjunctive primary
         kon1_perfekt_ich  = Konjunktiv 1 Perfekt ich
         kon1_perfekt_du   = Konjunktiv 1 Perfekt du
-        kon1_perfekt_er   = Konjunktiv 1 Perfekt er
+        kon1_perfekt_er   = Konjunktiv 1 Perfekt er/sie/es
         kon1_perfekt_wir  = Konjunktiv 1 Perfekt wir
         kon1_perfekt_ihr  = Konjunktiv 1 Perfekt ihr
-        kon1_perfekt_sie  = Konjunktiv 1 Perfekt sie
+        kon1_perfekt_sie  = Konjunktiv 1 Perfekt sie/Sie
 
         - Konjunktiv I Futur, I - Subjunctive Future Subjunctive primary
         kon1_futur1_ich  = Konjunktiv 1 Futur 1 ich
         kon1_futur1_du   = Konjunktiv 1 Futur 1 du
-        kon1_futur1_er   = Konjunktiv 1 Futur 1 er
+        kon1_futur1_er   = Konjunktiv 1 Futur 1 er/sie/es
         kon1_futur1_wir  = Konjunktiv 1 Futur 1 wir
         kon1_futur1_ihr  = Konjunktiv 1 Futur 1 ihr
-        kon1_futur1_sie  = Konjunktiv 1 Futur 1 sie
+        kon1_futur1_sie  = Konjunktiv 1 Futur 1 sie/Sie
 
         - Konjunktiv I Futur, II - Subjunctive Future Perfect Subjunctive primary
         kon1_futur2_ich  = Konjunktiv 1 Futur 2 ich
         kon1_futur2_du   = Konjunktiv 1 Futur 2 du
-        kon1_futur2_er   = Konjunktiv 1 Futur 2 er
+        kon1_futur2_er   = Konjunktiv 1 Futur 2 er/sie/es
         kon1_futur2_wir  = Konjunktiv 1 Futur 2 wir
         kon1_futur2_ihr  = Konjunktiv 1 Futur 2 ihr
-        kon1_futur2_sie  = Konjunktiv 1 Futur 2 sie
+        kon1_futur2_sie  = Konjunktiv 1 Futur 2 sie/Sie
 
 
         - Konjunktiv II Präteritum (Imperfekt) - Subjunctive Imperfect Subjunctive secondary
         kon2_prateritum_ich  = Konjunktiv 2 Präteritum ich
         kon2_prateritum_du   = Konjunktiv 2 Präteritum du
-        kon2_prateritum_er   = Konjunktiv 2 Präteritum er
+        kon2_prateritum_er   = Konjunktiv 2 Präteritum er/sie/es
         kon2_prateritum_wir  = Konjunktiv 2 Präteritum wir
         kon2_prateritum_ihr  = Konjunktiv 2 Präteritum ihr
-        kon2_prateritum_sie  = Konjunktiv 2 Präteritum sie
+        kon2_prateritum_sie  = Konjunktiv 2 Präteritum sie/Sie
 
         - Konjunktiv II Plusquamperfekt - Subjunctive Pluperfect Subjunctive secondary
         kon2_plusquamperfekt_ich  = Konjunktiv 2 Plusquamperfekt ich
         kon2_plusquamperfekt_du   = Konjunktiv 2 Plusquamperfekt du
-        kon2_plusquamperfekt_er   = Konjunktiv 2 Plusquamperfekt er
+        kon2_plusquamperfekt_er   = Konjunktiv 2 Plusquamperfekt er/sie/es
         kon2_plusquamperfekt_wir  = Konjunktiv 2 Plusquamperfekt wir
         kon2_plusquamperfekt_ihr  = Konjunktiv 2 Plusquamperfekt ihr
-        kon2_plusquamperfekt_sie  = Konjunktiv 2 Plusquamperfekt sie
+        kon2_plusquamperfekt_sie  = Konjunktiv 2 Plusquamperfekt sie/Sie
 
         - Konjunktiv II Futur I (Konditional (Bedingungsform)) - Subjunctive Present Conditional secondary
         kon2_futur1_ich  = Konjunktiv 2 Futur 1 ich
         kon2_futur1_du   = Konjunktiv 2 Futur 1 du
-        kon2_futur1_er   = Konjunktiv 2 Futur 1 er
+        kon2_futur1_er   = Konjunktiv 2 Futur 1 er/sie/es
         kon2_futur1_wir  = Konjunktiv 2 Futur 1 wir
         kon2_futur1_ihr  = Konjunktiv 2 Futur 1 ihr
-        kon2_futur1_sie  = Konjunktiv 2 Futur 1 sie
+        kon2_futur1_sie  = Konjunktiv 2 Futur 1 sie/Sie
 
         - Konjunktiv II Futur II (Konditional Perfekt) - Subjunctive Past Conditional secondary
         kon2_futur2_ich  = Konjunktiv 2 Futur 2 ich
         kon2_futur2_du   = Konjunktiv 2 Futur 2 du
-        kon2_futur2_er   = Konjunktiv 2 Futur 2 er
+        kon2_futur2_er   = Konjunktiv 2 Futur 2 er/sie/es
         kon2_futur2_wir  = Konjunktiv 2 Futur 2 wir
         kon2_futur2_ihr  = Konjunktiv 2 Futur 2 ihr
-        kon2_futur2_sie  = Konjunktiv 2 Futur 2 sie
+        kon2_futur2_sie  = Konjunktiv 2 Futur 2 sie/Sie
     -->
 
     <conjugation
@@ -4114,107 +4114,107 @@
         radicals                 = ""
 
         inf_prasens              = "sein"
-        inf_perfekt              = ""
-        par_prasens              = ""
-        par_perfekt              = ""
+        inf_perfekt              = "gewesen sein"
+        par_prasens              = "seiend"
+        par_perfekt              = "gewesen"
 
-        ind_prasens_ich          = ""
-        ind_prasens_du           = ""
-        ind_prasens_er           = ""
-        ind_prasens_wir          = ""
-        ind_prasens_ihr          = ""
-        ind_prasens_sie          = ""
+        ind_prasens_ich          = "bin"
+        ind_prasens_du           = "bist"
+        ind_prasens_er           = "ist"
+        ind_prasens_wir          = "sind"
+        ind_prasens_ihr          = "seid"
+        ind_prasens_sie          = "sind"
 
-        ind_prateritum_ich       = ""
-        ind_prateritum_du        = ""
-        ind_prateritum_er        = ""
-        ind_prateritum_wir       = ""
-        ind_prateritum_ihr       = ""
-        ind_prateritum_sie       = ""
+        ind_prateritum_ich       = "war"
+        ind_prateritum_du        = "warst"
+        ind_prateritum_er        = "war"
+        ind_prateritum_wir       = "waren"
+        ind_prateritum_ihr       = "wart"
+        ind_prateritum_sie       = "waren"
 
-        ind_perfekt_ich          = ""
-        ind_perfekt_du           = ""
-        ind_perfekt_er           = ""
-        ind_perfekt_wir          = ""
-        ind_perfekt_ihr          = ""
-        ind_perfekt_sie          = ""
+        ind_perfekt_ich          = "bin gewesen"
+        ind_perfekt_du           = "bist gewesen"
+        ind_perfekt_er           = "ist gewesen"
+        ind_perfekt_wir          = "sind gewesen"
+        ind_perfekt_ihr          = "seid gewesen"
+        ind_perfekt_sie          = "sind gewesen"
 
-        ind_plusquamperfekt_ich  = ""
-        ind_plusquamperfekt_du   = ""
-        ind_plusquamperfekt_er   = ""
-        ind_plusquamperfekt_wir  = ""
-        ind_plusquamperfekt_ihr  = ""
-        ind_plusquamperfekt_sie  = ""
+        ind_plusquamperfekt_ich  = "war gewesen"
+        ind_plusquamperfekt_du   = "warst gewesen"
+        ind_plusquamperfekt_er   = "war gewesen"
+        ind_plusquamperfekt_wir  = "waren gewesen"
+        ind_plusquamperfekt_ihr  = "wart gewesen"
+        ind_plusquamperfekt_sie  = "waren gewesen"
 
-        ind_futur1_ich           = ""
-        ind_futur1_du            = ""
-        ind_futur1_er            = ""
-        ind_futur1_wir           = ""
-        ind_futur1_ihr           = ""
-        ind_futur1_sie           = ""
+        ind_futur1_ich           = "werde sein"
+        ind_futur1_du            = "wirst sein"
+        ind_futur1_er            = "wird sein"
+        ind_futur1_wir           = "werden sein"
+        ind_futur1_ihr           = "werdet sein"
+        ind_futur1_sie           = "werden sein"
 
-        ind_futur2_ich           = ""
-        ind_futur2_du            = ""
-        ind_futur2_er            = ""
-        ind_futur2_wir           = ""
-        ind_futur2_ihr           = ""
-        ind_futur2_sie           = ""
+        ind_futur2_ich           = "werde gewesen sein"
+        ind_futur2_du            = "wirst gewesen sein"
+        ind_futur2_er            = "wird gewesen sein"
+        ind_futur2_wir           = "werden gewesen sein"
+        ind_futur2_ihr           = "werdet gewesen sein"
+        ind_futur2_sie           = "werden gewesen sein"
 
-        kon1_prasens_ich         = ""
-        kon1_prasens_du          = ""
-        kon1_prasens_er          = ""
-        kon1_prasens_wir         = ""
-        kon1_prasens_ihr         = ""
-        kon1_prasens_sie         = ""
+        kon1_prasens_ich         = "sei"
+        kon1_prasens_du          = "seist"
+        kon1_prasens_er          = "sei"
+        kon1_prasens_wir         = "seien"
+        kon1_prasens_ihr         = "seiet"
+        kon1_prasens_sie         = "seien"
 
-        kon1_perfekt_ich         = ""
-        kon1_perfekt_du          = ""
-        kon1_perfekt_er          = ""
-        kon1_perfekt_wir         = ""
-        kon1_perfekt_ihr         = ""
-        kon1_perfekt_sie         = ""
+        kon1_perfekt_ich         = "sei gewesen"
+        kon1_perfekt_du          = "seiest gewesen"
+        kon1_perfekt_er          = "sei gewesen"
+        kon1_perfekt_wir         = "seien gewesen"
+        kon1_perfekt_ihr         = "seiet gewesen"
+        kon1_perfekt_sie         = "seien gewesen"
 
-        kon1_futur1_ich          = ""
-        kon1_futur1_du           = ""
-        kon1_futur1_er           = ""
-        kon1_futur1_wir          = ""
-        kon1_futur1_ihr          = ""
-        kon1_futur1_sie          = ""
+        kon1_futur1_ich          = "werde sein"
+        kon1_futur1_du           = "werdest sein"
+        kon1_futur1_er           = "werde sein"
+        kon1_futur1_wir          = "werden sein"
+        kon1_futur1_ihr          = "werdet sein"
+        kon1_futur1_sie          = "werden sein"
 
-        kon1_futur2_ich          = ""
-        kon1_futur2_du           = ""
-        kon1_futur2_er           = ""
-        kon1_futur2_wir          = ""
-        kon1_futur2_ihr          = ""
-        kon1_futur2_sie          = ""
+        kon1_futur2_ich          = "werde gewesen sein"
+        kon1_futur2_du           = "werdest gewesen sein"
+        kon1_futur2_er           = "werde gewesen sein"
+        kon1_futur2_wir          = "werden gewesen sein"
+        kon1_futur2_ihr          = "werdet gewesen sein"
+        kon1_futur2_sie          = "werden gewesen sein"
 
-        kon2_prateritum_ich      = ""
-        kon2_prateritum_du       = ""
-        kon2_prateritum_er       = ""
-        kon2_prateritum_wir      = ""
-        kon2_prateritum_ihr      = ""
-        kon2_prateritum_sie      = ""
+        kon2_prateritum_ich      = "wäre"
+        kon2_prateritum_du       = "wärest"
+        kon2_prateritum_er       = "wäre"
+        kon2_prateritum_wir      = "wären"
+        kon2_prateritum_ihr      = "wäret"
+        kon2_prateritum_sie      = "wären"
 
-        kon2_plusquamperfekt_ich = ""
-        kon2_plusquamperfekt_du  = ""
-        kon2_plusquamperfekt_er  = ""
-        kon2_plusquamperfekt_wir = ""
-        kon2_plusquamperfekt_ihr = ""
-        kon2_plusquamperfekt_sie = ""
+        kon2_plusquamperfekt_ich = "wäre gewesen"
+        kon2_plusquamperfekt_du  = "wärest gewesen"
+        kon2_plusquamperfekt_er  = "wäre gewesen"
+        kon2_plusquamperfekt_wir = "wären gewesen"
+        kon2_plusquamperfekt_ihr = "wäret gewesen"
+        kon2_plusquamperfekt_sie = "wären gewesen"
 
-        kon2_futur1_ich          = ""
-        kon2_futur1_du           = ""
-        kon2_futur1_er           = ""
-        kon2_futur1_wir          = ""
-        kon2_futur1_ihr          = ""
-        kon2_futur1_sie          = ""
+        kon2_futur1_ich          = "würde sein"
+        kon2_futur1_du           = "würdest sein"
+        kon2_futur1_er           = "würde sein"
+        kon2_futur1_wir          = "würden sein"
+        kon2_futur1_ihr          = "würdet sein"
+        kon2_futur1_sie          = "würden sein"
 
-        kon2_futur2_ich          = ""
-        kon2_futur2_du           = ""
-        kon2_futur2_er           = ""
-        kon2_futur2_wir          = ""
-        kon2_futur2_ihr          = ""
-        kon2_futur2_sie          = "" />
+        kon2_futur2_ich          = "würde gewesen sein"
+        kon2_futur2_du           = "würdest gewesen sein"
+        kon2_futur2_er           = "würde gewesen sein"
+        kon2_futur2_wir          = "würden gewesen sein"
+        kon2_futur2_ihr          = "würdet gewesen sein"
+        kon2_futur2_sie          = "würden gewesen sein" />
     <conjugation
         id                       = "39"
         term                     = ""
