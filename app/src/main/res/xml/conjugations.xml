@@ -1713,9 +1713,9 @@
         par_prasens              = "habend"
         par_perfekt              = "gehabt"
 
-        imperativ_du             = ""
-        imperativ_ihr            = ""
-        imperativ_sie            = ""
+        imperativ_du             = "habe!"
+        imperativ_ihr            = "habt!"
+        imperativ_sie            = "haben Sie!"
 
         ind_prasens_ich          = "habe"
         ind_prasens_du           = "hast"
@@ -4266,9 +4266,9 @@
         par_prasens              = "seiend"
         par_perfekt              = "gewesen"
 
-        imperativ_du             = ""
-        imperativ_ihr            = ""
-        imperativ_sie            = ""
+        imperativ_du             = "sei!"
+        imperativ_ihr            = "seid!"
+        imperativ_sie            = "seien Sie!"
 
         ind_prasens_ich          = "bin"
         ind_prasens_du           = "bist"
@@ -5598,9 +5598,9 @@
         par_prasens              = "werdend"
         par_perfekt              = "geworden"
 
-        imperativ_du             = ""
-        imperativ_ihr            = ""
-        imperativ_sie            = ""
+        imperativ_du             = "werde!"
+        imperativ_ihr            = "werdet!"
+        imperativ_sie            = "werden Sie!"
 
         ind_prasens_ich          = "werde"
         ind_prasens_du           = "wirst"
