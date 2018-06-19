@@ -159,6 +159,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -265,6 +269,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -373,6 +381,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -479,6 +491,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -587,6 +603,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -693,6 +713,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -801,6 +825,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -907,6 +935,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -1015,6 +1047,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -1121,6 +1157,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -1229,6 +1269,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -1335,6 +1379,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -1443,6 +1491,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -1549,6 +1601,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -1657,6 +1713,10 @@
         par_prasens              = "habend"
         par_perfekt              = "gehabt"
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = "habe"
         ind_prasens_du           = "hast"
         ind_prasens_er           = "hat"
@@ -1763,6 +1823,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -1871,6 +1935,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -1977,6 +2045,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -2085,6 +2157,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -2191,6 +2267,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -2299,6 +2379,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -2406,6 +2490,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -2509,9 +2597,13 @@
         radicals                 = ""
 
         inf_prasens              = "können"
-        inf_perfekt              = ""
-        par_prasens              = ""
-        par_perfekt              = ""
+        inf_perfekt              = "gekonnt haben"
+        par_prasens              = "könnend"
+        par_perfekt              = "gekonnt"
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -2620,6 +2712,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -2726,6 +2822,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -2834,6 +2934,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -2940,6 +3044,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -3048,6 +3156,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -3154,6 +3266,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -3262,6 +3378,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -3368,6 +3488,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -3476,6 +3600,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -3582,6 +3710,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -3690,6 +3822,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -3796,6 +3932,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -3904,6 +4044,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -4010,6 +4154,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -4118,6 +4266,10 @@
         par_prasens              = "seiend"
         par_perfekt              = "gewesen"
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = "bin"
         ind_prasens_du           = "bist"
         ind_prasens_er           = "ist"
@@ -4224,6 +4376,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -4332,6 +4488,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -4438,6 +4598,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -4546,6 +4710,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -4652,6 +4820,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -4760,6 +4932,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -4866,6 +5042,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -4974,6 +5154,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -5080,6 +5264,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -5188,6 +5376,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -5294,6 +5486,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -5402,6 +5598,10 @@
         par_prasens              = "werdend"
         par_perfekt              = "geworden"
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = "werde"
         ind_prasens_du           = "wirst"
         ind_prasens_er           = "wird"
@@ -5508,6 +5708,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -5616,6 +5820,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -5722,6 +5930,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
@@ -5830,6 +6042,10 @@
         par_prasens              = ""
         par_perfekt              = ""
 
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
+
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
         ind_prasens_er           = ""
@@ -5936,6 +6152,10 @@
         inf_perfekt              = ""
         par_prasens              = ""
         par_perfekt              = ""
+
+        imperativ_du             = ""
+        imperativ_ihr            = ""
+        imperativ_sie            = ""
 
         ind_prasens_ich          = ""
         ind_prasens_du           = ""
