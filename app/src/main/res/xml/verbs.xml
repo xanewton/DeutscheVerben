@@ -34,6 +34,10 @@
         tres = translation_es
         trpt = translation_pt
     -->
+    <!--
+    Notes codes:
+    changePPwFI = Past Participle in parentheses when immediately preceded by another infinitive
+    -->
     <!-- TOP 25 -->
     <verb
         id   = "1"
@@ -103,7 +107,7 @@
         gr   = ""
         co   = "1"
         de   = ""
-        no   = ""
+        no   = "changePPwFI"
         tren = "be able (can); know (a language or how to do something)"
         trfr = ""
         tres = "" />
@@ -121,7 +125,7 @@
         gr   = ""
         co   = "1"
         de   = ""
-        no   = ""
+        no   = "changePPwFI"
         tren = "have to, must"
         trfr = ""
         tres = "" />
@@ -211,7 +215,7 @@
         gr   = ""
         co   = "1"
         de   = ""
-        no   = ""
+        no   = "changePPwFI"
         tren = "be; be supposed to; ought; be said to; be expected to"
         trfr = ""
         tres = "" />
@@ -229,7 +233,7 @@
         gr   = ""
         co   = "1"
         de   = ""
-        no   = ""
+        no   = "changePPwFI"
         tren = "want; intend"
         trfr = ""
         tres = "" />
