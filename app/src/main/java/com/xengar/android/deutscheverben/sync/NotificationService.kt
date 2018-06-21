@@ -52,7 +52,7 @@ import com.xengar.android.deutscheverben.utils.Constants.LOG
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_100
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_1000
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_25
-import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_300
+import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_250
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_50
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_500
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
@@ -67,11 +67,11 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.O
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMAGE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_100
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_1000
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_25
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_300
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_250
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_50
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_500
 import com.xengar.android.deutscheverben.utils.Constants.TYPE_VERB_NOTIFICATION
@@ -250,10 +250,10 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
                         CONTENT_VERBS_URI, columns, where, whereArgs, null)
             }
 
-            MOST_COMMON_300 -> {
+            MOST_COMMON_250 -> {
                 where = (COLUMN_COMMON + " = ? OR " + COLUMN_COMMON
                         + " = ? OR " + COLUMN_COMMON + " = ? OR " + COLUMN_COMMON + " = ?")
-                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_300)
+                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_250)
                 cursor = context.contentResolver.query(
                         CONTENT_VERBS_URI, columns, where, whereArgs, null)
             }
@@ -262,7 +262,7 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
                 where = (COLUMN_COMMON + " = ? OR " + COLUMN_COMMON
                         + " = ? OR " + COLUMN_COMMON + " = ? OR " + COLUMN_COMMON + " = ? OR "
                         + COLUMN_COMMON + " = ?")
-                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_300, S_TOP_500)
+                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_250, S_TOP_500)
                 cursor = context.contentResolver.query(
                         CONTENT_VERBS_URI, columns, where, whereArgs, null)
             }
@@ -271,7 +271,7 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
                 where = (COLUMN_COMMON + " = ? OR " + COLUMN_COMMON
                         + " = ? OR " + COLUMN_COMMON + " = ? OR " + COLUMN_COMMON + " = ? OR "
                         + COLUMN_COMMON + " = ? OR " + COLUMN_COMMON + " = ?")
-                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_300, S_TOP_500, S_TOP_1000)
+                whereArgs = arrayOf(S_TOP_25, S_TOP_50, S_TOP_100, S_TOP_250, S_TOP_500, S_TOP_1000)
                 cursor = context.contentResolver.query(
                         CONTENT_VERBS_URI, columns, where, whereArgs, null)
             }
@@ -334,7 +334,7 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
      * @return verb
      */
     private fun getVerb(verbId: Long?): Verb? {
-        val columns = arrayOf(COLUMN_ID, COLUMN_INFINITIVE, COLUMN_CONJUGATION_NUMBER, COLUMN_IMAGE)
+        val columns = arrayOf(COLUMN_ID, COLUMN_INFINITIV, COLUMN_CONJUGATION_NUMBER, COLUMN_IMAGE)
         val cursor = contentResolver.query(
                 CONTENT_VERBS_URI,
                 columns, // select
@@ -346,8 +346,9 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
                 return Verb(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)),
                         cursor.getInt(cursor.getColumnIndex(COLUMN_CONJUGATION_NUMBER)),
                         cursor.getString(cursor.getColumnIndex(COLUMN_IMAGE)) ?: "",
-                        cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIVE)) ?: "",
-                        "", "", "", "", OTHER, GROUP_ALL,
+                        cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIV)) ?: "",
+                        "", "", "", "",
+                        "", "", "", OTHER, GROUP_ALL,
                         0, 0, "", "", "", "")
             }
         } else {

@@ -21,316 +21,336 @@ package com.xengar.android.deutscheverben.data
 class Conjugation
 /*** Constructor  */
 (id: Long, termination: String, radicals: String,
- infinitivePresent: String,
- infinitivePasse: String,
- participePresent: String,
- participePasse1: String,
- participePasse2: String,
- gerondifPresent: String,
- gerondifPasse: String,
- imperatifPresentTu: String,
- imperatifPresentNous: String,
- imperatifPresentVous: String,
- imperatifPasseTu: String,
- imperatifPasseNous: String,
- imperatifPasseVous: String,
+ infinitivPrasens: String,
+ infinitivPerfekt: String,
+ partizipPrasens: String,
+ partizipPerfekt: String,
+ 
+ imperativDu: String,
+ imperativIhr: String,
+ imperativSie: String,
 
- indicatifPresentJe: String,
- indicatifPresentTu: String,
- indicatifPresentIl: String,
- indicatifPresentNous: String,
- indicatifPresentVous: String,
- indicatifPresentIls: String,
- indicatifPasseComposeJe: String,
- indicatifPasseComposeTu: String,
- indicatifPasseComposeIl: String,
- indicatifPasseComposeNous: String,
- indicatifPasseComposeVous: String,
- indicatifPasseComposeIls: String,
- indicatifImperfaitJe: String,
- indicatifImperfaitTu: String,
- indicatifImperfaitIl: String,
- indicatifImperfaitNous: String,
- indicatifImperfaitVous: String,
- indicatifImperfaitIls: String,
- indicatifPlusQueParfaitJe: String,
- indicatifPlusQueParfaitTu: String,
- indicatifPlusQueParfaitIl: String,
- indicatifPlusQueParfaitNous: String,
- indicatifPlusQueParfaitVous: String,
- indicatifPlusQueParfaitIls: String,
- indicatifPasseSimpleJe: String,
- indicatifPasseSimpleTu: String,
- indicatifPasseSimpleIl: String,
- indicatifPasseSimpleNous: String,
- indicatifPasseSimpleVous: String,
- indicatifPasseSimpleIls: String,
- indicatifPasseAnterieurJe: String,
- indicatifPasseAnterieurTu: String,
- indicatifPasseAnterieurIl: String,
- indicatifPasseAnterieurNous: String,
- indicatifPasseAnterieurVous: String,
- indicatifPasseAnterieurIls: String,
- indicatifFuturSimpleJe: String,
- indicatifFuturSimpleTu: String,
- indicatifFuturSimpleIl: String,
- indicatifFuturSimpleNous: String,
- indicatifFuturSimpleVous: String,
- indicatifFuturSimpleIls: String,
- indicatifFuturAnterieurJe: String,
- indicatifFuturAnterieurTu: String,
- indicatifFuturAnterieurIl: String,
- indicatifFuturAnterieurNous: String,
- indicatifFuturAnterieurVous: String,
- indicatifFuturAnterieurIls: String,
+ indikativPrasensIch: String,
+ indikativPrasensDu: String,
+ indikativPrasensEr: String,
+ indikativPrasensWir: String,
+ indikativPrasensIhr: String,
+ indikativPrasensSie: String,
 
- subjonctifPresentJe: String,
- subjonctifPresentTu: String,
- subjonctifPresentIl: String,
- subjonctifPresentNous: String,
- subjonctifPresentVous: String,
- subjonctifPresentIls: String,
- subjonctifPasseJe: String,
- subjonctifPasseTu: String,
- subjonctifPasseIl: String,
- subjonctifPasseNous: String,
- subjonctifPasseVous: String,
- subjonctifPasseIls: String,
- subjonctifImperfaitJe: String,
- subjonctifImperfaitTu: String,
- subjonctifImperfaitIl: String,
- subjonctifImperfaitNous: String,
- subjonctifImperfaitVous: String,
- subjonctifImperfaitIls: String,
- subjonctifPlusQueParfaitJe: String,
- subjonctifPlusQueParfaitTu: String,
- subjonctifPlusQueParfaitIl: String,
- subjonctifPlusQueParfaitNous: String,
- subjonctifPlusQueParfaitVous: String,
- subjonctifPlusQueParfaitIls: String,
+ indikativPrateritumIch: String,
+ indikativPrateritumDu: String,
+ indikativPrateritumEr: String,
+ indikativPrateritumWir: String,
+ indikativPrateritumIhr: String,
+ indikativPrateritumSie: String,
 
- conditionnelPresentJe: String,
- conditionnelPresentTu: String,
- conditionnelPresentIl: String,
- conditionnelPresentNous: String,
- conditionnelPresentVous: String,
- conditionnelPresentIls: String,
- conditionnelPasseJe: String,
- conditionnelPasseTu: String,
- conditionnelPasseIl: String,
- conditionnelPasseNous: String,
- conditionnelPasseVous: String,
- conditionnelPasseIls: String) {
+ indikativPerfektIch: String,
+ indikativPerfektDu: String,
+ indikativPerfektEr: String,
+ indikativPerfektWir: String,
+ indikativPerfektIhr: String,
+ indikativPerfektSie: String,
+
+ indikativPlusquamperfektIch: String,
+ indikativPlusquamperfektDu: String,
+ indikativPlusquamperfektEr: String,
+ indikativPlusquamperfektWir: String,
+ indikativPlusquamperfektIhr: String,
+ indikativPlusquamperfektSie: String,
+
+ indikativFutur1Ich: String,
+ indikativFutur1Du: String,
+ indikativFutur1Er: String,
+ indikativFutur1Wir: String,
+ indikativFutur1Ihr: String,
+ indikativFutur1Sie: String,
+
+ indikativFutur2Ich: String,
+ indikativFutur2Du: String,
+ indikativFutur2Er: String,
+ indikativFutur2Wir: String,
+ indikativFutur2Ihr: String,
+ indikativFutur2Sie: String,
+
+ konjunktiv1PrasensIch: String,
+ konjunktiv1PrasensDu: String,
+ konjunktiv1PrasensEr: String,
+ konjunktiv1PrasensWir: String,
+ konjunktiv1PrasensIhr: String,
+ konjunktiv1PrasensSie: String,
+
+ konjunktiv1PerfektIch: String,
+ konjunktiv1PerfektDu: String,
+ konjunktiv1PerfektEr: String,
+ konjunktiv1PerfektWir: String,
+ konjunktiv1PerfektIhr: String,
+ konjunktiv1PerfektSie: String,
+
+ konjunktiv1Futur1Ich: String,
+ konjunktiv1Futur1Du: String,
+ konjunktiv1Futur1Er: String,
+ konjunktiv1Futur1Wir: String,
+ konjunktiv1Futur1Ihr: String,
+ konjunktiv1Futur1Sie: String,
+
+ konjunktiv1Futur2Ich: String,
+ konjunktiv1Futur2Du: String,
+ konjunktiv1Futur2Er: String,
+ konjunktiv1Futur2Wir: String,
+ konjunktiv1Futur2Ihr: String,
+ konjunktiv1Futur2Sie: String,
+
+ konjunktiv2PrateritumIch: String,
+ konjunktiv2PrateritumDu: String,
+ konjunktiv2PrateritumEr: String,
+ konjunktiv2PrateritumWir: String,
+ konjunktiv2PrateritumIhr: String,
+ konjunktiv2PrateritumSie: String,
+
+ konjunktiv2PlusquamperfektIch: String,
+ konjunktiv2PlusquamperfektDu: String,
+ konjunktiv2PlusquamperfektEr: String,
+ konjunktiv2PlusquamperfektWir: String,
+ konjunktiv2PlusquamperfektIhr: String,
+ konjunktiv2PlusquamperfektSie: String,
+
+ konjunktiv2Futur1Ich: String,
+ konjunktiv2Futur1Du: String,
+ konjunktiv2Futur1Er: String,
+ konjunktiv2Futur1Wir: String,
+ konjunktiv2Futur1Ihr: String,
+ konjunktiv2Futur1Sie: String,
+
+ konjunktiv2Futur2Ich: String,
+ konjunktiv2Futur2Du: String,
+ konjunktiv2Futur2Er: String,
+ konjunktiv2Futur2Wir: String,
+ konjunktiv2Futur2Ihr: String,
+ konjunktiv2Futur2Sie: String) {
 
     /* Getters and Setters */
     var id: Long = 0
     var termination = ""
     var radicals = ""
-    var infinitivePresent = ""
-    var infinitivePasse = ""
-    var participePresent = ""
-    var participePasse1 = ""
-    var participePasse2 = ""
-    var gerondifPresent = ""
-    var gerondifPasse = ""
-    var imperatifPresentTu = ""
-    var imperatifPresentNous = ""
-    var imperatifPresentVous = ""
-    var imperatifPasseTu = ""
-    var imperatifPasseNous = ""
-    var imperatifPasseVous = ""
 
-    var indicatifPresentJe = ""
-    var indicatifPresentTu = ""
-    var indicatifPresentIl = ""
-    var indicatifPresentNous = ""
-    var indicatifPresentVous = ""
-    var indicatifPresentIls = ""
-    var indicatifPasseComposeJe = ""
-    var indicatifPasseComposeTu = ""
-    var indicatifPasseComposeIl = ""
-    var indicatifPasseComposeNous = ""
-    var indicatifPasseComposeVous = ""
-    var indicatifPasseComposeIls = ""
-    var indicatifImperfaitJe = ""
-    var indicatifImperfaitTu = ""
-    var indicatifImperfaitIl = ""
-    var indicatifImperfaitNous = ""
-    var indicatifImperfaitVous = ""
-    var indicatifImperfaitIls = ""
-    var indicatifPlusQueParfaitJe = ""
-    var indicatifPlusQueParfaitTu = ""
-    var indicatifPlusQueParfaitIl = ""
-    var indicatifPlusQueParfaitNous = ""
-    var indicatifPlusQueParfaitVous = ""
-    var indicatifPlusQueParfaitIls = ""
-    var indicatifPasseSimpleJe = ""
-    var indicatifPasseSimpleTu = ""
-    var indicatifPasseSimpleIl = ""
-    var indicatifPasseSimpleNous = ""
-    var indicatifPasseSimpleVous = ""
-    var indicatifPasseSimpleIls = ""
-    var indicatifPasseAnterieurJe = ""
-    var indicatifPasseAnterieurTu = ""
-    var indicatifPasseAnterieurIl = ""
-    var indicatifPasseAnterieurNous = ""
-    var indicatifPasseAnterieurVous = ""
-    var indicatifPasseAnterieurIls = ""
-    var indicatifFuturSimpleJe = ""
-    var indicatifFuturSimpleTu = ""
-    var indicatifFuturSimpleIl = ""
-    var indicatifFuturSimpleNous = ""
-    var indicatifFuturSimpleVous = ""
-    var indicatifFuturSimpleIls = ""
-    var indicatifFuturAnterieurJe = ""
-    var indicatifFuturAnterieurTu = ""
-    var indicatifFuturAnterieurIl = ""
-    var indicatifFuturAnterieurNous = ""
-    var indicatifFuturAnterieurVous = ""
-    var indicatifFuturAnterieurIls = ""
+    var infinitivPrasens = ""
+    var infinitivPerfekt = ""
+    var partizipPrasens = ""
+    var partizipPerfekt = ""
 
-    var subjonctifPresentJe = ""
-    var subjonctifPresentTu = ""
-    var subjonctifPresentIl = ""
-    var subjonctifPresentNous = ""
-    var subjonctifPresentVous = ""
-    var subjonctifPresentIls = ""
-    var subjonctifPasseJe = ""
-    var subjonctifPasseTu = ""
-    var subjonctifPasseIl = ""
-    var subjonctifPasseNous = ""
-    var subjonctifPasseVous = ""
-    var subjonctifPasseIls = ""
-    var subjonctifImperfaitJe = ""
-    var subjonctifImperfaitTu = ""
-    var subjonctifImperfaitIl = ""
-    var subjonctifImperfaitNous = ""
-    var subjonctifImperfaitVous = ""
-    var subjonctifImperfaitIls = ""
-    var subjonctifPlusQueParfaitJe = ""
-    var subjonctifPlusQueParfaitTu = ""
-    var subjonctifPlusQueParfaitIl = ""
-    var subjonctifPlusQueParfaitNous = ""
-    var subjonctifPlusQueParfaitVous = ""
-    var subjonctifPlusQueParfaitIls = ""
+    var imperativDu = ""
+    var imperativIhr = ""
+    var imperativSie = ""
 
-    var conditionnelPresentJe = ""
-    var conditionnelPresentTu = ""
-    var conditionnelPresentIl = ""
-    var conditionnelPresentNous = ""
-    var conditionnelPresentVous = ""
-    var conditionnelPresentIls = ""
-    var conditionnelPasseJe = ""
-    var conditionnelPasseTu = ""
-    var conditionnelPasseIl = ""
-    var conditionnelPasseNous = ""
-    var conditionnelPasseVous = ""
-    var conditionnelPasseIls = ""
+    var indikativPrasensIch = ""
+    var indikativPrasensDu = ""
+    var indikativPrasensEr = ""
+    var indikativPrasensWir = ""
+    var indikativPrasensIhr = ""
+    var indikativPrasensSie = ""
+
+    var indikativPrateritumIch = ""
+    var indikativPrateritumDu = ""
+    var indikativPrateritumEr = ""
+    var indikativPrateritumWir = ""
+    var indikativPrateritumIhr = ""
+    var indikativPrateritumSie = ""
+
+    var indikativPerfektIch = ""
+    var indikativPerfektDu = ""
+    var indikativPerfektEr = ""
+    var indikativPerfektWir = ""
+    var indikativPerfektIhr = ""
+    var indikativPerfektSie = ""
+
+    var indikativPlusquamperfektIch = ""
+    var indikativPlusquamperfektDu = ""
+    var indikativPlusquamperfektEr = ""
+    var indikativPlusquamperfektWir = ""
+    var indikativPlusquamperfektIhr = ""
+    var indikativPlusquamperfektSie = ""
+
+    var indikativFutur1Ich = ""
+    var indikativFutur1Du = ""
+    var indikativFutur1Er = ""
+    var indikativFutur1Wir = ""
+    var indikativFutur1Ihr = ""
+    var indikativFutur1Sie = ""
+
+    var indikativFutur2Ich = ""
+    var indikativFutur2Du = ""
+    var indikativFutur2Er = ""
+    var indikativFutur2Wir = ""
+    var indikativFutur2Ihr = ""
+    var indikativFutur2Sie = ""
+
+    var konjunktiv1PrasensIch = ""
+    var konjunktiv1PrasensDu = ""
+    var konjunktiv1PrasensEr = ""
+    var konjunktiv1PrasensWir = ""
+    var konjunktiv1PrasensIhr = ""
+    var konjunktiv1PrasensSie = ""
+
+    var konjunktiv1PerfektIch = ""
+    var konjunktiv1PerfektDu = ""
+    var konjunktiv1PerfektEr = ""
+    var konjunktiv1PerfektWir = ""
+    var konjunktiv1PerfektIhr = ""
+    var konjunktiv1PerfektSie = ""
+
+    var konjunktiv1Futur1Ich = ""
+    var konjunktiv1Futur1Du = ""
+    var konjunktiv1Futur1Er = ""
+    var konjunktiv1Futur1Wir = ""
+    var konjunktiv1Futur1Ihr = ""
+    var konjunktiv1Futur1Sie = ""
+
+    var konjunktiv1Futur2Ich = ""
+    var konjunktiv1Futur2Du = ""
+    var konjunktiv1Futur2Er = ""
+    var konjunktiv1Futur2Wir = ""
+    var konjunktiv1Futur2Ihr = ""
+    var konjunktiv1Futur2Sie = ""
+
+    var konjunktiv2PrateritumIch = ""
+    var konjunktiv2PrateritumDu = ""
+    var konjunktiv2PrateritumEr = ""
+    var konjunktiv2PrateritumWir = ""
+    var konjunktiv2PrateritumIhr = ""
+    var konjunktiv2PrateritumSie = ""
+
+    var konjunktiv2PlusquamperfektIch = ""
+    var konjunktiv2PlusquamperfektDu = ""
+    var konjunktiv2PlusquamperfektEr = ""
+    var konjunktiv2PlusquamperfektWir = ""
+    var konjunktiv2PlusquamperfektIhr = ""
+    var konjunktiv2PlusquamperfektSie = ""
+
+    var konjunktiv2Futur1Ich = ""
+    var konjunktiv2Futur1Du = ""
+    var konjunktiv2Futur1Er = ""
+    var konjunktiv2Futur1Wir = ""
+    var konjunktiv2Futur1Ihr = ""
+    var konjunktiv2Futur1Sie = ""
+
+    var konjunktiv2Futur2Ich = ""
+    var konjunktiv2Futur2Du = ""
+    var konjunktiv2Futur2Er = ""
+    var konjunktiv2Futur2Wir = ""
+    var konjunktiv2Futur2Ihr = ""
+    var konjunktiv2Futur2Sie = ""
 
     init {
         this.id = id
         this.termination = termination
         this.radicals = radicals
-        this.infinitivePresent = infinitivePresent
-        this.infinitivePasse = infinitivePasse
-        this.participePresent = participePresent
-        this.participePasse1 = participePasse1
-        this.participePasse2 = participePasse2
-        this.gerondifPresent = gerondifPresent
-        this.gerondifPasse = gerondifPasse
-        this.imperatifPresentTu = imperatifPresentTu
-        this.imperatifPresentNous = imperatifPresentNous
-        this.imperatifPresentVous = imperatifPresentVous
-        this.imperatifPasseTu = imperatifPasseTu
-        this.imperatifPasseNous = imperatifPasseNous
-        this.imperatifPasseVous = imperatifPasseVous
 
-        this.indicatifPresentJe = indicatifPresentJe
-        this.indicatifPresentTu = indicatifPresentTu
-        this.indicatifPresentIl = indicatifPresentIl
-        this.indicatifPresentNous = indicatifPresentNous
-        this.indicatifPresentVous = indicatifPresentVous
-        this.indicatifPresentIls = indicatifPresentIls
-        this.indicatifPasseComposeJe = indicatifPasseComposeJe
-        this.indicatifPasseComposeTu = indicatifPasseComposeTu
-        this.indicatifPasseComposeIl = indicatifPasseComposeIl
-        this.indicatifPasseComposeNous = indicatifPasseComposeNous
-        this.indicatifPasseComposeVous = indicatifPasseComposeVous
-        this.indicatifPasseComposeIls = indicatifPasseComposeIls
-        this.indicatifImperfaitJe = indicatifImperfaitJe
-        this.indicatifImperfaitTu = indicatifImperfaitTu
-        this.indicatifImperfaitIl = indicatifImperfaitIl
-        this.indicatifImperfaitNous = indicatifImperfaitNous
-        this.indicatifImperfaitVous = indicatifImperfaitVous
-        this.indicatifImperfaitIls = indicatifImperfaitIls
-        this.indicatifPlusQueParfaitJe = indicatifPlusQueParfaitJe
-        this.indicatifPlusQueParfaitTu = indicatifPlusQueParfaitTu
-        this.indicatifPlusQueParfaitIl = indicatifPlusQueParfaitIl
-        this.indicatifPlusQueParfaitNous = indicatifPlusQueParfaitNous
-        this.indicatifPlusQueParfaitVous = indicatifPlusQueParfaitVous
-        this.indicatifPlusQueParfaitIls = indicatifPlusQueParfaitIls
-        this.indicatifPasseSimpleJe = indicatifPasseSimpleJe
-        this.indicatifPasseSimpleTu = indicatifPasseSimpleTu
-        this.indicatifPasseSimpleIl = indicatifPasseSimpleIl
-        this.indicatifPasseSimpleNous = indicatifPasseSimpleNous
-        this.indicatifPasseSimpleVous = indicatifPasseSimpleVous
-        this.indicatifPasseSimpleIls = indicatifPasseSimpleIls
-        this.indicatifPasseAnterieurJe = indicatifPasseAnterieurJe
-        this.indicatifPasseAnterieurTu = indicatifPasseAnterieurTu
-        this.indicatifPasseAnterieurIl = indicatifPasseAnterieurIl
-        this.indicatifPasseAnterieurNous = indicatifPasseAnterieurNous
-        this.indicatifPasseAnterieurVous = indicatifPasseAnterieurVous
-        this.indicatifPasseAnterieurIls = indicatifPasseAnterieurIls
-        this.indicatifFuturSimpleJe = indicatifFuturSimpleJe
-        this.indicatifFuturSimpleTu = indicatifFuturSimpleTu
-        this.indicatifFuturSimpleIl = indicatifFuturSimpleIl
-        this.indicatifFuturSimpleNous = indicatifFuturSimpleNous
-        this.indicatifFuturSimpleVous = indicatifFuturSimpleVous
-        this.indicatifFuturSimpleIls = indicatifFuturSimpleIls
-        this.indicatifFuturAnterieurJe = indicatifFuturAnterieurJe
-        this.indicatifFuturAnterieurTu = indicatifFuturAnterieurTu
-        this.indicatifFuturAnterieurIl = indicatifFuturAnterieurIl
-        this.indicatifFuturAnterieurNous = indicatifFuturAnterieurNous
-        this.indicatifFuturAnterieurVous = indicatifFuturAnterieurVous
-        this.indicatifFuturAnterieurIls = indicatifFuturAnterieurIls
+        this.infinitivPrasens = infinitivPrasens
+        this.infinitivPerfekt = infinitivPerfekt
+        this.partizipPrasens = partizipPrasens
+        this.partizipPerfekt = partizipPerfekt
 
-        this.subjonctifPresentJe = subjonctifPresentJe
-        this.subjonctifPresentTu = subjonctifPresentTu
-        this.subjonctifPresentIl = subjonctifPresentIl
-        this.subjonctifPresentNous = subjonctifPresentNous
-        this.subjonctifPresentVous = subjonctifPresentVous
-        this.subjonctifPresentIls = subjonctifPresentIls
-        this.subjonctifPasseJe = subjonctifPasseJe
-        this.subjonctifPasseTu = subjonctifPasseTu
-        this.subjonctifPasseIl = subjonctifPasseIl
-        this.subjonctifPasseNous = subjonctifPasseNous
-        this.subjonctifPasseVous = subjonctifPasseVous
-        this.subjonctifPasseIls = subjonctifPasseIls
-        this.subjonctifImperfaitJe = subjonctifImperfaitJe
-        this.subjonctifImperfaitTu = subjonctifImperfaitTu
-        this.subjonctifImperfaitIl = subjonctifImperfaitIl
-        this.subjonctifImperfaitNous = subjonctifImperfaitNous
-        this.subjonctifImperfaitVous = subjonctifImperfaitVous
-        this.subjonctifImperfaitIls = subjonctifImperfaitIls
-        this.subjonctifPlusQueParfaitJe = subjonctifPlusQueParfaitJe
-        this.subjonctifPlusQueParfaitTu = subjonctifPlusQueParfaitTu
-        this.subjonctifPlusQueParfaitIl = subjonctifPlusQueParfaitIl
-        this.subjonctifPlusQueParfaitNous = subjonctifPlusQueParfaitNous
-        this.subjonctifPlusQueParfaitVous = subjonctifPlusQueParfaitVous
-        this.subjonctifPlusQueParfaitIls = subjonctifPlusQueParfaitIls
+        this.imperativDu = imperativDu
+        this.imperativIhr = imperativIhr
+        this.imperativSie = imperativSie
 
-        this.conditionnelPresentJe = conditionnelPresentJe
-        this.conditionnelPresentTu = conditionnelPresentTu
-        this.conditionnelPresentIl = conditionnelPresentIl
-        this.conditionnelPresentNous = conditionnelPresentNous
-        this.conditionnelPresentVous = conditionnelPresentVous
-        this.conditionnelPresentIls = conditionnelPresentIls
-        this.conditionnelPasseJe = conditionnelPasseJe
-        this.conditionnelPasseTu = conditionnelPasseTu
-        this.conditionnelPasseIl = conditionnelPasseIl
-        this.conditionnelPasseNous = conditionnelPasseNous
-        this.conditionnelPasseVous = conditionnelPasseVous
-        this.conditionnelPasseIls = conditionnelPasseIls
+        this.indikativPrasensIch = indikativPrasensIch
+        this.indikativPrasensDu = indikativPrasensDu
+        this.indikativPrasensEr = indikativPrasensEr
+        this.indikativPrasensWir = indikativPrasensWir
+        this.indikativPrasensIhr = indikativPrasensIhr
+        this.indikativPrasensSie = indikativPrasensSie
+
+        this.indikativPrateritumIch = indikativPrateritumIch
+        this.indikativPrateritumDu = indikativPrateritumDu
+        this.indikativPrateritumEr = indikativPrateritumEr
+        this.indikativPrateritumWir = indikativPrateritumWir
+        this.indikativPrateritumIhr = indikativPrateritumIhr
+        this.indikativPrateritumSie = indikativPrateritumSie
+
+        this.indikativPerfektIch = indikativPerfektIch
+        this.indikativPerfektDu = indikativPerfektDu
+        this.indikativPerfektEr = indikativPerfektEr
+        this.indikativPerfektWir = indikativPerfektWir
+        this.indikativPerfektIhr = indikativPerfektIhr
+        this.indikativPerfektSie = indikativPerfektSie
+
+        this.indikativPlusquamperfektIch = indikativPlusquamperfektIch
+        this.indikativPlusquamperfektDu = indikativPlusquamperfektDu
+        this.indikativPlusquamperfektEr = indikativPlusquamperfektEr
+        this.indikativPlusquamperfektWir = indikativPlusquamperfektWir
+        this.indikativPlusquamperfektIhr = indikativPlusquamperfektIhr
+        this.indikativPlusquamperfektSie = indikativPlusquamperfektSie
+
+        this.indikativFutur1Ich = indikativFutur1Ich
+        this.indikativFutur1Du = indikativFutur1Du
+        this.indikativFutur1Er = indikativFutur1Er
+        this.indikativFutur1Wir = indikativFutur1Wir
+        this.indikativFutur1Ihr = indikativFutur1Ihr
+        this.indikativFutur1Sie = indikativFutur1Sie
+
+        this.indikativFutur2Ich = indikativFutur2Ich
+        this.indikativFutur2Du = indikativFutur2Du
+        this.indikativFutur2Er = indikativFutur2Er
+        this.indikativFutur2Wir = indikativFutur2Wir
+        this.indikativFutur2Ihr = indikativFutur2Ihr
+        this.indikativFutur2Sie = indikativFutur2Sie
+
+        this.konjunktiv1PrasensIch = konjunktiv1PrasensIch
+        this.konjunktiv1PrasensDu = konjunktiv1PrasensDu
+        this.konjunktiv1PrasensEr = konjunktiv1PrasensEr
+        this.konjunktiv1PrasensWir = konjunktiv1PrasensWir
+        this.konjunktiv1PrasensIhr = konjunktiv1PrasensIhr
+        this.konjunktiv1PrasensSie = konjunktiv1PrasensSie
+
+        this.konjunktiv1PerfektIch = konjunktiv1PerfektIch
+        this.konjunktiv1PerfektDu = konjunktiv1PerfektDu
+        this.konjunktiv1PerfektEr = konjunktiv1PerfektEr
+        this.konjunktiv1PerfektWir = konjunktiv1PerfektWir
+        this.konjunktiv1PerfektIhr = konjunktiv1PerfektIhr
+        this.konjunktiv1PerfektSie = konjunktiv1PerfektSie
+
+        this.konjunktiv1Futur1Ich = konjunktiv1Futur1Ich
+        this.konjunktiv1Futur1Du = konjunktiv1Futur1Du
+        this.konjunktiv1Futur1Er = konjunktiv1Futur1Er
+        this.konjunktiv1Futur1Wir = konjunktiv1Futur1Wir
+        this.konjunktiv1Futur1Ihr = konjunktiv1Futur1Ihr
+        this.konjunktiv1Futur1Sie = konjunktiv1Futur1Sie
+
+        this.konjunktiv1Futur2Ich = konjunktiv1Futur2Ich
+        this.konjunktiv1Futur2Du = konjunktiv1Futur2Du
+        this.konjunktiv1Futur2Er = konjunktiv1Futur2Er
+        this.konjunktiv1Futur2Wir = konjunktiv1Futur2Wir
+        this.konjunktiv1Futur2Ihr = konjunktiv1Futur2Ihr
+        this.konjunktiv1Futur2Sie = konjunktiv1Futur2Sie
+
+        this.konjunktiv2PrateritumIch = konjunktiv2PrateritumIch
+        this.konjunktiv2PrateritumDu = konjunktiv2PrateritumDu
+        this.konjunktiv2PrateritumEr = konjunktiv2PrateritumEr
+        this.konjunktiv2PrateritumWir = konjunktiv2PrateritumWir
+        this.konjunktiv2PrateritumIhr = konjunktiv2PrateritumIhr
+        this.konjunktiv2PrateritumSie = konjunktiv2PrateritumSie
+
+        this.konjunktiv2PlusquamperfektIch = konjunktiv2PlusquamperfektIch
+        this.konjunktiv2PlusquamperfektDu = konjunktiv2PlusquamperfektDu
+        this.konjunktiv2PlusquamperfektEr = konjunktiv2PlusquamperfektEr
+        this.konjunktiv2PlusquamperfektWir = konjunktiv2PlusquamperfektWir
+        this.konjunktiv2PlusquamperfektIhr = konjunktiv2PlusquamperfektIhr
+        this.konjunktiv2PlusquamperfektSie = konjunktiv2PlusquamperfektSie
+
+        this.konjunktiv2Futur1Ich = konjunktiv2Futur1Ich
+        this.konjunktiv2Futur1Du = konjunktiv2Futur1Du
+        this.konjunktiv2Futur1Er = konjunktiv2Futur1Er
+        this.konjunktiv2Futur1Wir = konjunktiv2Futur1Wir
+        this.konjunktiv2Futur1Ihr = konjunktiv2Futur1Ihr
+        this.konjunktiv2Futur1Sie = konjunktiv2Futur1Sie
+
+        this.konjunktiv2Futur2Ich = konjunktiv2Futur2Ich
+        this.konjunktiv2Futur2Du = konjunktiv2Futur2Du
+        this.konjunktiv2Futur2Er = konjunktiv2Futur2Er
+        this.konjunktiv2Futur2Wir = konjunktiv2Futur2Wir
+        this.konjunktiv2Futur2Ihr = konjunktiv2Futur2Ihr
+        this.konjunktiv2Futur2Sie = konjunktiv2Futur2Sie
     }
 
 }

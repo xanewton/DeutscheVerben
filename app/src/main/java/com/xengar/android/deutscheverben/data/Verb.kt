@@ -23,16 +23,20 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.O
  */
 class Verb
 /*** Constructor  */
-(id: Long, conjugation: Int, image: String, infinitive: String, definition: String,
+(id: Long, conjugation: Int, image: String, infinitive: String,
+ pastParticiple: String, presentHe: String, pastHe: String, definition: String,
  sample1: String, sample2: String, sample3: String,
  common: Int, group: Int, color: Int, score: Int, notes: String,
- translationEN: String, translationES: String, translationPT: String) {
+ translationEN: String, translationFR: String, translationES: String) {
 
     /* Getters and Setters */
     var id: Long = 0
     var conjugation = 0      // Conjugation id
     var image = ""
     var infinitive = ""
+    var pastParticiple = ""
+    var presentHe = ""
+    var pastHe = ""
     var definition = ""
     var sample1 = ""
     var sample2 = ""
@@ -43,14 +47,17 @@ class Verb
     var score = 0
     var notes = ""
     var translationEN = ""
+    var translationFR = ""
     var translationES = ""
-    var translationPT = ""
 
     init {
         this.id = id
         this.conjugation = conjugation
         this.image = image
         this.infinitive = infinitive
+        this.pastParticiple = pastParticiple
+        this.presentHe = presentHe
+        this.pastHe = pastHe
         this.definition = definition
         this.sample1 = sample1
         this.sample2 = sample2
@@ -61,8 +68,8 @@ class Verb
         this.score = score
         this.notes = notes
         this.translationEN = translationEN
+        this.translationFR = translationFR
         this.translationES = translationES
-        this.translationPT = translationPT
     }
 
 }

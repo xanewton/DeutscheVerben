@@ -182,7 +182,7 @@ class SearchActivity : AppCompatActivity() {
         override fun doInBackground(vararg voids: Void): ArrayList<Verb> {
             // Define a projection that specifies the columns from the table we care about.
             val columns = ActivityUtils.allVerbColumns()
-            val sortOrder = VerbEntry.COLUMN_INFINITIVE + " ASC"
+            val sortOrder = VerbEntry.COLUMN_INFINITIV + " ASC"
             val cursor = contentResolver.query(
                     VerbEntry.CONTENT_VERBS_URI, columns, null, null, sortOrder)
 

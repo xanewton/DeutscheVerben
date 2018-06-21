@@ -22,7 +22,7 @@
     android:layout_height="wrap_content">
 
 
-    <!-- Indicatif -->
+    <!-- Indikativ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,9 +44,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/indicatif"
+                android:text="@string/indikativ"
                 android:textAllCaps="true"
-                tools:text="@string/indicatif"/>
+                tools:text="@string/indikativ"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -60,8 +60,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
+            android:text="@string/prasens"
+            tools:text="@string/prasens"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -69,8 +69,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe_compose"
-            tools:text="@string/passe_compose"/>
+            android:text="@string/prateritum"
+            tools:text="@string/prateritum"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,7 +78,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_present_je"
+            android:id="@+id/play_indikativ_prasens_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -92,15 +92,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_present_je"
+                android:id="@+id/indikativ_prasens_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="je sais"
-                tools:text="je sais"/>
+                android:text="ich kaufe"
+                tools:text="ich kaufe"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_je"
+            android:id="@+id/play_indikativ_prateritum_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -114,62 +114,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_compose_je"
+                android:id="@+id/indikativ_prateritum_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="j’ai su"
-                tools:text="j’ai su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_present_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_present_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu sais"
-                tools:text="tu sais"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_compose_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu as su"
-                tools:text="tu as su"/>
+                android:text="ich kaufte"
+                tools:text="ich kaufte"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -178,7 +128,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_present_il"
+            android:id="@+id/play_indikativ_prasens_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -192,15 +142,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_present_il"
+                android:id="@+id/indikativ_prasens_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="il (elle) sait"
-                tools:text="il (elle) sait" />
+                android:text="du kaufst"
+                tools:text="du kaufst"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_il"
+            android:id="@+id/play_indikativ_prateritum_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -214,62 +164,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_compose_il"
+                android:id="@+id/indikativ_prateritum_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="il (elle) a su"
-                tools:text="il (elle) a su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_present_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_present_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous savons"
-                tools:text="nous savons"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_compose_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous avons su"
-                tools:text="nous avons su"/>
+                android:text="du kauftest"
+                tools:text="du kauftest"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -278,7 +178,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_present_vous"
+            android:id="@+id/play_indikativ_prasens_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -292,15 +192,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_present_vous"
-                android:padding="2dp"
+                android:id="@+id/indikativ_prasens_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous savez"
-                tools:text="vous savez"/>
+                android:padding="2dp"
+                android:text="er kauft"
+                tools:text="er kauft" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_vous"
+            android:id="@+id/play_indikativ_prateritum_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -314,12 +214,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_compose_vous"
+                android:id="@+id/indikativ_prateritum_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous avez su"
-                tools:text="vous avez su"/>
+                android:text="er kaufte"
+                tools:text="er kaufte"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -328,7 +228,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_present_ils"
+            android:id="@+id/play_indikativ_prasens_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -342,15 +242,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_present_ils"
+                android:id="@+id/indikativ_prasens_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) savent"
-                tools:text="ils (elles) savent"/>
+                android:text="wir kaufen"
+                tools:text="wir kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_compose_ils"
+            android:id="@+id/play_indikativ_prateritum_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -364,12 +264,112 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_compose_ils"
+                android:id="@+id/indikativ_prateritum_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) ont su"
-                tools:text="ils (elles) ont su"/>
+                android:text="wir kauften"
+                tools:text="wir kauften"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_prasens_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_prasens_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr kauft"
+                tools:text="ihr kauft"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_prateritum_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_prateritum_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr kauftet"
+                tools:text="ihr kauftet"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_prasens_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_prasens_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie kaufen"
+                tools:text="sie kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_prateritum_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_prateritum_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie kauften"
+                tools:text="sie kauften"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -385,8 +385,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/imperfait"
-            tools:text="@string/imperfait"/>
+            android:text="@string/perfekt"
+            tools:text="@string/perfekt"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -394,8 +394,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/plus_que_parfait"
-            tools:text="@string/plus_que_parfait"/>
+            android:text="@string/plusquamperfekt"
+            tools:text="@string/plusquamperfekt"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -403,7 +403,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_imperfait_je"
+            android:id="@+id/play_indikativ_perfekt_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -417,15 +417,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_imperfait_je"
+                android:id="@+id/indikativ_perfekt_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="je savais"
-                tools:text="je savais"/>
+                android:text="ich habe gekauft"
+                tools:text="ich habe gekauft"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_je"
+            android:id="@+id/play_indikativ_plusquamperfekt_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -439,62 +439,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_plus_que_parfait_je"
+                android:id="@+id/indikativ_plusquamperfekt_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="j’avais su"
-                tools:text="j’avais su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_imperfait_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_imperfait_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu savais"
-                tools:text="tu savais"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_plus_que_parfait_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu avais su"
-                tools:text="tu avais su"/>
+                android:text="ich hatte gekauft"
+                tools:text="ich hatte gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -503,7 +453,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_imperfait_il"
+            android:id="@+id/play_indikativ_perfekt_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -517,15 +467,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_imperfait_il"
+                android:id="@+id/indikativ_perfekt_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="il (elle) savait"
-                tools:text="il (elle) savait" />
+                android:text="du hast gekauft"
+                tools:text="du hast gekauft"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_il"
+            android:id="@+id/play_indikativ_plusquamperfekt_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -539,62 +489,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_plus_que_parfait_il"
+                android:id="@+id/indikativ_plusquamperfekt_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="il (elle) avait su"
-                tools:text="il (elle) avait su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_imperfait_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_imperfait_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous savions"
-                tools:text="nous savions"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_plus_que_parfait_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous avions su"
-                tools:text="nous avions su"/>
+                android:text="du hattest gekauft"
+                tools:text="du hattest gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -603,7 +503,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_imperfait_vous"
+            android:id="@+id/play_indikativ_perfekt_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -617,15 +517,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_imperfait_vous"
-                android:padding="2dp"
+                android:id="@+id/indikativ_perfekt_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous saviez"
-                tools:text="vous saviez"/>
+                android:padding="2dp"
+                android:text="er hat gekauft"
+                tools:text="er hat gekauft" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_vous"
+            android:id="@+id/play_indikativ_plusquamperfekt_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -639,12 +539,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_plus_que_parfait_vous"
+                android:id="@+id/indikativ_plusquamperfekt_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous aviez su"
-                tools:text="vous aviez su"/>
+                android:text="er hatte gekauft"
+                tools:text="er hatte gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -653,7 +553,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_imperfait_ils"
+            android:id="@+id/play_indikativ_perfekt_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -667,15 +567,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_imperfait_ils"
+                android:id="@+id/indikativ_perfekt_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) savaient"
-                tools:text="ils (elles) savaient"/>
+                android:text="wir haben gekauft"
+                tools:text="wir haben gekauft"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_plus_que_parfait_ils"
+            android:id="@+id/play_indikativ_plusquamperfekt_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -689,12 +589,112 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_plus_que_parfait_ils"
+                android:id="@+id/indikativ_plusquamperfekt_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) avaient su"
-                tools:text="ils (elles) avaient su"/>
+                android:text="wir hatten gekauft"
+                tools:text="wir hatten gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_perfekt_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_perfekt_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr habt gekauft"
+                tools:text="ihr habt gekauft"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_plusquamperfekt_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_plusquamperfekt_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr hattet gekauft"
+                tools:text="ihr hattet gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_perfekt_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_perfekt_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie haben gekauft"
+                tools:text="sie haben gekauft"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_plusquamperfekt_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_plusquamperfekt_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie hatten gekauft"
+                tools:text="sie hatten gekauft"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -710,8 +710,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe_simple"
-            tools:text="@string/passe_simple"/>
+            android:text="@string/futur1"
+            tools:text="@string/futur1"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -719,8 +719,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe_anterieur"
-            tools:text="@string/passe_anterieur"/>
+            android:text="@string/futur2"
+            tools:text="@string/futur2"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -728,7 +728,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_je"
+            android:id="@+id/play_indikativ_futur1_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -742,15 +742,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_simple_je"
+                android:id="@+id/indikativ_futur1_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="je sus"
-                tools:text="je sus"/>
+                android:text="ich werde kaufen"
+                tools:text="ich werde kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_je"
+            android:id="@+id/play_indikativ_futur2_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -764,62 +764,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_anterieur_je"
+                android:id="@+id/indikativ_futur2_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="j’eus su"
-                tools:text="j’eus su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_simple_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu sus"
-                tools:text="tu sus"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_anterieur_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu eus su"
-                tools:text="tu eus su"/>
+                android:text="ich werde gekauft haben"
+                tools:text="ich werde gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -828,7 +778,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_il"
+            android:id="@+id/play_indikativ_futur1_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -842,15 +792,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_simple_il"
+                android:id="@+id/indikativ_futur1_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="il (elle) sut"
-                tools:text="il (elle) sut" />
+                android:text="du wirst kaufen"
+                tools:text="du wirst kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_il"
+            android:id="@+id/play_indikativ_futur2_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -864,62 +814,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_anterieur_il"
+                android:id="@+id/indikativ_futur2_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="il (elle) eut su"
-                tools:text="il (elle) eut su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_simple_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous sûmes"
-                tools:text="nous sûmes"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_passe_anterieur_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous eûmes su"
-                tools:text="nous eûmes su"/>
+                android:text="du wirst gekauft haben"
+                tools:text="du wirst gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -928,7 +828,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_vous"
+            android:id="@+id/play_indikativ_futur1_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -942,15 +842,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_simple_vous"
-                android:padding="2dp"
+                android:id="@+id/indikativ_futur1_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous sûtes"
-                tools:text="vous sûtes"/>
+                android:padding="2dp"
+                android:text="er wird kaufen"
+                tools:text="er wird kaufen" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_vous"
+            android:id="@+id/play_indikativ_futur2_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -964,12 +864,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_anterieur_vous"
+                android:id="@+id/indikativ_futur2_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous eûtes su"
-                tools:text="vous eûtes su"/>
+                android:text="er wird gekauft haben"
+                tools:text="er wird gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -978,7 +878,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_passe_simple_ils"
+            android:id="@+id/play_indikativ_futur1_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -992,15 +892,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_simple_ils"
+                android:id="@+id/indikativ_futur1_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) surent"
-                tools:text="ils (elles) surent"/>
+                android:text="wir werden kaufen"
+                tools:text="wir werden kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_passe_anterieur_ils"
+            android:id="@+id/play_indikativ_futur2_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1014,12 +914,466 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_passe_anterieur_ils"
+                android:id="@+id/indikativ_futur2_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) eurent su"
-                tools:text="ils (elles) eurent su"/>
+                android:text="wir werden gekauft haben"
+                tools:text="wir werden gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_futur1_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_futur1_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr werdet kaufen"
+                tools:text="ihr werdet kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_futur2_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_futur2_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr werdet gekauft haben"
+                tools:text="ihr werdet gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_indikativ_futur1_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_futur1_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie werden kaufen"
+                tools:text="sie werden kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_indikativ_futur2_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/indikativ_futur2_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie werden gekauft haben"
+                tools:text="sie werden gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Konjunktiv1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@color/colorGray500">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:text="@string/konjunktiv1"
+                android:textAllCaps="true"
+                tools:text="@string/konjunktiv1"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prasens"
+            tools:text="@string/prasens"/>
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/perfekt"
+            tools:text="@string/perfekt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_ich"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_ich"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ich kaufe"
+                tools:text="ich kaufe"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_ich"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_ich"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ich habe gekauft"
+                tools:text="ich habe gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_du"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_du"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="du kaufest"
+                tools:text="du kaufest"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_du"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_du"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="du habest gekauft"
+                tools:text="du habest gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_er"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_er"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="er kaufe"
+                tools:text="er kaufe" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_er"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_er"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="er habe gekauft"
+                tools:text="er habe gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_wir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_wir"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wir kaufen"
+                tools:text="wir kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_wir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_wir"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wir haben gekauft"
+                tools:text="wir haben gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr kaufet"
+                tools:text="ihr kaufet"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr habet gekauft"
+                tools:text="ihr habet gekauft"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_prasens_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_prasens_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie kaufen"
+                tools:text="sie kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_perfekt_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_perfekt_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie haben gekauft"
+                tools:text="sie haben gekauft"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -1035,8 +1389,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/futur_simple"
-            tools:text="@string/futur_simple"/>
+            android:text="@string/futur1"
+            tools:text="@string/futur1"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -1044,8 +1398,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/futur_anterieur"
-            tools:text="@string/futur_anterieur"/>
+            android:text="@string/futur2"
+            tools:text="@string/futur2"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -1053,7 +1407,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_je"
+            android:id="@+id/play_konjunktiv1_futur1_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1067,15 +1421,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_simple_je"
+                android:id="@+id/konjunktiv1_futur1_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="je saurai"
-                tools:text="je saurai"/>
+                android:text="ich werde kaufen"
+                tools:text="ich werde kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_je"
+            android:id="@+id/play_konjunktiv1_futur2_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1089,62 +1443,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_anterieur_je"
+                android:id="@+id/konjunktiv1_futur2_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="j’aurai su"
-                tools:text="j’aurai su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_futur_simple_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu sauras"
-                tools:text="tu sauras"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_futur_anterieur_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu auras su"
-                tools:text="tu auras su"/>
+                android:text="ich werde gekauft haben"
+                tools:text="ich werde gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1153,7 +1457,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_il"
+            android:id="@+id/play_konjunktiv1_futur1_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1167,15 +1471,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_simple_il"
+                android:id="@+id/konjunktiv1_futur1_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="il (elle) saura"
-                tools:text="il (elle) saura" />
+                android:text="du werdest kaufen"
+                tools:text="du werdest kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_il"
+            android:id="@+id/play_konjunktiv1_futur2_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1189,62 +1493,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_anterieur_il"
+                android:id="@+id/konjunktiv1_futur2_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="il (elle) aura su"
-                tools:text="il (elle) aura su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_futur_simple_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous saurons"
-                tools:text="nous saurons"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/indicative_futur_anterieur_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous aurons su"
-                tools:text="nous aurons su"/>
+                android:text="du werdest gekauft haben"
+                tools:text="du werdest gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1253,7 +1507,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_vous"
+            android:id="@+id/play_konjunktiv1_futur1_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1267,15 +1521,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_simple_vous"
-                android:padding="2dp"
+                android:id="@+id/konjunktiv1_futur1_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous saurez"
-                tools:text="vous saurez"/>
+                android:padding="2dp"
+                android:text="er werde kaufen"
+                tools:text="er werde kaufen" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_vous"
+            android:id="@+id/play_konjunktiv1_futur2_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1289,12 +1543,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_anterieur_vous"
+                android:id="@+id/konjunktiv1_futur2_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous aurez su"
-                tools:text="vous aurez su"/>
+                android:text="er werde gekauft haben"
+                tools:text="er werde gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1303,7 +1557,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_indicative_futur_simple_ils"
+            android:id="@+id/play_konjunktiv1_futur1_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1317,15 +1571,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_simple_ils"
+                android:id="@+id/konjunktiv1_futur1_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) sauront"
-                tools:text="ils (elles) sauront"/>
+                android:text="wir werden kaufen"
+                tools:text="wir werden kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_indicative_futur_anterieur_ils"
+            android:id="@+id/play_konjunktiv1_futur2_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1339,17 +1593,117 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/indicative_futur_anterieur_ils"
+                android:id="@+id/konjunktiv1_futur2_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ils (elles) auront su"
-                tools:text="ils (elles) auront su"/>
+                android:text="wir werden gekauft haben"
+                tools:text="wir werden gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_futur1_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_futur1_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr werdet kaufen"
+                tools:text="ihr werdet kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_futur2_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_futur2_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr werdet gekauft haben"
+                tools:text="ihr werdet gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_futur1_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_futur1_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie werden kaufen"
+                tools:text="sie werden kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv1_futur2_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv1_futur2_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie werden gekauft haben"
+                tools:text="sie werden gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
 
 
-    <!-- Conditionnel -->
+    <!-- Konjunktiv2 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -1372,9 +1726,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/conditionnel"
+                android:text="@string/konjunktiv2"
                 android:textAllCaps="true"
-                tools:text="@string/conditionnel"/>
+                tools:text="@string/konjunktiv2"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -1389,8 +1743,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
+            android:text="@string/prateritum"
+            tools:text="@string/prateritum"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -1398,8 +1752,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
+            android:text="@string/plusquamperfekt"
+            tools:text="@string/plusquamperfekt"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -1407,7 +1761,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_conditionnel_present_je"
+            android:id="@+id/play_konjunktiv2_prateritum_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1421,15 +1775,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_present_je"
+                android:id="@+id/konjunktiv2_prateritum_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="je saurais"
-                tools:text="je saurais"/>
+                android:text="ich kaufte"
+                tools:text="ich kaufte"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_conditionnel_passe_je"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1443,62 +1797,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_passe_je"
+                android:id="@+id/konjunktiv2_plusquamperfekt_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="j’aurais su"
-                tools:text="j’aurais su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_conditionnel_present_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_present_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu saurais"
-                tools:text="tu saurais"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_conditionnel_passe_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_passe_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="tu aurais su"
-                tools:text="tu aurais su"/>
+                android:text="ich hätte gekauft"
+                tools:text="ich hätte gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1507,7 +1811,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_conditionnel_present_il"
+            android:id="@+id/play_konjunktiv2_prateritum_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1521,15 +1825,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_present_il"
+                android:id="@+id/konjunktiv2_prateritum_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="il (elle) saurait"
-                tools:text="il (elle) saurait" />
+                android:text="du kauftest"
+                tools:text="du kauftest"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_conditionnel_passe_il"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1543,62 +1847,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_passe_il"
+                android:id="@+id/konjunktiv2_plusquamperfekt_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="il (elle) aurait su"
-                tools:text="il (elle) aurait su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_conditionnel_present_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_present_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous saurions"
-                tools:text="nous saurions"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_conditionnel_passe_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_passe_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="nous aurions su"
-                tools:text="nous aurions su"/>
+                android:text="du hättest gekauft"
+                tools:text="du hättest gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1607,7 +1861,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_conditionnel_present_vous"
+            android:id="@+id/play_konjunktiv2_prateritum_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1621,15 +1875,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_present_vous"
-                android:padding="2dp"
+                android:id="@+id/konjunktiv2_prateritum_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous sauriez"
-                tools:text="vous sauriez"/>
+                android:padding="2dp"
+                android:text="er kaufte"
+                tools:text="er kaufte" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_conditionnel_passe_vous"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1643,166 +1897,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/conditionnel_passe_vous"
+                android:id="@+id/konjunktiv2_plusquamperfekt_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="vous auriez su"
-                tools:text="vous auriez su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_conditionnel_present_ils"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_present_ils"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ils (elles) sauraient"
-                tools:text="ils (elles) sauraient"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_conditionnel_passe_ils"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/conditionnel_passe_ils"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ils (elles) auraient su"
-                tools:text="ils (elles) auraient su"/>
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <!-- Subjonctif -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@color/colorGray500">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/subjonctif"
-                android:textAllCaps="true"
-                tools:text="@string/subjonctif"/>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:padding="2dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
-        <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:padding="2dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_subjonctif_present_je"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_present_je"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que je sache"
-                tools:text="que je sache"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_subjonctif_passe_je"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_passe_je"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que j’aie su"
-                tools:text="que j’aie su"/>
+                android:text="er hätte gekauft"
+                tools:text="er hätte gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1811,7 +1911,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_present_tu"
+            android:id="@+id/play_konjunktiv2_prateritum_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1825,15 +1925,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_present_tu"
+                android:id="@+id/konjunktiv2_prateritum_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que tu saches"
-                tools:text="que tu saches"/>
+                android:text="wir kauften"
+                tools:text="wir kauften"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_passe_tu"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1847,62 +1947,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_passe_tu"
+                android:id="@+id/konjunktiv2_plusquamperfekt_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que tu aies su"
-                tools:text="que tu aies su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_subjonctif_present_il"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_present_il"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="qu'il (elle) sache"
-                tools:text="qu'il (elle) sache" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_subjonctif_passe_il"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_passe_il"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="qu'il (elle) ait su"
-                tools:text="qu'il (elle) ait su"/>
+                android:text="wir hätten gekauft"
+                tools:text="wir hätten gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -1911,7 +1961,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_present_nous"
+            android:id="@+id/play_konjunktiv2_prateritum_ihr"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1925,15 +1975,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_present_nous"
+                android:id="@+id/konjunktiv2_prateritum_ihr"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que nous sachions"
-                tools:text="que nous sachions"/>
+                android:text="ihr kauftet"
+                tools:text="ihr kauftet"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_passe_nous"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_ihr"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -1947,62 +1997,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_passe_nous"
+                android:id="@+id/konjunktiv2_plusquamperfekt_ihr"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que nous ayons su"
-                tools:text="que nous ayons su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_subjonctif_present_vous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_present_vous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que vous sachiez"
-                tools:text="que vous sachiez"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_subjonctif_passe_vous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_passe_vous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que vous ayez su"
-                tools:text="que vous ayez su"/>
+                android:text="ihr hättet gekauft"
+                tools:text="ihr hättet gekauft"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2011,7 +2011,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_present_ils"
+            android:id="@+id/play_konjunktiv2_prateritum_sie"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2025,15 +2025,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_present_ils"
+                android:id="@+id/konjunktiv2_prateritum_sie"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="qu'ils (elles) sachent"
-                tools:text="qu'ils (elles) sachent"/>
+                android:text="sie kauften"
+                tools:text="sie kauften"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_passe_ils"
+            android:id="@+id/play_konjunktiv2_plusquamperfekt_sie"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2047,12 +2047,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_passe_ils"
+                android:id="@+id/konjunktiv2_plusquamperfekt_sie"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="qu'ils (elles) aient su"
-                tools:text="qu'ils (elles) aient su"/>
+                android:text="sie hätten gekauft"
+                tools:text="sie hätten gekauft"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -2068,8 +2068,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/imperfait"
-            tools:text="@string/imperfait"/>
+            android:text="@string/futur1"
+            tools:text="@string/futur1"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -2077,8 +2077,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/plus_que_parfait"
-            tools:text="@string/plus_que_parfait"/>
+            android:text="@string/futur2"
+            tools:text="@string/futur2"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -2086,7 +2086,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_je"
+            android:id="@+id/play_konjunktiv2_futur1_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2100,15 +2100,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_imperfait_je"
+                android:id="@+id/konjunktiv2_futur1_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que je susse"
-                tools:text="que je susse"/>
+                android:text="ich würde kaufen"
+                tools:text="ich würde kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_je"
+            android:id="@+id/play_konjunktiv2_futur2_ich"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2122,62 +2122,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_je"
+                android:id="@+id/konjunktiv2_futur2_ich"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que j’eusse su"
-                tools:text="que j’eusse su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_imperfait_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que tu susses"
-                tools:text="que tu susses"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que tu eusses su"
-                tools:text="que tu eusses su"/>
+                android:text="ich würde gekauft haben"
+                tools:text="ich würde gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2186,7 +2136,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_il"
+            android:id="@+id/play_konjunktiv2_futur1_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2200,15 +2150,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_imperfait_il"
+                android:id="@+id/konjunktiv2_futur1_du"
+                android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="qu'il (elle) sût"
-                tools:text="qu'il (elle) sût" />
+                android:text="du würdest kaufen"
+                tools:text="du würdest kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_il"
+            android:id="@+id/play_konjunktiv2_futur2_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2222,62 +2172,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_il"
+                android:id="@+id/konjunktiv2_futur2_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="qu'il (elle) eût su"
-                tools:text="qu'il (elle) eût su"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_imperfait_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que nous sussions"
-                tools:text="que nous sussions"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="que nous eussions su"
-                tools:text="que nous eussions su"/>
+                android:text="du würdest gekauft haben"
+                tools:text="du würdest gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2286,7 +2186,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_vous"
+            android:id="@+id/play_konjunktiv2_futur1_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2300,15 +2200,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_imperfait_vous"
-                android:padding="2dp"
+                android:id="@+id/konjunktiv2_futur1_er"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que vous sussiez"
-                tools:text="que vous sussiez"/>
+                android:padding="2dp"
+                android:text="er würde kaufen"
+                tools:text="er würde kaufen" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_vous"
+            android:id="@+id/play_konjunktiv2_futur2_er"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2322,12 +2222,12 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_vous"
+                android:id="@+id/konjunktiv2_futur2_er"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="que vous eussiez su"
-                tools:text="que vous eussiez su"/>
+                android:text="er würde gekauft haben"
+                tools:text="er würde gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2336,7 +2236,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_subjonctif_imperfait_ils"
+            android:id="@+id/play_konjunktiv2_futur1_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2350,15 +2250,15 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_imperfait_ils"
+                android:id="@+id/konjunktiv2_futur1_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="qu'ils (elles) sussent"
-                tools:text="qu'ils (elles) sussent"/>
+                android:text="wir würden kaufen"
+                tools:text="wir würden kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_subjonctif_plus_que_parfait_ils"
+            android:id="@+id/play_konjunktiv2_futur2_wir"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2372,18 +2272,118 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/subjonctif_plus_que_parfait_ils"
+                android:id="@+id/konjunktiv2_futur2_wir"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="qu'ils (elles) eussent su"
-                tools:text="qu'ils (elles) eussent su"/>
+                android:text="wir würden gekauft haben"
+                tools:text="wir würden gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv2_futur1_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv2_futur1_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr würdet kaufen"
+                tools:text="ihr würdet kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv2_futur2_ihr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv2_futur2_ihr"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ihr würdet gekauft haben"
+                tools:text="ihr würdet gekauft haben"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:id="@+id/play_konjunktiv2_futur1_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv2_futur1_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie würden kaufen"
+                tools:text="sie würden kaufen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/play_konjunktiv2_futur2_sie"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/touch_effect"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:id="@+id/konjunktiv2_futur2_sie"
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sie würden gekauft haben"
+                tools:text="sie würden gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
 
 
 
-    <!-- Imperatif -->
+    <!-- Imperativ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -2406,9 +2406,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/imperatif"
+                android:text="@string/imperativ"
                 android:textAllCaps="true"
-                tools:text="@string/imperatif"/>
+                tools:text="@string/imperativ"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2422,17 +2422,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
-        <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:padding="2dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
+            android:text="@string/prasens"
+            tools:text="@string/prasens"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -2440,7 +2431,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_imperatif_present_tu"
+            android:id="@+id/play_imperativ_prasens_du"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2454,36 +2445,13 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/imperatif_present_tu"
+                android:id="@+id/imperativ_prasens_du"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="sache"
-                tools:text="sache"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_imperatif_passe_tu"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/imperatif_passe_tu"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="aie su"
-                tools:text="aie su"/>
+                android:text="kaufe!"
+                tools:text="kaufe!"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2492,7 +2460,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_imperatif_present_nous"
+            android:id="@+id/play_imperativ_prasens_ihr"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2506,36 +2474,13 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/imperatif_present_nous"
+                android:id="@+id/imperativ_prasens_ihr"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="sachons"
-                tools:text="sachons"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_imperatif_passe_nous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/imperatif_passe_nous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="ayons su"
-                tools:text="ayons su"/>
+                android:text="kauft!"
+                tools:text="kauft!"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2544,7 +2489,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_imperatif_present_vous"
+            android:id="@+id/play_imperativ_prasens_sie"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2558,40 +2503,17 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/imperatif_present_vous"
+                android:id="@+id/imperativ_prasens_sie"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="sachez"
-                tools:text="sachez"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_imperatif_passe_vous"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/imperatif_passe_vous"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="ayez su"
-                tools:text="ayez su"/>
+                android:text="kaufen Sie!"
+                tools:text="kaufen Sie!"/>
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Infinitif -->
+    <!-- Infinitiv -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -2614,9 +2536,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/infinitif"
+                android:text="@string/infinitiv"
                 android:textAllCaps="true"
-                tools:text="@string/infinitif"/>
+                tools:text="@string/infinitiv"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2630,8 +2552,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
+            android:text="@string/prasens"
+            tools:text="@string/prasens"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -2639,8 +2561,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
+            android:text="@string/perfekt"
+            tools:text="@string/perfekt"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -2648,7 +2570,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_infinitive_present"
+            android:id="@+id/play_infinitiv_prasens"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2662,16 +2584,16 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/infinitive_present"
+                android:id="@+id/infinitiv_prasens"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="savoir"
-                tools:text="savoir"/>
+                android:text="kaufen"
+                tools:text="kaufen"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_infinitive_passe"
+            android:id="@+id/play_infinitiv_perfekt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2685,18 +2607,18 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/infinitive_passe"
+                android:id="@+id/infinitiv_perfekt"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="avoir su"
-                tools:text="avoir su"/>
+                android:text="gekauft haben"
+                tools:text="gekauft haben"/>
         </LinearLayout>
     </LinearLayout>
 
 
-    <!-- Participe -->
+    <!-- Partizip -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -2719,9 +2641,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/participe"
+                android:text="@string/partizip"
                 android:textAllCaps="true"
-                tools:text="@string/participe"/>
+                tools:text="@string/partizip"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -2735,8 +2657,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
+            android:text="@string/prasens"
+            tools:text="@string/prasens"/>
         <TextView
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:padding="2dp"
@@ -2744,8 +2666,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
+            android:text="@string/perfekt"
+            tools:text="@string/perfekt"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -2753,7 +2675,7 @@
         android:orientation="horizontal"
         android:baselineAligned="false">
         <LinearLayout
-            android:id="@+id/play_participe_present"
+            android:id="@+id/play_partizip_prasens"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2767,16 +2689,16 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/participe_present"
+                android:id="@+id/partizip_prasens"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="sachant"
-                tools:text="sachant"/>
+                android:text="kaufend"
+                tools:text="kaufend"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/play_participe_passe1"
+            android:id="@+id/play_partizip_perfekt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -2790,166 +2712,13 @@
             android:clickable="true"
             android:focusable="true">
             <TextView
-                android:id="@+id/participe_passe1"
+                android:id="@+id/partizip_perfekt"
                 android:padding="2dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="su (u, ue, us, ues)"
-                tools:text="su (u, ue, us, ues)"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal">
-            <TextView
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text=""
-                tools:text=""/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_participe_passe2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/participe_passe2"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="ayant su"
-                tools:text="ayant su"/>
-        </LinearLayout>
-    </LinearLayout>
-
-
-
-    <!-- Gerondif -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@color/colorGray500">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="1dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:text="@string/gerondif"
-                android:textAllCaps="true"
-                tools:text="@string/gerondif"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:padding="2dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/present"
-            tools:text="@string/present"/>
-        <TextView
-            android:textAppearance="@style/TextAppearance.AppCompat.Title"
-            android:padding="2dp"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/passe"
-            tools:text="@string/passe"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
-        <LinearLayout
-            android:id="@+id/play_gerondif_present"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/gerondif_present"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="en sachant"
-                tools:text="en sachant"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/play_gerondif_passe"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:gravity="center_horizontal"
-            android:background="@drawable/touch_effect"
-            android:clickable="true"
-            android:focusable="true">
-            <TextView
-                android:id="@+id/gerondif_passe"
-                android:padding="2dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="en ayant su"
-                tools:text="en ayant su"/>
+                android:text="gekauft"
+                tools:text="gekauft"/>
         </LinearLayout>
     </LinearLayout>
 

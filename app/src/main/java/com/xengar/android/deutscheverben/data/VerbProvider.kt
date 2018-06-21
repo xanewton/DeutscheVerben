@@ -35,7 +35,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_DEFINITION
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SCORE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONJUGATION_TBL
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_ITEM_TYPE_CONJUGATION
@@ -365,7 +365,7 @@ class VerbProvider : ContentProvider() {
     private fun updateVerb(uri: Uri, values: ContentValues?, selection: String?,
                            selectionArgs: Array<String>?): Int {
         // Check possible value changes
-        checkNotNullKeyString(values, COLUMN_INFINITIVE, "Verb requires infinitive")
+        checkNotNullKeyString(values, COLUMN_INFINITIV, "Verb requires infinitive")
         checkCommonUsage(values, COLUMN_COMMON,
                 "Verb requires valid common usage (top 50, top 100)")
         checkGroup(values, COLUMN_GROUP, "Verb requires valid group value (1, 2, 3)")

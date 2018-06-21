@@ -32,13 +32,13 @@ import fr.castorflex.android.circularprogressbar.CircularProgressBar
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COLOR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_FAVORITE_VERBS_URI
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_VERBS_URI
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_100
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_1000
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_25
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_300
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_250
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_50
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S_TOP_500
 import com.xengar.android.deutscheverben.utils.Constants.ALPHABET
@@ -53,7 +53,7 @@ import com.xengar.android.deutscheverben.utils.Constants.LOG
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_100
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_1000
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_25
-import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_300
+import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_250
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_50
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_500
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
@@ -77,10 +77,10 @@ class FetchVerbs// Constructor
         // Define a projection that specifies the columns from the table we care about.
         val columns = ActivityUtils.allVerbColumns()
         val sortOrder: String = when (sort) {
-            ALPHABET -> "$COLUMN_INFINITIVE ASC"
-            COLOR -> "$COLUMN_COLOR DESC, $COLUMN_INFINITIVE ASC"
-            GROUP -> "$COLUMN_GROUP ASC, $COLUMN_INFINITIVE ASC"
-            else -> "$COLUMN_INFINITIVE ASC"
+            ALPHABET -> "$COLUMN_INFINITIV ASC"
+            COLOR -> "$COLUMN_COLOR DESC, $COLUMN_INFINITIV ASC"
+            GROUP -> "$COLUMN_GROUP ASC, $COLUMN_INFINITIV ASC"
+            else -> "$COLUMN_INFINITIV ASC"
         }
 
         var where: String? = null
@@ -101,13 +101,13 @@ class FetchVerbs// Constructor
                 listArgs.add(S_TOP_50)
                 listArgs.add(S_TOP_100)
             }
-            MOST_COMMON_300 -> {
+            MOST_COMMON_250 -> {
                 where = (COLUMN_COMMON + " = ? OR " + COLUMN_COMMON
                         + " = ? OR " + COLUMN_COMMON + " = ? OR " + COLUMN_COMMON + " = ?")
                 listArgs.add(S_TOP_25)
                 listArgs.add(S_TOP_50)
                 listArgs.add(S_TOP_100)
-                listArgs.add(S_TOP_300)
+                listArgs.add(S_TOP_250)
             }
             MOST_COMMON_500 -> {
                 where = (COLUMN_COMMON + " = ? OR " + COLUMN_COMMON
@@ -116,7 +116,7 @@ class FetchVerbs// Constructor
                 listArgs.add(S_TOP_25)
                 listArgs.add(S_TOP_50)
                 listArgs.add(S_TOP_100)
-                listArgs.add(S_TOP_300)
+                listArgs.add(S_TOP_250)
                 listArgs.add(S_TOP_500)
             }
             MOST_COMMON_1000 -> {
@@ -126,7 +126,7 @@ class FetchVerbs// Constructor
                 listArgs.add(S_TOP_25)
                 listArgs.add(S_TOP_50)
                 listArgs.add(S_TOP_100)
-                listArgs.add(S_TOP_300)
+                listArgs.add(S_TOP_250)
                 listArgs.add(S_TOP_500)
                 listArgs.add(S_TOP_1000)
             }

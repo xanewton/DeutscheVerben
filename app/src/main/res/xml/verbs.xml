@@ -20,7 +20,7 @@
         ta   = table of conjugation model (1, 2, ...)
         in   = Infinitiv (Nennform) (infinitive)
         img  = image (verb_image.xml)
-        pahe = Imperfekt (Vergangenheit) (Imperfect Indicative) Past he
+        pahe = Imperfekt (Vergangenheit) er (Imperfect Indicative) Past he
         pp   = Partizip Perfekt (past participle)
         prhe = Präsens (Gegenwart) er (simple present he)
         s1   = sample1
@@ -34,8 +34,8 @@
         tres = translation_es
         trpt = translation_pt
     -->
-    <!--
-    Notes codes:
+    <!-- Notes code:
+
     changePPwFI = Past Participle in parentheses when immediately preceded by another infinitive
     -->
     <!-- TOP 25 -->

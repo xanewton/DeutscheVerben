@@ -3,9 +3,9 @@ Deutsche Verben
 
 <a href='https://play.google.com/store/apps/details?id=com.xengar.android.deutscheverben'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height=90px/></a>
 
-![Scheme](/readmeImages/Screenshot_20170821-112845x.png)
-![Scheme](/readmeImages/Screenshot_20170821-113032x.png)
-![Scheme](/readmeImages/Screenshot_20170821-113047x.png)
+![Scheme](/readmeImages/Screenshot_1529622638.png)
+![Scheme](/readmeImages/Screenshot_1529622656.png)
+![Scheme](/readmeImages/Screenshot_1529622670.png)
 
 
 Android application to learn german verb tenses.

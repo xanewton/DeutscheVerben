@@ -65,119 +65,115 @@ import android.content.pm.ResolveInfo
 import android.util.Log
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COLOR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PASSE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONDITIONNEL_PRESENT_VOUS
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONJUGATION_NUMBER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_DEFINITION
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GERONDIF_PASSE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GERONDIF_PRESENT
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMAGE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PASSE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PASSE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PASSE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PRESENT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PRESENT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIF_PRESENT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_ANTERIEUR_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_FUTUR_SIMPLE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_IMPERFAIT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_ANTERIEUR_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_COMPOSE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PASSE_SIMPLE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PLUS_QUE_PARFAIT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDICATIF_PRESENT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE_PASSE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIVE_PRESENT
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIV_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIV_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIV_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERFEKT_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR1_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_FUTUR2_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PERFEKT_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PLUSQUAMPERFEKT_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRASENS_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INDIKATIV_PRATERIUM_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV_PERFEKT
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV_PRASENS
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR1_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_FUTUR2_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PERFEKT_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV1_PRASENS_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR1_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_FUTUR2_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_WIR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_DU
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_ER
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_ICH
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_IHR
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_SIE
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_KONJUNKTIV2_PRATERIUM_WIR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_NOTES
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PARTICIPE_PASSE_1
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PARTICIPE_PASSE_2
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PARTICIPE_PRESENT
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PARTIZIP_PERFEKT
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PARTIZIP_PRASENS
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_PRASENS_ER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_RADICALS
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SAMPLE_1
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SAMPLE_2
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SAMPLE_3
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SCORE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_IMPERFAIT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PASSE_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_VOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_IL
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_ILS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_JE
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_NOUS
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_TU
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SUBJONTIF_PRESENT_VOUS
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TERMINATION
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_EN
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_FR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_ES
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TRANSLATION_PT
 import com.xengar.android.deutscheverben.utils.Constants.CONJUGATION_ID
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_FONT_SIZE
 import com.xengar.android.deutscheverben.utils.Constants.DEFAULT_TTS_LOCALE
@@ -189,13 +185,12 @@ import com.xengar.android.deutscheverben.utils.Constants.LOG
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_100
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_1000
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_25
-import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_300
+import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_250
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_50
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_500
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
 import com.xengar.android.deutscheverben.utils.Constants.NONE
-import com.xengar.android.deutscheverben.utils.Constants.PORTUGUESE
-import com.xengar.android.deutscheverben.utils.Constants.PREF_NO_ALARM_MANAGER_SINCE_API_26
+import com.xengar.android.deutscheverben.utils.Constants.FRENCH
 import com.xengar.android.deutscheverben.utils.Constants.PREF_PREFERRED_TTS_LOCALE
 import com.xengar.android.deutscheverben.utils.Constants.PREF_VERSION_CODE_KEY
 import com.xengar.android.deutscheverben.utils.Constants.SHARED_PREF_NAME
@@ -385,8 +380,8 @@ object ActivityUtils {
         return when (lang) {
             "", "None" -> NONE
             "en_EN" -> ENGLISH
+            "fr_FR" -> FRENCH
             "es_ES" -> SPANISH
-            "pt_PT" -> PORTUGUESE
             else -> NONE
         }
     }
@@ -427,7 +422,7 @@ object ActivityUtils {
             "1" -> FAVORITES
             "50" -> MOST_COMMON_50
             "100" -> MOST_COMMON_100
-            "300" -> MOST_COMMON_300
+            "250" -> MOST_COMMON_250
             "500" -> MOST_COMMON_500
             "1000" -> MOST_COMMON_1000
             "9000" -> MOST_COMMON_ALL
@@ -480,13 +475,13 @@ object ActivityUtils {
                 textView?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
                 textView?.text = verb.translationEN
             }
+            FRENCH -> {
+                textView?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
+                textView?.text = verb.translationFR
+            }
             SPANISH -> {
                 textView?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
                 textView?.text = verb.translationES
-            }
-            PORTUGUESE -> {
-                textView?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
-                textView?.text = verb.translationPT
             }
         }
     }
@@ -501,8 +496,8 @@ object ActivityUtils {
         var translation = ""
         when (language) {
             ENGLISH -> translation = verb.translationEN
+            FRENCH -> translation = verb.translationFR
             SPANISH -> translation = verb.translationES
-            PORTUGUESE -> translation = verb.translationPT
         }
         return translation
     }
@@ -690,11 +685,12 @@ object ActivityUtils {
      * @return String[]
      */
     fun allVerbColumns(): Array<String> {
-        return arrayOf(COLUMN_ID, COLUMN_CONJUGATION_NUMBER, COLUMN_INFINITIVE, COLUMN_DEFINITION,
-                COLUMN_IMAGE, COLUMN_SAMPLE_1, COLUMN_SAMPLE_2, COLUMN_SAMPLE_3,
+        return arrayOf(COLUMN_ID, COLUMN_CONJUGATION_NUMBER, COLUMN_INFINITIV,
+                COLUMN_PARTIZIP_PERFEKT, COLUMN_IMPERFEKT_ER, COLUMN_PRASENS_ER,
+                COLUMN_DEFINITION, COLUMN_IMAGE, COLUMN_SAMPLE_1, COLUMN_SAMPLE_2, COLUMN_SAMPLE_3,
                 COLUMN_COMMON, COLUMN_GROUP,
                 COLUMN_COLOR, COLUMN_SCORE, COLUMN_NOTES,
-                COLUMN_TRANSLATION_EN, COLUMN_TRANSLATION_ES, COLUMN_TRANSLATION_PT)
+                COLUMN_TRANSLATION_EN, COLUMN_TRANSLATION_FR, COLUMN_TRANSLATION_ES)
     }
 
     /**
@@ -702,58 +698,113 @@ object ActivityUtils {
      * @return String[]
      */
     fun allConjugationColumns(): Array<String> {
-        return arrayOf(COLUMN_ID, COLUMN_TERMINATION, COLUMN_RADICALS, COLUMN_INFINITIVE_PRESENT,
-                COLUMN_INFINITIVE_PASSE, COLUMN_PARTICIPE_PRESENT, COLUMN_PARTICIPE_PASSE_1,
-                COLUMN_PARTICIPE_PASSE_2, COLUMN_GERONDIF_PRESENT, COLUMN_GERONDIF_PASSE,
+        return arrayOf(COLUMN_ID, COLUMN_TERMINATION, COLUMN_RADICALS,
+                COLUMN_INFINITIV_PRASENS,
+                COLUMN_INFINITIV_PERFEKT,
+                COLUMN_PARTIZIP_PRASENS,
+                COLUMN_PARTIZIP_PERFEKT,
 
-                COLUMN_IMPERATIF_PRESENT_TU, COLUMN_IMPERATIF_PRESENT_NOUS,
-                COLUMN_IMPERATIF_PRESENT_VOUS, COLUMN_IMPERATIF_PASSE_TU,
-                COLUMN_IMPERATIF_PASSE_NOUS, COLUMN_IMPERATIF_PASSE_VOUS,
+                COLUMN_IMPERATIV_DU,
+                COLUMN_IMPERATIV_IHR,
+                COLUMN_IMPERATIV_SIE,
 
-                COLUMN_INDICATIF_PRESENT_JE, COLUMN_INDICATIF_PRESENT_TU,
-                COLUMN_INDICATIF_PRESENT_IL, COLUMN_INDICATIF_PRESENT_NOUS,
-                COLUMN_INDICATIF_PRESENT_VOUS, COLUMN_INDICATIF_PRESENT_ILS,
-                COLUMN_INDICATIF_PASSE_COMPOSE_JE, COLUMN_INDICATIF_PASSE_COMPOSE_TU,
-                COLUMN_INDICATIF_PASSE_COMPOSE_IL, COLUMN_INDICATIF_PASSE_COMPOSE_NOUS,
-                COLUMN_INDICATIF_PASSE_COMPOSE_VOUS, COLUMN_INDICATIF_PASSE_COMPOSE_ILS,
-                COLUMN_INDICATIF_IMPERFAIT_JE, COLUMN_INDICATIF_IMPERFAIT_TU,
-                COLUMN_INDICATIF_IMPERFAIT_IL, COLUMN_INDICATIF_IMPERFAIT_NOUS,
-                COLUMN_INDICATIF_IMPERFAIT_VOUS, COLUMN_INDICATIF_IMPERFAIT_ILS,
-                COLUMN_INDICATIF_PLUS_QUE_PARFAIT_JE, COLUMN_INDICATIF_PLUS_QUE_PARFAIT_TU,
-                COLUMN_INDICATIF_PLUS_QUE_PARFAIT_IL, COLUMN_INDICATIF_PLUS_QUE_PARFAIT_NOUS,
-                COLUMN_INDICATIF_PLUS_QUE_PARFAIT_VOUS, COLUMN_INDICATIF_PLUS_QUE_PARFAIT_ILS,
-                COLUMN_INDICATIF_PASSE_SIMPLE_JE, COLUMN_INDICATIF_PASSE_SIMPLE_TU,
-                COLUMN_INDICATIF_PASSE_SIMPLE_IL, COLUMN_INDICATIF_PASSE_SIMPLE_NOUS,
-                COLUMN_INDICATIF_PASSE_SIMPLE_VOUS, COLUMN_INDICATIF_PASSE_SIMPLE_ILS,
-                COLUMN_INDICATIF_PASSE_ANTERIEUR_JE, COLUMN_INDICATIF_PASSE_ANTERIEUR_TU,
-                COLUMN_INDICATIF_PASSE_ANTERIEUR_IL, COLUMN_INDICATIF_PASSE_ANTERIEUR_NOUS,
-                COLUMN_INDICATIF_PASSE_ANTERIEUR_VOUS, COLUMN_INDICATIF_PASSE_ANTERIEUR_ILS,
-                COLUMN_INDICATIF_FUTUR_SIMPLE_JE, COLUMN_INDICATIF_FUTUR_SIMPLE_TU,
-                COLUMN_INDICATIF_FUTUR_SIMPLE_IL, COLUMN_INDICATIF_FUTUR_SIMPLE_NOUS,
-                COLUMN_INDICATIF_FUTUR_SIMPLE_VOUS, COLUMN_INDICATIF_FUTUR_SIMPLE_ILS,
-                COLUMN_INDICATIF_FUTUR_ANTERIEUR_JE, COLUMN_INDICATIF_FUTUR_ANTERIEUR_TU,
-                COLUMN_INDICATIF_FUTUR_ANTERIEUR_IL, COLUMN_INDICATIF_FUTUR_ANTERIEUR_NOUS,
-                COLUMN_INDICATIF_FUTUR_ANTERIEUR_VOUS, COLUMN_INDICATIF_FUTUR_ANTERIEUR_ILS,
+                COLUMN_INDIKATIV_PRASENS_ICH,
+                COLUMN_INDIKATIV_PRASENS_DU,
+                COLUMN_INDIKATIV_PRASENS_ER,
+                COLUMN_INDIKATIV_PRASENS_WIR,
+                COLUMN_INDIKATIV_PRASENS_IHR,
+                COLUMN_INDIKATIV_PRASENS_SIE,
 
-                COLUMN_SUBJONTIF_PRESENT_JE, COLUMN_SUBJONTIF_PRESENT_TU,
-                COLUMN_SUBJONTIF_PRESENT_IL, COLUMN_SUBJONTIF_PRESENT_NOUS,
-                COLUMN_SUBJONTIF_PRESENT_VOUS, COLUMN_SUBJONTIF_PRESENT_ILS,
-                COLUMN_SUBJONTIF_PASSE_JE, COLUMN_SUBJONTIF_PASSE_TU,
-                COLUMN_SUBJONTIF_PASSE_IL, COLUMN_SUBJONTIF_PASSE_NOUS,
-                COLUMN_SUBJONTIF_PASSE_VOUS, COLUMN_SUBJONTIF_PASSE_ILS,
-                COLUMN_SUBJONTIF_IMPERFAIT_JE, COLUMN_SUBJONTIF_IMPERFAIT_TU,
-                COLUMN_SUBJONTIF_IMPERFAIT_IL, COLUMN_SUBJONTIF_IMPERFAIT_NOUS,
-                COLUMN_SUBJONTIF_IMPERFAIT_VOUS, COLUMN_SUBJONTIF_IMPERFAIT_ILS,
-                COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_JE, COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_TU,
-                COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_IL, COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_NOUS,
-                COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_VOUS, COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_ILS,
+                COLUMN_INDIKATIV_PRATERIUM_ICH,
+                COLUMN_INDIKATIV_PRATERIUM_DU,
+                COLUMN_INDIKATIV_PRATERIUM_ER,
+                COLUMN_INDIKATIV_PRATERIUM_WIR,
+                COLUMN_INDIKATIV_PRATERIUM_IHR,
+                COLUMN_INDIKATIV_PRATERIUM_SIE,
 
-                COLUMN_CONDITIONNEL_PRESENT_JE, COLUMN_CONDITIONNEL_PRESENT_TU,
-                COLUMN_CONDITIONNEL_PRESENT_IL, COLUMN_CONDITIONNEL_PRESENT_NOUS,
-                COLUMN_CONDITIONNEL_PRESENT_VOUS, COLUMN_CONDITIONNEL_PRESENT_ILS,
-                COLUMN_CONDITIONNEL_PASSE_JE, COLUMN_CONDITIONNEL_PASSE_TU,
-                COLUMN_CONDITIONNEL_PASSE_IL, COLUMN_CONDITIONNEL_PASSE_NOUS,
-                COLUMN_CONDITIONNEL_PASSE_VOUS, COLUMN_CONDITIONNEL_PASSE_ILS)
+                COLUMN_INDIKATIV_PERFEKT_ICH,
+                COLUMN_INDIKATIV_PERFEKT_DU,
+                COLUMN_INDIKATIV_PERFEKT_ER,
+                COLUMN_INDIKATIV_PERFEKT_WIR,
+                COLUMN_INDIKATIV_PERFEKT_IHR,
+                COLUMN_INDIKATIV_PERFEKT_SIE,
+
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ICH,
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_DU,
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ER,
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_WIR,
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_IHR,
+                COLUMN_INDIKATIV_PLUSQUAMPERFEKT_SIE,
+
+                COLUMN_INDIKATIV_FUTUR1_ICH,
+                COLUMN_INDIKATIV_FUTUR1_DU,
+                COLUMN_INDIKATIV_FUTUR1_ER,
+                COLUMN_INDIKATIV_FUTUR1_WIR,
+                COLUMN_INDIKATIV_FUTUR1_IHR,
+                COLUMN_INDIKATIV_FUTUR1_SIE,
+
+                COLUMN_INDIKATIV_FUTUR2_ICH,
+                COLUMN_INDIKATIV_FUTUR2_DU,
+                COLUMN_INDIKATIV_FUTUR2_ER,
+                COLUMN_INDIKATIV_FUTUR2_WIR,
+                COLUMN_INDIKATIV_FUTUR2_IHR,
+                COLUMN_INDIKATIV_FUTUR2_SIE,
+
+                COLUMN_KONJUNKTIV1_PRASENS_ICH,
+                COLUMN_KONJUNKTIV1_PRASENS_DU,
+                COLUMN_KONJUNKTIV1_PRASENS_ER,
+                COLUMN_KONJUNKTIV1_PRASENS_WIR,
+                COLUMN_KONJUNKTIV1_PRASENS_IHR,
+                COLUMN_KONJUNKTIV1_PRASENS_SIE,
+
+                COLUMN_KONJUNKTIV1_PERFEKT_ICH,
+                COLUMN_KONJUNKTIV1_PERFEKT_DU,
+                COLUMN_KONJUNKTIV1_PERFEKT_ER,
+                COLUMN_KONJUNKTIV1_PERFEKT_WIR,
+                COLUMN_KONJUNKTIV1_PERFEKT_IHR,
+                COLUMN_KONJUNKTIV1_PERFEKT_SIE,
+
+                COLUMN_KONJUNKTIV1_FUTUR1_ICH,
+                COLUMN_KONJUNKTIV1_FUTUR1_DU,
+                COLUMN_KONJUNKTIV1_FUTUR1_ER,
+                COLUMN_KONJUNKTIV1_FUTUR1_WIR,
+                COLUMN_KONJUNKTIV1_FUTUR1_IHR,
+                COLUMN_KONJUNKTIV1_FUTUR1_SIE,
+
+                COLUMN_KONJUNKTIV1_FUTUR2_ICH,
+                COLUMN_KONJUNKTIV1_FUTUR2_DU,
+                COLUMN_KONJUNKTIV1_FUTUR2_ER,
+                COLUMN_KONJUNKTIV1_FUTUR2_WIR,
+                COLUMN_KONJUNKTIV1_FUTUR2_IHR,
+                COLUMN_KONJUNKTIV1_FUTUR2_SIE,
+
+                COLUMN_KONJUNKTIV2_PRATERIUM_ICH,
+                COLUMN_KONJUNKTIV2_PRATERIUM_DU,
+                COLUMN_KONJUNKTIV2_PRATERIUM_ER,
+                COLUMN_KONJUNKTIV2_PRATERIUM_WIR,
+                COLUMN_KONJUNKTIV2_PRATERIUM_IHR,
+                COLUMN_KONJUNKTIV2_PRATERIUM_SIE,
+
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ICH,
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_DU,
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ER,
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_WIR,
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_IHR,
+                COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_SIE,
+
+                COLUMN_KONJUNKTIV2_FUTUR1_ICH,
+                COLUMN_KONJUNKTIV2_FUTUR1_DU,
+                COLUMN_KONJUNKTIV2_FUTUR1_ER,
+                COLUMN_KONJUNKTIV2_FUTUR1_WIR,
+                COLUMN_KONJUNKTIV2_FUTUR1_IHR,
+                COLUMN_KONJUNKTIV2_FUTUR1_SIE,
+
+                COLUMN_KONJUNKTIV2_FUTUR2_ICH,
+                COLUMN_KONJUNKTIV2_FUTUR2_DU,
+                COLUMN_KONJUNKTIV2_FUTUR2_ER,
+                COLUMN_KONJUNKTIV2_FUTUR2_WIR,
+                COLUMN_KONJUNKTIV2_FUTUR2_IHR,
+                COLUMN_KONJUNKTIV2_FUTUR2_SIE)
     }
 
 
@@ -767,7 +818,10 @@ object ActivityUtils {
         return Verb(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)),
                 cursor.getInt(cursor.getColumnIndex(COLUMN_CONJUGATION_NUMBER)),
                 cursor.getString(cursor.getColumnIndex(COLUMN_IMAGE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIVE)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIV)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_PARTIZIP_PERFEKT)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_PRASENS_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERFEKT_ER)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_DEFINITION)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_SAMPLE_1)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_SAMPLE_2)) ?: "",
@@ -778,8 +832,8 @@ object ActivityUtils {
                 cursor.getInt(cursor.getColumnIndex(COLUMN_SCORE)),
                 cursor.getString(cursor.getColumnIndex(COLUMN_NOTES)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_TRANSLATION_EN)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_TRANSLATION_ES)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_TRANSLATION_PT)) ?: "")
+                cursor.getString(cursor.getColumnIndex(COLUMN_TRANSLATION_FR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_TRANSLATION_ES)) ?: "")
     }
 
     /**
@@ -792,106 +846,112 @@ object ActivityUtils {
         return Conjugation(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)),
                 cursor.getString(cursor.getColumnIndex(COLUMN_TERMINATION)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_RADICALS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIVE_PRESENT)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIVE_PASSE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_PARTICIPE_PRESENT)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_PARTICIPE_PASSE_1)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_PARTICIPE_PASSE_2)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_GERONDIF_PRESENT)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_GERONDIF_PASSE)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIV_PRASENS)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIV_PERFEKT)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_PARTIZIP_PRASENS)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_PARTIZIP_PERFEKT)) ?: "",
 
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PRESENT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PRESENT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PRESENT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PASSE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PASSE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIF_PASSE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PRESENT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_COMPOSE_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_IMPERFAIT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PLUS_QUE_PARFAIT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_SIMPLE_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_PASSE_ANTERIEUR_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_SIMPLE_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_INDICATIF_FUTUR_ANTERIEUR_ILS)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIV_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIV_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_IMPERATIV_SIE)) ?: "",
 
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PRESENT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PASSE_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_IMPERFAIT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_SUBJONTIF_PLUS_QUE_PARFAIT_ILS)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRASENS_SIE)) ?: "",
 
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PRESENT_ILS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_JE)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_TU)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_IL)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_NOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_VOUS)) ?: "",
-                cursor.getString(cursor.getColumnIndex(COLUMN_CONDITIONNEL_PASSE_ILS)) ?: ""
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PRATERIUM_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PERFEKT_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_PLUSQUAMPERFEKT_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR1_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_INDIKATIV_FUTUR2_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PRASENS_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_PERFEKT_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR1_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV1_FUTUR2_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PRATERIUM_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_PLUSQUAMPERFEKT_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR1_SIE)) ?: "",
+
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_ICH)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_DU)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_ER)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_WIR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_IHR)) ?: "",
+                cursor.getString(cursor.getColumnIndex(COLUMN_KONJUNKTIV2_FUTUR2_SIE)) ?: ""
         )
     }
 

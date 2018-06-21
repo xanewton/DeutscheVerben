@@ -59,22 +59,19 @@
     <string name="favorites_del_message">Remove from Favorites</string>
 
     <!-- Verb Conjugation Titles in French -->
-    <string name="infinitif" translatable="false">Infinitif</string>
-    <string name="participe" translatable="false">Participe</string>
-    <string name="gerondif" translatable="false">Gérondif</string>
-    <string name="imperatif" translatable="false">Impératif</string>
-    <string name="indicatif" translatable="false">Indicatif</string>
-    <string name="conditionnel" translatable="false">Conditionnel</string>
-    <string name="subjonctif" translatable="false">Subjonctif</string>
-    <string name="present" translatable="false">Présent</string>
-    <string name="passe" translatable="false">Passé</string>
-    <string name="passe_compose" translatable="false">Passé composé</string>
-    <string name="imperfait" translatable="false">Imparfait</string>
-    <string name="plus_que_parfait" translatable="false">Plus-que-parfait</string>
-    <string name="passe_simple" translatable="false">Passé simple</string>
-    <string name="passe_anterieur" translatable="false">Passé antérieur</string>
-    <string name="futur_simple" translatable="false">Futur simple</string>
-    <string name="futur_anterieur" translatable="false">Futur antérieur</string>
+    <string name="verbe" translatable="false">Verbe</string>
+    <string name="infinitiv" translatable="false">Infinitiv</string>
+    <string name="partizip" translatable="false">Partizip</string>
+    <string name="perfekt" translatable="false">Perfekt</string>
+    <string name="imperativ" translatable="false">Imperativ</string>
+    <string name="indikativ" translatable="false">Indikativ</string>
+    <string name="konjunktiv1" translatable="false">Konjunktiv I</string>
+    <string name="konjunktiv2" translatable="false">Konjunktiv II</string>
+    <string name="prasens" translatable="false">Präsens</string>
+    <string name="prateritum" translatable="false">Präteritum</string>
+    <string name="plusquamperfekt" translatable="false">Plusquamperfekt</string>
+    <string name="futur1" translatable="false">Futur I</string>
+    <string name="futur2" translatable="false">Futur II</string>
 
     <!-- error messages -->
     <string name="database_error">Cannot connect to the Database.</string>

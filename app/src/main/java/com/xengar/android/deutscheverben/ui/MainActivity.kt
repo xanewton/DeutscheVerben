@@ -57,7 +57,7 @@ import com.xengar.android.deutscheverben.utils.Constants.LOG
 import com.xengar.android.deutscheverben.utils.Constants.MAIN_ACTIVITY
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_100
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_25
-import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_300
+import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_250
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_50
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_500
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private val sortType = arrayOf(SORT_TYPES[sortSelection[0]]) // current sort type list in screen
 
     private val COMMON_TYPES = arrayOf(MOST_COMMON_25, MOST_COMMON_50, MOST_COMMON_100,
-            MOST_COMMON_300, MOST_COMMON_500, MOST_COMMON_ALL)
+            MOST_COMMON_250, MOST_COMMON_500, MOST_COMMON_ALL)
     private val commonSelection = intArrayOf(3)
     private val commonType = arrayOf(COMMON_TYPES[commonSelection[0]]) // current most common type list in screen
 
@@ -387,7 +387,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         builder.setPositiveButton(android.R.string.ok) { dialog, id ->
             // Change the selection.
             when (commonType[0]) {
-                MOST_COMMON_25, MOST_COMMON_50, MOST_COMMON_100, MOST_COMMON_300,
+                MOST_COMMON_25, MOST_COMMON_50, MOST_COMMON_100, MOST_COMMON_250,
                 MOST_COMMON_500, MOST_COMMON_ALL -> {
                     ActivityUtils.saveStringToPreferences(
                             applicationContext, DISPLAY_COMMON_TYPE, commonType[0])

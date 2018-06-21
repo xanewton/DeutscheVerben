@@ -38,7 +38,7 @@ object Constants {
     val MOST_COMMON_25 = "25"
     val MOST_COMMON_50 = "50"
     val MOST_COMMON_100 = "100"
-    val MOST_COMMON_300 = "300"
+    val MOST_COMMON_250 = "250"
     val MOST_COMMON_500 = "500"
     val MOST_COMMON_1000 = "1000"
     val MOST_COMMON_ALL = "all"
@@ -88,8 +88,8 @@ object Constants {
     // Translation languages
     val NONE = "None"
     val ENGLISH = "en"
+    val FRENCH = "fr"
     val SPANISH = "es"
-    val PORTUGUESE = "pt"
     // Check Text To Speech
     val ACT_CHECK_TTS_DATA = 1000
     val DEFAULT_TTS_LOCALE = "de"
