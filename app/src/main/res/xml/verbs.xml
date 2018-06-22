@@ -56,7 +56,7 @@
         no   = ""
         tren = "be, have (with ‘sein’ verbs)"
         trfr = "être"
-        tres = "ser" />
+        tres = "ser, estar, tener" />
     <verb
         id   = "2"
         ta   = "15"
@@ -74,7 +74,7 @@
         no   = ""
         tren = "have"
         trfr = "avoir"
-        tres = "tener" />
+        tres = "tener, poseer" />
     <verb
         id   = "3"
         ta   = "50"
@@ -92,7 +92,7 @@
         no   = ""
         tren = "become; shall or will; be"
         trfr = ""
-        tres = "" />
+        tres = "hacerse, volverse, ser" />
     <verb
         id   = "4"
         ta   = "23"
@@ -110,7 +110,7 @@
         no   = "changePPwFI"
         tren = "be able (can); know (a language or how to do something)"
         trfr = ""
-        tres = "" />
+        tres = "poder (hacer), saber" />
     <verb
         id   = "5"
         ta   = ""
@@ -128,7 +128,7 @@
         no   = "changePPwFI"
         tren = "have to, must"
         trfr = ""
-        tres = "" />
+        tres = "ser necesario +inf" />
     <verb
         id   = "6"
         ta   = "33"
@@ -146,7 +146,7 @@
         no   = ""
         tren = "say; tell; speak"
         trfr = ""
-        tres = "" />
+        tres = "decir, expresar, comunicar" />
     <verb
         id   = "7"
         ta   = "29"
@@ -164,7 +164,7 @@
         no   = ""
         tren = "make; do"
         trfr = ""
-        tres = "" />
+        tres = "hacer, causar, producir" />
     <verb
         id   = "8"
         ta   = "11"
@@ -182,7 +182,7 @@
         no   = ""
         tren = "give"
         trfr = ""
-        tres = "" />
+        tres = "dar" />
     <verb
         id   = "9"
         ta   = "22"
@@ -200,7 +200,7 @@
         no   = ""
         tren = "come"
         trfr = ""
-        tres = "" />
+        tres = "llegar, venir de, suceder" />
     <verb
         id   = "10"
         ta   = "40"
@@ -218,7 +218,7 @@
         no   = "changePPwFI"
         tren = "be; be supposed to; ought; be said to; be expected to"
         trfr = ""
-        tres = "" />
+        tres = "deber" />
     <verb
         id   = "11"
         ta   = "54"
@@ -236,7 +236,7 @@
         no   = "changePPwFI"
         tren = "want; intend"
         trfr = ""
-        tres = "" />
+        tres = "querer, desear" />
     <verb
         id   = "12"
         ta   = "12"
@@ -254,7 +254,7 @@
         no   = ""
         tren = "go; walk"
         trfr = ""
-        tres = "" />
+        tres = "ir" />
     <verb
         id   = "13"
         ta   = "52"
@@ -272,7 +272,7 @@
         no   = ""
         tren = "know (a fact)"
         trfr = ""
-        tres = "" />
+        tres = "saber" />
     <verb
         id   = "14"
         ta   = "37"
@@ -290,7 +290,7 @@
         no   = ""
         tren = "see; realize"
         trfr = ""
-        tres = "" />
+        tres = "ver, mirar, notar" />
     <verb
         id   = "15"
         ta   = "24"
@@ -308,7 +308,7 @@
         no   = ""
         tren = "let; leave; allow; abandon; stop; have something done (with infinitive)"
         trfr = ""
-        tres = "" />
+        tres = "dejar, poderse, hacer +inf" />
     <verb
         id   = "16"
         ta   = "43"
@@ -324,9 +324,9 @@
         co   = "1"
         de   = ""
         no   = ""
-        tren = "stand; be located"
+        tren = "stand; be located; mark"
         trfr = ""
-        tres = "" />
+        tres = "estar de pie, encontrarse, estar, marcar" />
     <verb
         id   = "17"
         ta   = "9"
@@ -344,7 +344,7 @@
         no   = ""
         tren = "find"
         trfr = ""
-        tres = "" />
+        tres = "encontrar, opinar" />
     <verb
         id   = "18"
         ta   = "3"
@@ -362,7 +362,7 @@
         no   = ""
         tren = "remain, stay; keep; be"
         trfr = ""
-        tres = "" />
+        tres = "quedarse, mantener, permanecer" />
     <verb
         id   = "19"
         ta   = "28"
@@ -380,7 +380,7 @@
         no   = ""
         tren = "lie; be situated; appeal to"
         trfr = ""
-        tres = "" />
+        tres = "estar acostado, estar, encontrarse, gustar, interesar" />
     <verb
         id   = "20"
         ta   = "17"
@@ -398,7 +398,7 @@
         no   = ""
         tren = "be called or named; mean; command"
         trfr = ""
-        tres = "" />
+        tres = "llamarse, significar, mandar" />
     <verb
         id   = "21"
         ta   = "6"
@@ -416,7 +416,7 @@
         no   = ""
         tren = "think; have in mind"
         trfr = ""
-        tres = "" />
+        tres = "pensar en de, reflexionar, recordar, querer" />
     <verb
         id   = "22"
         ta   = "32"
@@ -434,7 +434,7 @@
         no   = ""
         tren = "take"
         trfr = ""
-        tres = "" />
+        tres = "agarrar, cobrar, sacar" />
     <verb
         id   = "23"
         ta   = "48"
@@ -452,7 +452,7 @@
         no   = ""
         tren = "do; make; put; act"
         trfr = ""
-        tres = "" />
+        tres = "hacer, poner" />
     <verb
         id   = "24"
         ta   = ""
@@ -470,7 +470,7 @@
         no   = ""
         tren = "be permitted, be allowed, may"
         trfr = ""
-        tres = "" />
+        tres = "poder, tener permiso de/para" />
     <verb
         id   = "25"
         ta   = "14"
@@ -488,7 +488,7 @@
         no   = ""
         tren = "believe"
         trfr = ""
-        tres = "" />
+        tres = "creer(se), pensar" />
 
 
 </verbs>

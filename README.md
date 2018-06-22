@@ -36,6 +36,7 @@ References
 
 - https://www.linguee.com/german-english/translation/sein.html  Samples
 - https://en.pons.com/translate?q=Sein&l=deen&in=ac_de&lf=de  Samples
+- https://en.pons.com/translate/german-spanish/k%C3%B6nnen  Translations
 - http://www.dict.cc/dict/options.php Samples
 
 - http://www.canoo.net/services/Controller?service=canooNet&input=sein  Dictionary
