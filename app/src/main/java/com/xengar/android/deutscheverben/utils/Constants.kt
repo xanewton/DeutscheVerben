@@ -67,23 +67,12 @@ object Constants {
     val PREF_PREFERRED_TTS_LOCALE = "preferred_text_to_speech_locale"
 
     // Pronoms personnels
-    val JEA = "j'"
-    val JE = "je "
-    val TU = "tu "
-    val IL = "il "
-    val NOUS = "nous "
-    val VOUS = "vous "
-    val ILS = "ils "
-    val QUE = "que "
-    val QUEA = "qu'"
-
-    // Pronoms reflexive
-    val MEA = "m'"
-    val ME = "me "
-    val TEA = "t'"
-    val TE = "te "
-    val SEA = "s'"
-    val SE = "se "
+    val ICH = "ich "        // I
+    val DU = "du "          // You (informal singular)
+    val ER = "er/sie/es "   // He / She / It
+    val WIR = "wir "        // We (us)
+    val IHR = "ihr "        // You (informal plural)
+    val SIE = "sie/Sie "    // They / You (formal - singular or plural)
 
     // Translation languages
     val NONE = "None"
