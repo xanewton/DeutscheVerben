@@ -34,7 +34,12 @@ References
 - https://zodml.org/sites/default/files/501_German_Verbs.pdf  top500 book, conjugation rules
 - https://www.kobo.com/gb/en/ebook/501-german-verbs-5th-edition   top500
 
+- https://www.linguee.com/german-english/translation/sein.html  Samples
+- https://en.pons.com/translate?q=Sein&l=deen&in=ac_de&lf=de  Samples
+- http://www.dict.cc/dict/options.php Samples
 
+- http://www.canoo.net/services/Controller?service=canooNet&input=sein  Dictionary
+- http://de.thefreedictionary.com/sein  Dictionary
 
 
 

@@ -58,7 +58,7 @@
     <string name="favorites_add_message">Add to Favorites</string>
     <string name="favorites_del_message">Remove from Favorites</string>
 
-    <!-- Verb Conjugation Titles in French -->
+    <!-- Verb Conjugation titles in German -->
     <string name="verbe" translatable="false">Verbe</string>
     <string name="infinitiv" translatable="false">Infinitiv</string>
     <string name="partizip" translatable="false">Partizip</string>
@@ -234,6 +234,7 @@
         <item name="estonian">Eesti</item>
         <item name="finnish">Suomi</item>-->
         <item name="english">English</item>
+        <item name="french">Français</item>
         <!--        <item name="german">Deutsch</item>
         <item name="greek">Ελληνικά</item>
         <item name="hebrew">עברית</item>
@@ -246,9 +247,9 @@
         <item name="latvian">Latviešu</item>
         <item name="lithuanian">Lietuvių</item>
         <item name="norwegian">Norsk bokmål</item>
-        <item name="polish">Polski</item>-->
+        <item name="polish">Polski</item>
         <item name="portuguese">Português</item>
-        <!--<item name="romanian">Română</item>
+        <item name="romanian">Română</item>
         <item name="russian">Русский</item>
         <item name="serbian">Српски / srpski</item>-->
         <item name="spanish">Español</item>
@@ -275,6 +276,7 @@
         <item name="estonian">et_ET</item>
         <item name="finnish">fi_FI</item>-->
         <item name="english">en_EN</item>
+        <item name="french">fr_FR</item>
         <!--       <item name="german">de_DE</item>
         <item name="greek">el_GR</item>
         <item name="hebrew">he_IL</item>
@@ -287,9 +289,9 @@
         <item name="latvian">lv_LV</item>
         <item name="lithuanian">lt_LT</item>
         <item name="norwegian">no_NO</item>
-        <item name="polish">pl_PL</item>-->
+        <item name="polish">pl_PL</item>
         <item name="portuguese">pt_PT</item>
-        <!--<item name="romanian">ro_RO</item>
+        <item name="romanian">ro_RO</item>
         <item name="russian">ru_RU</item>
         <item name="serbian">sr_RS</item>-->
         <item name="spanish">es_ES</item>

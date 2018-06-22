@@ -31,8 +31,8 @@
         de   = definition
         no   = notes ()
         tren = translation_en
+        trfr = translation_fr
         tres = translation_es
-        trpt = translation_pt
     -->
     <!-- Notes code:
 
