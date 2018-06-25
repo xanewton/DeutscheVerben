@@ -75,6 +75,15 @@
         android:paddingTop="20dp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/principalParts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="kaufte, gekauft, kauft"/>
+
         <ImageView
             android:id="@+id/verb_image"
             android:contentDescription="@string/play"

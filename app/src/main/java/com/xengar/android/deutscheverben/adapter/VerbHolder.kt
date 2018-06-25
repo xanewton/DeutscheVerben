@@ -41,6 +41,7 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
     private val infinitive: TextView
     private val translation: TextView
     private val definition: TextView
+    private val principalParts: TextView
     private var tts: TextToSpeech? = null
     private var verb: Verb? = null
     private var group: TextView? = null
@@ -57,6 +58,7 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
         infinitive = view.findViewById(R.id.infinitive)
         definition = view.findViewById(R.id.definition)
         translation = view.findViewById(R.id.translation)
+        principalParts = view.findViewById(R.id.principalParts)
 
         // Card items
         definitionTitle = view.findViewById(R.id.definition_title)
@@ -112,6 +114,9 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
         infinitive.text = verb.infinitive
         infinitive.setTextColor(verb.color)
         infinitive.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
+
+        principalParts.text = verb.pastHe + ", " + verb.pastParticiple + ", " + verb.presentHe
+        principalParts.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
 
         definition.text = verb.definition
         definition.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())

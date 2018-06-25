@@ -90,6 +90,7 @@ class DetailsActivity
     private var group:TextView? = null
     private var definition:TextView? = null
     private var translation:TextView? = null
+    private var principalParts:TextView? = null
     private var sample1:TextView? = null
     private var sample2:TextView? = null
     private var sample3:TextView? = null
@@ -148,6 +149,7 @@ class DetailsActivity
         group = findViewById(R.id.groupe)
         definition = findViewById(R.id.definition)
         translation = findViewById(R.id.translation)
+        principalParts = findViewById(R.id.principalParts)
         sample1 = findViewById(R.id.sample1)
         sample2 = findViewById(R.id.sample2)
         sample3 = findViewById(R.id.sample3)
@@ -692,6 +694,7 @@ class DetailsActivity
             3 -> group?.text = getString(R.string.group3)
         }
 
+        principalParts?.text = verb.pastHe + ", " + verb.pastParticiple + ", " + verb.presentHe
         definition?.text = verb.definition
         sample1?.text = verb.sample1
         sample2?.text = verb.sample2
@@ -701,6 +704,7 @@ class DetailsActivity
         (findViewById<View>(R.id.groupe) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         (findViewById<View>(R.id.definition_title) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         (findViewById<View>(R.id.examples_title) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
+        principalParts?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         definition?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         sample1?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         sample2?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())

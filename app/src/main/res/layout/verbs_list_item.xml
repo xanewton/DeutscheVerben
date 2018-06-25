@@ -37,26 +37,26 @@
             android:id="@+id/infinitive"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:gravity="start"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/colorBlack"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            tools:text="travailler" />
+            tools:text="kaufen" />
 
         <TextView
-            android:id="@+id/translation"
+            android:id="@+id/principalParts"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start"
+            android:layout_weight="2"
+            android:gravity="end"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/colorIndigo"
+            android:textColor="@color/colorBlack"
             android:fontFamily="sans-serif"
             android:textAppearance="?android:textAppearanceSmall"
-            tools:text="translation" />
+            tools:text="kaufte, gekauft, kauft" />
 
     </LinearLayout>
 
@@ -64,12 +64,23 @@
         android:id="@+id/definition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="start"
         android:ellipsize="end"
-        android:maxLines="3"
+        android:maxLines="2"
         android:textColor="@color/colorGray"
         android:fontFamily="sans-serif"
         android:textAppearance="?android:textAppearanceSmall"
         tools:text="definition" />
+
+    <TextView
+        android:id="@+id/translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorIndigo"
+        android:textAppearance="?android:textAppearanceSmall"
+        tools:text="translation" />
 
 </LinearLayout>
