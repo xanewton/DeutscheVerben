@@ -147,7 +147,10 @@ class SearchActivity : AppCompatActivity() {
                     verbs.clear()
                     mVerbs!!.filterTo(verbs) {
                         (ActivityUtils.getTranslation(it, language).contains(charSequence)
-                                || it.infinitive.contains(charSequence))
+                                || it.infinitive.contains(charSequence)
+                                || it.pastHe.contains(charSequence)
+                                || it.presentHe.contains(charSequence)
+                                || it.pastParticiple.contains(charSequence))
                     }
                     results.values = verbs
                     results.count = verbs.size
