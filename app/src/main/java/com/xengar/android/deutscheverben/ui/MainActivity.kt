@@ -45,11 +45,11 @@ import com.xengar.android.deutscheverben.utils.Constants.DISPLAY_COMMON_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.DISPLAY_SORT_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.DISPLAY_VERB_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.FAVORITES
-import com.xengar.android.deutscheverben.utils.Constants.GROUP
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_1
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_2
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_3
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_ALL
+import com.xengar.android.deutscheverben.utils.Constants.TYPE
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_WEAK
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_STRONG
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_MIXED
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_ALL
 import com.xengar.android.deutscheverben.utils.Constants.ITEM_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.LAST_ACTIVITY
 import com.xengar.android.deutscheverben.utils.Constants.LIST
@@ -67,7 +67,7 @@ import com.xengar.android.deutscheverben.utils.Constants.PAGE_VERBS
 import com.xengar.android.deutscheverben.utils.Constants.SHARED_PREF_NAME
 import com.xengar.android.deutscheverben.utils.Constants.SORT_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.TYPE_PAGE
-import com.xengar.android.deutscheverben.utils.Constants.VERB_GROUP
+import com.xengar.android.deutscheverben.utils.Constants.VERB_TYPE
 import kotlinx.android.synthetic.main.activity_main.*
 
 /**
@@ -80,11 +80,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private var cardsFragment: UniversalFragment? = null
     private var favoritesFragment: UniversalFragment? = null
 
-    private val VERB_GROUPS = arrayOf(GROUP_1, GROUP_2, GROUP_3, GROUP_ALL)
+    private val VERB_GROUPS = arrayOf(TYPE_WEAK, TYPE_STRONG, TYPE_MIXED, TYPE_ALL)
     private val verbSelection = intArrayOf(3)
-    private val verbGroup = arrayOf(VERB_GROUPS[verbSelection[0]]) // current verb group list in screen
+    private val verbGroup = arrayOf(VERB_GROUPS[verbSelection[0]]) // current verb type list in screen
 
-    private val SORT_TYPES = arrayOf(ALPHABET, COLOR, GROUP)
+    private val SORT_TYPES = arrayOf(ALPHABET, COLOR, TYPE)
     private val sortSelection = intArrayOf(0)
     private val sortType = arrayOf(SORT_TYPES[sortSelection[0]]) // current sort type list in screen
 
@@ -135,7 +135,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             page = currentPage
         }
         // read verb Type
-        verbGroup[0] = prefs.getString(DISPLAY_VERB_TYPE, GROUP_ALL)
+        verbGroup[0] = prefs.getString(DISPLAY_VERB_TYPE, TYPE_ALL)
         for (i in VERB_GROUPS.indices) {
             if (verbGroup[0].contentEquals(VERB_GROUPS[i])) {
                 verbSelection[0] = i
@@ -261,7 +261,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     /**
      * Creates a Fragment.
-     * @param verbGroup Type of verbs to display GROUP_1, GROUP_2, GROUP_3, ALL_GROUPS
+     * @param verbGroup Type of verbs to display TYPE_WEAK, TYPE_STRONG, TYPE_MIXED, ALL_GROUPS
      * @param itemType Display mode LIST, CARD
      * @param sortType Alphabet, groups
      * @param commonType Display Top 25, Top 50, Top 100, Top 300, Top 500
@@ -271,7 +271,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                                         sortType: String, commonType: String): UniversalFragment {
         val fragment = UniversalFragment()
         val bundle = Bundle()
-        bundle.putString(VERB_GROUP, verbGroup)
+        bundle.putString(VERB_TYPE, verbGroup)
         bundle.putString(ITEM_TYPE, itemType)
         bundle.putString(SORT_TYPE, sortType)
         bundle.putString(COMMON_TYPE, commonType)
@@ -280,10 +280,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     /**
-     * Changes the list according to the selected group (1er, 2nd, 3rd, all).
+     * Changes the list according to the selected type (1er, 2nd, 3rd, all).
      */
     private fun changeVerbGroup() {
-        val options = arrayOf<CharSequence>(getString(R.string.group1), getString(R.string.group2), getString(R.string.group3), getString(R.string.all))
+        val options = arrayOf<CharSequence>(getString(R.string.type_weak), getString(R.string.type_strong), getString(R.string.type_mixed), getString(R.string.all))
 
         val builder = AlertDialog.Builder(this, R.style.MyAlertDialogStyle)
         builder.setTitle(getString(R.string.select_show_verbs))
@@ -295,7 +295,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         builder.setPositiveButton(android.R.string.ok) { dialog, id ->
             // Change the selection.
             when (verbGroup[0]) {
-                GROUP_1, GROUP_2, GROUP_3, GROUP_ALL -> {
+                TYPE_WEAK, TYPE_STRONG, TYPE_MIXED, TYPE_ALL -> {
                     ActivityUtils.saveStringToPreferences(
                             applicationContext, DISPLAY_VERB_TYPE, verbGroup[0])
                     changeFragmentsDisplay()
@@ -312,7 +312,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
      * Changes the sort order.
      */
     private fun sortVerbs() {
-        val options = arrayOf<CharSequence>(getString(R.string.alphabet), getString(R.string.color), getString(R.string.group))
+        val options = arrayOf<CharSequence>(getString(R.string.alphabet), getString(R.string.color), getString(R.string.type))
 
         val builder = AlertDialog.Builder(this, R.style.MyAlertDialogStyle)
         builder.setTitle(getString(R.string.select_type_of_sort))
@@ -324,7 +324,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         builder.setPositiveButton(android.R.string.ok) { dialog, id ->
             // Change the selection.
             when (sortType[0]) {
-                ALPHABET, COLOR, GROUP -> {
+                ALPHABET, COLOR, TYPE -> {
                     ActivityUtils.saveStringToPreferences(
                             applicationContext, DISPLAY_SORT_TYPE, sortType[0])
                     changeFragmentsDisplay()

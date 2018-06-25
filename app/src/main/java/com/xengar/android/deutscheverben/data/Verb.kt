@@ -15,7 +15,7 @@
  */
 package com.xengar.android.deutscheverben.data
 
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.GROUP_ALL
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.TYPE_ALL
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.OTHER
 
 /**
@@ -26,7 +26,7 @@ class Verb
 (id: Long, conjugation: Int, image: String, infinitive: String,
  pastParticiple: String, presentHe: String, pastHe: String, definition: String,
  sample1: String, sample2: String, sample3: String,
- common: Int, group: Int, color: Int, score: Int, notes: String,
+ common: Int, type: Int, color: Int, score: Int, notes: String,
  translationEN: String, translationFR: String, translationES: String) {
 
     /* Getters and Setters */
@@ -42,7 +42,7 @@ class Verb
     var sample2 = ""
     var sample3 = ""
     var common = OTHER
-    var group = GROUP_ALL
+    var type = TYPE_ALL
     var color = 0
     var score = 0
     var notes = ""
@@ -63,7 +63,7 @@ class Verb
         this.sample2 = sample2
         this.sample3 = sample3
         this.common = common
-        this.group = group
+        this.type = type
         this.color = color
         this.score = score
         this.notes = notes

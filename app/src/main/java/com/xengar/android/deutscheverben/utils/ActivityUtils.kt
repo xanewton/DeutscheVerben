@@ -67,7 +67,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONJUGATION_NUMBER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_DEFINITION
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TYPE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMAGE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIV_DU
@@ -688,7 +688,7 @@ object ActivityUtils {
         return arrayOf(COLUMN_ID, COLUMN_CONJUGATION_NUMBER, COLUMN_INFINITIV,
                 COLUMN_PARTIZIP_PERFEKT, COLUMN_IMPERFEKT_ER, COLUMN_PRASENS_ER,
                 COLUMN_DEFINITION, COLUMN_IMAGE, COLUMN_SAMPLE_1, COLUMN_SAMPLE_2, COLUMN_SAMPLE_3,
-                COLUMN_COMMON, COLUMN_GROUP,
+                COLUMN_COMMON, COLUMN_TYPE,
                 COLUMN_COLOR, COLUMN_SCORE, COLUMN_NOTES,
                 COLUMN_TRANSLATION_EN, COLUMN_TRANSLATION_FR, COLUMN_TRANSLATION_ES)
     }
@@ -827,7 +827,7 @@ object ActivityUtils {
                 cursor.getString(cursor.getColumnIndex(COLUMN_SAMPLE_2)) ?: "",
                 cursor.getString(cursor.getColumnIndex(COLUMN_SAMPLE_3)) ?: "",
                 cursor.getInt(cursor.getColumnIndex(COLUMN_COMMON)),
-                cursor.getInt(cursor.getColumnIndex(COLUMN_GROUP)),
+                cursor.getInt(cursor.getColumnIndex(COLUMN_TYPE)),
                 cursor.getInt(cursor.getColumnIndex(COLUMN_COLOR)),
                 cursor.getInt(cursor.getColumnIndex(COLUMN_SCORE)),
                 cursor.getString(cursor.getColumnIndex(COLUMN_NOTES)) ?: "",

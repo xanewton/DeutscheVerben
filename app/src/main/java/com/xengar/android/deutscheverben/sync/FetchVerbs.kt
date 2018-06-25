@@ -31,7 +31,7 @@ import fr.castorflex.android.circularprogressbar.CircularProgressBar
 
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COLOR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TYPE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_FAVORITE_VERBS_URI
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_VERBS_URI
@@ -44,11 +44,11 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.S
 import com.xengar.android.deutscheverben.utils.Constants.ALPHABET
 import com.xengar.android.deutscheverben.utils.Constants.COLOR
 import com.xengar.android.deutscheverben.utils.Constants.FAVORITES
-import com.xengar.android.deutscheverben.utils.Constants.GROUP
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_1
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_2
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_3
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_ALL
+import com.xengar.android.deutscheverben.utils.Constants.TYPE
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_WEAK
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_STRONG
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_MIXED
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_ALL
 import com.xengar.android.deutscheverben.utils.Constants.LOG
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_100
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_1000
@@ -62,7 +62,7 @@ import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
  * FetchVerbs from the database.
  */
 class FetchVerbs// Constructor
-(private val group: String, // Verb group (1st group, 2nd group, 3rd group, all)
+(private val type: String, // Verb type (1=weak, 2=strong, 3=mixed, 0=all)
  private val sort: String, // Sort order (alphabet, color, groups)
  private val common: String, // Common (Top50, Top100, Top25, all)
  private val adapter: VerbAdapter,
@@ -79,7 +79,7 @@ class FetchVerbs// Constructor
         val sortOrder: String = when (sort) {
             ALPHABET -> "$COLUMN_INFINITIV ASC"
             COLOR -> "$COLUMN_COLOR DESC, $COLUMN_INFINITIV ASC"
-            GROUP -> "$COLUMN_GROUP ASC, $COLUMN_INFINITIV ASC"
+            TYPE -> "$COLUMN_TYPE ASC, $COLUMN_INFINITIV ASC"
             else -> "$COLUMN_INFINITIV ASC"
         }
 
@@ -137,19 +137,19 @@ class FetchVerbs// Constructor
         }
 
         val cursor: Cursor?
-        when (group) {
-            GROUP_1, GROUP_2, GROUP_3 -> {
+        when (type) {
+            TYPE_WEAK, TYPE_STRONG, TYPE_MIXED -> {
                 where = if (where == null) {
-                    "$COLUMN_GROUP = ?"
+                    "$COLUMN_TYPE = ?"
                 } else {
-                    "($where) AND $COLUMN_GROUP = ?"
+                    "($where) AND $COLUMN_TYPE = ?"
                 }
-                // group substring should match group numbers (1,2,3)
-                listArgs.add(group.substring(0, 1))
+                // type substring should match type numbers (1,2,3,0)
+                listArgs.add(type.substring(0, 1))
                 val whereArgs = if (listArgs.size > 0) listArgs.toTypedArray() else null
                 cursor = contentResolver.query(CONTENT_VERBS_URI, columns, where, whereArgs, sortOrder)
             }
-            GROUP_ALL -> {
+            TYPE_ALL -> {
                 val whereArgs = if (listArgs.size > 0) listArgs.toTypedArray() else null
                 cursor = contentResolver.query(CONTENT_VERBS_URI, columns, where, whereArgs, sortOrder)
             }

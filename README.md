@@ -43,7 +43,8 @@ References
 - http://de.thefreedictionary.com/sein  Dictionary
 - https://www.dwds.de/wb/kaufen  Dictionary
 - https://en.pons.com/translate?q=kaufen&l=dedx&in=&lf= Dictionary
-
+- https://www.duden.de/rechtschreibung/machen  Weak or Strong
+- https://en.wiktionary.org/wiki/sein  Weak or Strong
 
 
 # Set up

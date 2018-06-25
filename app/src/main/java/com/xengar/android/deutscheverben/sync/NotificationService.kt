@@ -62,7 +62,7 @@ import com.xengar.android.deutscheverben.utils.Constants.VERB_NAME
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONJUGATION_NUMBER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_FAVORITE_VERBS_URI
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.CONTENT_VERBS_URI
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.GROUP_ALL
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.TYPE_ALL
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.OTHER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
@@ -348,7 +348,7 @@ class NotificationService : IntentService(NotificationService::class.java.name) 
                         cursor.getString(cursor.getColumnIndex(COLUMN_IMAGE)) ?: "",
                         cursor.getString(cursor.getColumnIndex(COLUMN_INFINITIV)) ?: "",
                         "", "", "", "",
-                        "", "", "", OTHER, GROUP_ALL,
+                        "", "", "", OTHER, TYPE_ALL,
                         0, 0, "", "", "", "")
             }
         } else {

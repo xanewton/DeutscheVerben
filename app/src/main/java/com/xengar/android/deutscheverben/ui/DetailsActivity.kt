@@ -87,7 +87,7 @@ class DetailsActivity
     private var conjugation:Conjugation? = null
     private var tts:TextToSpeech? = null
     private var infinitive:TextView? = null
-    private var group:TextView? = null
+    private var type:TextView? = null
     private var definition:TextView? = null
     private var translation:TextView? = null
     private var principalParts:TextView? = null
@@ -146,7 +146,7 @@ class DetailsActivity
         setClickListeners()
 
         infinitive = findViewById(R.id.infinitive)
-        group = findViewById(R.id.groupe)
+        type = findViewById(R.id.type)
         definition = findViewById(R.id.definition)
         translation = findViewById(R.id.translation)
         principalParts = findViewById(R.id.principalParts)
@@ -367,7 +367,7 @@ class DetailsActivity
                     + "\n" + conjugation!!.partizipPrasens
                     + "\n\n" + getString(R.string.partizip) + " " + getString(R.string.perfekt) + ":"
                     + "\n" + conjugation!!.partizipPerfekt
-                    + "\n" + getString(R.string.group) + ": " + verb!!.group
+                    + "\n" + getString(R.string.type) + ": " + verb!!.type
                     + "\n\n" + getString(R.string.definition) + ":\n" + verb!!.definition
                     + "\n\n" + getString(R.string.examples) + ":\n" + verb!!.sample1
                     + "\n" + verb!!.sample2
@@ -688,10 +688,10 @@ class DetailsActivity
     private fun fillVerbDetails(verb:Verb) {
         // Update the views on the screen with the values from the database
         infinitive?.text = verb.infinitive
-        when (verb.group) {
-            1 -> group?.text = getString(R.string.group1)
-            2 -> group?.text = getString(R.string.group2)
-            3 -> group?.text = getString(R.string.group3)
+        when (verb.type) {
+            1 -> type?.text = getString(R.string.type_weak)
+            2 -> type?.text = getString(R.string.type_strong)
+            3 -> type?.text = getString(R.string.type_mixed)
         }
 
         principalParts?.text = verb.pastHe + ", " + verb.pastParticiple + ", " + verb.presentHe
@@ -701,7 +701,7 @@ class DetailsActivity
         sample3?.text = verb.sample3
 
         val fontSize = Integer.parseInt(ActivityUtils.getPreferenceFontSize(applicationContext))
-        (findViewById<View>(R.id.groupe) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
+        (findViewById<View>(R.id.type) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         (findViewById<View>(R.id.definition_title) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         (findViewById<View>(R.id.examples_title) as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
         principalParts?.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
@@ -2089,8 +2089,8 @@ class DetailsActivity
         if (!demo) return
         when (counter) {
             0 -> {
-                showcaseView!!.setShowcase(ViewTarget(findViewById(R.id.groupe)), true)
-                showcaseView!!.setContentText(getString(R.string.group))
+                showcaseView!!.setShowcase(ViewTarget(findViewById(R.id.type)), true)
+                showcaseView!!.setContentText(getString(R.string.type))
             }
 
             1 -> {

@@ -44,7 +44,7 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
     private val principalParts: TextView
     private var tts: TextToSpeech? = null
     private var verb: Verb? = null
-    private var group: TextView? = null
+    private var type: TextView? = null
     private var definitionTitle: TextView? = null
     private var sample1: TextView? = null
     private var sample2: TextView? = null
@@ -62,7 +62,7 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
 
         // Card items
         definitionTitle = view.findViewById(R.id.definition_title)
-        group = view.findViewById(R.id.groupe)
+        type = view.findViewById(R.id.type)
         imageVerb = view.findViewById(R.id.verb_image)
         sample1 = view.findViewById(R.id.sample1)
         sample2 = view.findViewById(R.id.sample2)
@@ -131,12 +131,12 @@ class VerbHolder(view: View) : RecyclerView.ViewHolder(view), View.OnClickListen
         }
 
         if (layoutType.contentEquals(CARD)) {
-            when (verb.group) {
-                1 -> group!!.text = context.resources.getString(R.string.group1)
-                2 -> group!!.text = context.resources.getString(R.string.group2)
-                3 -> group!!.text = context.resources.getString(R.string.group3)
+            when (verb.type) {
+                1 -> type!!.text = context.resources.getString(R.string.type_weak)
+                2 -> type!!.text = context.resources.getString(R.string.type_strong)
+                3 -> type!!.text = context.resources.getString(R.string.type_mixed)
             }
-            group!!.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
+            type!!.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize.toFloat())
 
             sample1!!.text = verb.sample1
             sample2!!.text = verb.sample2

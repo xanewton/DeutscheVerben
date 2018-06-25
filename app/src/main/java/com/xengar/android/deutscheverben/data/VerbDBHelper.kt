@@ -35,7 +35,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.C
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_CONJUGATION_NUMBER
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_DEFINITION
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TYPE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMAGE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_IMPERATIV_DU
@@ -257,7 +257,7 @@ class VerbDBHelper
                 + COLUMN_SAMPLE_2 + " TEXT, "
                 + COLUMN_SAMPLE_3 + " TEXT, "
                 + COLUMN_COMMON + " INTEGER NOT NULL DEFAULT 0, "
-                + COLUMN_GROUP + " INTEGER NOT NULL DEFAULT 0, "
+                + COLUMN_TYPE + " INTEGER NOT NULL DEFAULT 0, "
                 + COLUMN_COLOR + " INTEGER NOT NULL DEFAULT 0, "
                 + COLUMN_SCORE + " INTEGER NOT NULL DEFAULT 0, "
                 + COLUMN_DEFINITION + " TEXT NOT NULL, "
@@ -529,7 +529,7 @@ class VerbDBHelper
                         values.put(COLUMN_SAMPLE_2, parser.getAttributeValue(null, "s2"))
                         values.put(COLUMN_SAMPLE_3, parser.getAttributeValue(null, "s3"))
                         values.put(COLUMN_COMMON, parser.getAttributeValue(null, "co"))
-                        values.put(COLUMN_GROUP, parser.getAttributeValue(null, "gr"))
+                        values.put(COLUMN_TYPE, parser.getAttributeValue(null, "type"))
                         values.put(COLUMN_COLOR, DEFAULT_COLOR)
                         values.put(COLUMN_SCORE, DEFAULT_SCORE)
                         values.put(COLUMN_DEFINITION, parser.getAttributeValue(null, "de"))

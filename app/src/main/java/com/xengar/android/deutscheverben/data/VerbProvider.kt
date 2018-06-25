@@ -33,7 +33,7 @@ import com.xengar.android.deutscheverben.data.VerbContract.PATH_VERBS
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COLOR
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_COMMON
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_DEFINITION
-import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_GROUP
+import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_TYPE
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_ID
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_INFINITIV
 import com.xengar.android.deutscheverben.data.VerbContract.VerbEntry.Companion.COLUMN_SCORE
@@ -295,8 +295,8 @@ class VerbProvider : ContentProvider() {
         }
     }
 
-    private fun checkGroup(regular: Int?, message: String) {
-        if (regular == null || !VerbEntry.isValidGroup(regular)) {
+    private fun checkType(regular: Int?, message: String) {
+        if (regular == null || !VerbEntry.isValidType(regular)) {
             throw IllegalArgumentException(message)
         }
     }
@@ -344,9 +344,9 @@ class VerbProvider : ContentProvider() {
     }
 
     /** If the key is there, checks that is valid  */
-    private fun checkGroup(values: ContentValues?, key: String, message: String) {
+    private fun checkType(values: ContentValues?, key: String, message: String) {
         if (values!!.containsKey(key)) {
-            checkGroup(values.getAsInteger(key), message)
+            checkType(values.getAsInteger(key), message)
         }
     }
 
@@ -368,7 +368,7 @@ class VerbProvider : ContentProvider() {
         checkNotNullKeyString(values, COLUMN_INFINITIV, "Verb requires infinitive")
         checkCommonUsage(values, COLUMN_COMMON,
                 "Verb requires valid common usage (top 50, top 100)")
-        checkGroup(values, COLUMN_GROUP, "Verb requires valid group value (1, 2, 3)")
+        checkType(values, COLUMN_TYPE, "Verb requires valid type value (1, 2, 3, 0)")
         checkNotNullKeyString(values, COLUMN_DEFINITION, "Verb requires a definition")
         /*checkNotNullKeyString(values, COLUMN_SAMPLE_1, "Verb requires sample 1");
         checkNotNullKeyString(values, COLUMN_SAMPLE_2, "Verb requires sample 2");

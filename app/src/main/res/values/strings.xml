@@ -19,7 +19,7 @@
     <string name="action_search">Search</string>
     <string name="action_sort">Sort</string>
     <string name="action_most_common">Most common</string>
-    <string name="group">Group</string>
+    <string name="type">Type</string>
 
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
@@ -32,9 +32,9 @@
     <string name="share">Share</string>
 
     <string name="select_show_verbs">Show verbs</string>
-    <string name="group1" translatable="false">1er groupe</string>
-    <string name="group2" translatable="false">2e groupe</string>
-    <string name="group3" translatable="false">3e groupe</string>
+    <string name="type_weak" translatable="false">weak</string>
+    <string name="type_strong" translatable="false">strong</string>
+    <string name="type_mixed" translatable="false">mixed</string>
 
     <string name="select_type_of_sort">Sort by</string>
     <string name="alphabet">Alphabet</string>

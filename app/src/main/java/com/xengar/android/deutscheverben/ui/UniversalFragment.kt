@@ -15,12 +15,12 @@ import com.xengar.android.deutscheverben.data.Verb
 import com.xengar.android.deutscheverben.sync.FetchVerbs
 import com.xengar.android.deutscheverben.utils.Constants.ALPHABET
 import com.xengar.android.deutscheverben.utils.Constants.COMMON_TYPE
-import com.xengar.android.deutscheverben.utils.Constants.GROUP_ALL
+import com.xengar.android.deutscheverben.utils.Constants.TYPE_ALL
 import com.xengar.android.deutscheverben.utils.Constants.ITEM_TYPE
 import com.xengar.android.deutscheverben.utils.Constants.LIST
 import com.xengar.android.deutscheverben.utils.Constants.MOST_COMMON_ALL
 import com.xengar.android.deutscheverben.utils.Constants.SORT_TYPE
-import com.xengar.android.deutscheverben.utils.Constants.VERB_GROUP
+import com.xengar.android.deutscheverben.utils.Constants.VERB_TYPE
 import com.xengar.android.deutscheverben.utils.CustomErrorView
 import com.xengar.android.deutscheverben.utils.FragmentUtils
 import fr.castorflex.android.circularprogressbar.CircularProgressBar
@@ -37,10 +37,10 @@ class UniversalFragment : Fragment() {
     private var progressBar: CircularProgressBar? = null
     private var mAdapter: VerbAdapter? = null
     private var mVerbs: MutableList<Verb>? = null
-    var verbGroup = GROUP_ALL
-        private set   // 1er group, 2nd group, 3rd group, all groups
+    var verbGroup = TYPE_ALL
+        private set   // 1er type, 2nd type, 3rd type, all groups
     var sortType = ALPHABET
-        private set     // alphabet, color, group
+        private set     // alphabet, color, type
     private var itemType = LIST         // card, list
     var commonType = MOST_COMMON_ALL
         private set
@@ -53,7 +53,7 @@ class UniversalFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         if (arguments != null) {
-            verbGroup = arguments!!.getString(VERB_GROUP, GROUP_ALL)
+            verbGroup = arguments!!.getString(VERB_TYPE, TYPE_ALL)
             itemType = arguments!!.getString(ITEM_TYPE, LIST)
             sortType = arguments!!.getString(SORT_TYPE, ALPHABET)
             commonType = arguments!!.getString(COMMON_TYPE, MOST_COMMON_ALL)

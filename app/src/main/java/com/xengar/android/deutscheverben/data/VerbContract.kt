@@ -106,18 +106,18 @@ object VerbContract {
                         || usage == TOP_500 || usage == TOP_1000 || usage == OTHER)
             }
 
-            /** Group verbs (1st, 2nd, 3rd, all). - Type: INTEGER  */
-            @JvmField val COLUMN_GROUP = "GROUPE"
+            /** Type of verb (1=weak, 2=strong, 3=mixed). - Type: INTEGER  */
+            @JvmField val COLUMN_TYPE = "TYP"
 
             /** Possible values for verb groups.  */
-            @JvmField val GROUP_1 = 1
-            @JvmField val GROUP_2 = 2
-            @JvmField val GROUP_3 = 3
-            @JvmField val GROUP_ALL = 0
+            @JvmField val TYPE_WEAK = 1
+            @JvmField val TYPE_STRONG = 2
+            @JvmField val TYPE_MIXED = 3
+            @JvmField val TYPE_ALL = 0
 
-            fun isValidGroup(value: Int): Boolean {
-                return value == GROUP_1 || value == GROUP_2
-                        || value == GROUP_3 || value == GROUP_ALL
+            fun isValidType(value: Int): Boolean {
+                return value == TYPE_WEAK || value == TYPE_STRONG
+                        || value == TYPE_MIXED || value == TYPE_ALL
             }
 
             /** Definition of the verb. - Type: TEXT  */
