@@ -41,6 +41,8 @@ References
 
 - http://www.canoo.net/services/Controller?service=canooNet&input=sein  Dictionary
 - http://de.thefreedictionary.com/sein  Dictionary
+- https://www.dwds.de/wb/kaufen  Dictionary
+- https://en.pons.com/translate?q=kaufen&l=dedx&in=&lf= Dictionary
 
 
 
