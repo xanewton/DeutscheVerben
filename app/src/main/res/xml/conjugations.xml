@@ -6367,6 +6367,117 @@
         kon2_futur2_wir          = "würden gedurft haben"
         kon2_futur2_ihr          = "würdet gedurft haben"
         kon2_futur2_sie          = "würden gedurft haben" />
+    <conjugation
+        id                       = "57"
+        term                     = ""
+        radicals                 = ""
+
+        inf_prasens              = "müssen"
+        inf_perfekt              = "gemusst haben"
+        par_prasens              = "müssend"
+        par_perfekt              = "gemusst"
+
+        imperativ_du             = "-"
+        imperativ_ihr            = "-"
+        imperativ_sie            = "-"
+
+        ind_prasens_ich          = "muss"
+        ind_prasens_du           = "musst"
+        ind_prasens_er           = "muss"
+        ind_prasens_wir          = "müssen"
+        ind_prasens_ihr          = "müsst"
+        ind_prasens_sie          = "müssen"
+
+        ind_prateritum_ich       = "musste"
+        ind_prateritum_du        = "musstest"
+        ind_prateritum_er        = "musste"
+        ind_prateritum_wir       = "mussten"
+        ind_prateritum_ihr       = "musstet"
+        ind_prateritum_sie       = "mussten"
+
+        ind_perfekt_ich          = "habe gemusst"
+        ind_perfekt_du           = "hast gemusst"
+        ind_perfekt_er           = "hat gemusst"
+        ind_perfekt_wir          = "haben gemusst"
+        ind_perfekt_ihr          = "habt gemusst"
+        ind_perfekt_sie          = "haben gemusst"
+
+        ind_plusquamperfekt_ich  = "hatte gemusst"
+        ind_plusquamperfekt_du   = "hattest gemusst"
+        ind_plusquamperfekt_er   = "hatte gemusst"
+        ind_plusquamperfekt_wir  = "hatten gemusst"
+        ind_plusquamperfekt_ihr  = "hattet gemusst"
+        ind_plusquamperfekt_sie  = "hatten gemusst"
+
+        ind_futur1_ich           = "werde müssen"
+        ind_futur1_du            = "wirst müssen"
+        ind_futur1_er            = "wird müssen"
+        ind_futur1_wir           = "werden müssen"
+        ind_futur1_ihr           = "werdet müssen"
+        ind_futur1_sie           = "werden müssen"
+
+        ind_futur2_ich           = "werde gemusst haben"
+        ind_futur2_du            = "wirst gemusst haben"
+        ind_futur2_er            = "wird gemusst haben"
+        ind_futur2_wir           = "werden gemusst haben"
+        ind_futur2_ihr           = "werdet gemusst haben"
+        ind_futur2_sie           = "werden gemusst haben"
+
+        kon1_prasens_ich         = "müsse"
+        kon1_prasens_du          = "müssest"
+        kon1_prasens_er          = "müsse"
+        kon1_prasens_wir         = "müssen"
+        kon1_prasens_ihr         = "müsset"
+        kon1_prasens_sie         = "müssen"
+
+        kon1_perfekt_ich         = "habe gemusst"
+        kon1_perfekt_du          = "habest gemusst"
+        kon1_perfekt_er          = "habe gemusst"
+        kon1_perfekt_wir         = "haben gemusst"
+        kon1_perfekt_ihr         = "habet gemusst"
+        kon1_perfekt_sie         = "haben gemusst"
+
+        kon1_futur1_ich          = "werde müssen"
+        kon1_futur1_du           = "werdest müssen"
+        kon1_futur1_er           = "werde müssen"
+        kon1_futur1_wir          = "werden müssen"
+        kon1_futur1_ihr          = "werdet müssen"
+        kon1_futur1_sie          = "werden müssen"
+
+        kon1_futur2_ich          = "werde gemusst haben"
+        kon1_futur2_du           = "werdest gemusst haben"
+        kon1_futur2_er           = "werde gemusst haben"
+        kon1_futur2_wir          = "werden gemusst haben"
+        kon1_futur2_ihr          = "werdet gemusst haben"
+        kon1_futur2_sie          = "werden gemusst haben"
+
+        kon2_prateritum_ich      = "müsste"
+        kon2_prateritum_du       = "müsstest"
+        kon2_prateritum_er       = "müsste"
+        kon2_prateritum_wir      = "müssten"
+        kon2_prateritum_ihr      = "müsstet"
+        kon2_prateritum_sie      = "müssten"
+
+        kon2_plusquamperfekt_ich = "hätte gemusst"
+        kon2_plusquamperfekt_du  = "hättest gemusst"
+        kon2_plusquamperfekt_er  = "hätte gemusst"
+        kon2_plusquamperfekt_wir = "hätten gemusst"
+        kon2_plusquamperfekt_ihr = "hättet gemusst"
+        kon2_plusquamperfekt_sie = "hätten gemusst"
+
+        kon2_futur1_ich          = "würde müssen"
+        kon2_futur1_du           = "würdest müssen"
+        kon2_futur1_er           = "würde müssen"
+        kon2_futur1_wir          = "würden müssen"
+        kon2_futur1_ihr          = "würdet müssen"
+        kon2_futur1_sie          = "würden müssen"
+
+        kon2_futur2_ich          = "würde gemusst haben"
+        kon2_futur2_du           = "würdest gemusst haben"
+        kon2_futur2_er           = "würde gemusst haben"
+        kon2_futur2_wir          = "würden gemusst haben"
+        kon2_futur2_ihr          = "würdet gemusst haben"
+        kon2_futur2_sie          = "würden gemusst haben" />
 
 
 </conjugations>
