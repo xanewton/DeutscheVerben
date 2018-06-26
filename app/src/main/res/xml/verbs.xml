@@ -455,11 +455,11 @@
         tres = "hacer, poner" />
     <verb
         id   = "24"
-        ta   = ""
+        ta   = "56"
         in   = "dürfen"
         img  = ""
         pahe = "durfte"
-        pp   = "gedurft"
+        pp   = "gedurft (dürfen)"
         prhe = "darf"
         s1   = "In der Stadt Mahagonny durfte man fast alles."
         s2   = "Heutzutage darf man alles, heißt es in einem Lied von Cole Porter."
@@ -467,7 +467,7 @@
         type = "2"
         co   = "1"
         de   = "1. die Erlaubnis haben \n2. verwendet, um eine höfliche Bitte auszusprechen \n3. das Recht haben \n4. in die Lage versetzt sein"
-        no   = ""
+        no   = "changePPwFI"
         tren = "be permitted, be allowed, may"
         trfr = "avoir la permission"
         tres = "poder, tener permiso de/para" />

@@ -6255,5 +6255,118 @@
         kon2_futur2_ihr          = ""
         kon2_futur2_sie          = "" />
 
+    <!-- End of book 501 german verbs Esential 55 verb list -->
+    <conjugation
+        id                       = "56"
+        term                     = ""
+        radicals                 = ""
+
+        inf_prasens              = "dürfen"
+        inf_perfekt              = "gedurft haben"
+        par_prasens              = "dürfend"
+        par_perfekt              = "gedurft"
+
+        imperativ_du             = "-"
+        imperativ_ihr            = "-"
+        imperativ_sie            = "-"
+
+        ind_prasens_ich          = "darf"
+        ind_prasens_du           = "darfst"
+        ind_prasens_er           = "darf"
+        ind_prasens_wir          = "dürfen"
+        ind_prasens_ihr          = "dürft"
+        ind_prasens_sie          = "dürfen"
+
+        ind_prateritum_ich       = "durfte"
+        ind_prateritum_du        = "durftest"
+        ind_prateritum_er        = "durfte"
+        ind_prateritum_wir       = "durften"
+        ind_prateritum_ihr       = "durftet"
+        ind_prateritum_sie       = "durften"
+
+        ind_perfekt_ich          = "habe gedurft"
+        ind_perfekt_du           = "hast gedurft"
+        ind_perfekt_er           = "hat gedurft"
+        ind_perfekt_wir          = "haben gedurft"
+        ind_perfekt_ihr          = "habt gedurft"
+        ind_perfekt_sie          = "haben gedurft"
+
+        ind_plusquamperfekt_ich  = "hatte gedurft"
+        ind_plusquamperfekt_du   = "hattest gedurft"
+        ind_plusquamperfekt_er   = "hatte gedurft"
+        ind_plusquamperfekt_wir  = "hatten gedurft"
+        ind_plusquamperfekt_ihr  = "hattet gedurft"
+        ind_plusquamperfekt_sie  = "hatten gedurft"
+
+        ind_futur1_ich           = "werde dürfen"
+        ind_futur1_du            = "wirst dürfen"
+        ind_futur1_er            = "wird dürfen"
+        ind_futur1_wir           = "werden dürfen"
+        ind_futur1_ihr           = "werdet dürfen"
+        ind_futur1_sie           = "werden dürfen"
+
+        ind_futur2_ich           = "werde gedurft haben"
+        ind_futur2_du            = "wirst gedurft haben"
+        ind_futur2_er            = "wird gedurft haben"
+        ind_futur2_wir           = "werden gedurft haben"
+        ind_futur2_ihr           = "werdet gedurft haben"
+        ind_futur2_sie           = "werden gedurft haben"
+
+        kon1_prasens_ich         = "dürfe"
+        kon1_prasens_du          = "dürfest"
+        kon1_prasens_er          = "dürfe"
+        kon1_prasens_wir         = "dürfen"
+        kon1_prasens_ihr         = "dürfet"
+        kon1_prasens_sie         = "dürfen"
+
+        kon1_perfekt_ich         = "habe gedurft"
+        kon1_perfekt_du          = "habest gedurft"
+        kon1_perfekt_er          = "habe gedurft"
+        kon1_perfekt_wir         = "haben gedurft"
+        kon1_perfekt_ihr         = "habet gedurft"
+        kon1_perfekt_sie         = "haben gedurft"
+
+        kon1_futur1_ich          = "werde dürfen"
+        kon1_futur1_du           = "werdest dürfen"
+        kon1_futur1_er           = "werdest dürfen"
+        kon1_futur1_wir          = "werdest dürfen"
+        kon1_futur1_ihr          = "werdet dürfen"
+        kon1_futur1_sie          = "werden dürfen"
+
+        kon1_futur2_ich          = "werde gedurft haben"
+        kon1_futur2_du           = "werdest gedurft haben"
+        kon1_futur2_er           = "werde gedurft haben"
+        kon1_futur2_wir          = "werden gedurft haben"
+        kon1_futur2_ihr          = "werdet gedurft haben"
+        kon1_futur2_sie          = "werden gedurft haben"
+
+        kon2_prateritum_ich      = "dürfte"
+        kon2_prateritum_du       = "dürftest"
+        kon2_prateritum_er       = "dürfte"
+        kon2_prateritum_wir      = "dürften"
+        kon2_prateritum_ihr      = "dürftet"
+        kon2_prateritum_sie      = "dürften"
+
+        kon2_plusquamperfekt_ich = "hätte gedurft"
+        kon2_plusquamperfekt_du  = "hättest gedurft"
+        kon2_plusquamperfekt_er  = "hätte gedurft"
+        kon2_plusquamperfekt_wir = "hätten gedurft"
+        kon2_plusquamperfekt_ihr = "hättet gedurft"
+        kon2_plusquamperfekt_sie = "hätten gedurft"
+
+        kon2_futur1_ich          = "würde dürfen"
+        kon2_futur1_du           = "würdest dürfen"
+        kon2_futur1_er           = "würde dürfen"
+        kon2_futur1_wir          = "würden dürfen"
+        kon2_futur1_ihr          = "würdet dürfen"
+        kon2_futur1_sie          = "würden dürfen"
+
+        kon2_futur2_ich          = "würde gedurft haben"
+        kon2_futur2_du           = "würdest gedurft haben"
+        kon2_futur2_er           = "würde gedurft haben"
+        kon2_futur2_wir          = "würden gedurft haben"
+        kon2_futur2_ihr          = "würdet gedurft haben"
+        kon2_futur2_sie          = "würden gedurft haben" />
+
 
 </conjugations>

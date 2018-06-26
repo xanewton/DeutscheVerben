@@ -23,7 +23,7 @@ References
 - http://canoo.net/inflection/laufen:V:sein:haben
 - http://conjugator.reverso.net/index-german-251-500.html  Conjugator
 - https://en.wikipedia.org/wiki/German_verbs  Conjugator
-- http://www.die-konjugation.de/verb/interpretieren.php Conjugator pattern
+- http://www.die-konjugation.de/verb/interpretieren.php Conjugator pattern, Weak or Strong
 - http://conjugator.reverso.net/conjugation-german-verb-interpretieren.html Conjugator pattern
 
 - https://www.pinterest.ca/pin/234187249353769621  top25
